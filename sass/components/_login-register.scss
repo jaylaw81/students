@@ -1,0 +1,42 @@
+.login-register {
+	background-color: lighten($grey, 50%);
+	width: 70%;
+	margin: 100px auto 0 auto;
+
+	.heading {
+		background-color: lighten($grey, 5%);
+		color: $white;
+		padding: 20px;
+	}
+
+	form {
+		padding: 20px;
+		margin: 0;
+
+		.form-group {
+			margin-bottom: 15px;
+			width: 100%;
+		}
+
+		input,
+		input.form-control {
+			width: 96%;
+			background: $white;
+			border: 1px solid #ccc;
+			padding: 20px 2%;
+			color: lighten($black, 50%);
+			font-size: 95%;
+		}
+
+		.btm-links {
+			a {
+				color: lighten($grey, 20%);
+				@include transition(all, 0.2s, ease-in-out);
+			}
+
+			a:hover {
+				color: darken($grey, 80%);
+			}
+		}
+	}
+}

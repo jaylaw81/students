@@ -1,0 +1,23 @@
+#account-form-container.container-fluid.login-register
+	div.heading
+		h1 Account Details
+	form( method="post")#account-form.form-horizontal
+		p#sub1.subheading Please tell us a little about yourself.
+		fieldset
+			#name-cg.form-group
+				input#name-tf.input-xlarge(type='text', placeholder="Full name", name='name', value= user.name).required.form-controls
+			#email-cg.form-group
+				input#email-tf.input-xlarge(type='text', placeholder="Email address", name='email', value= user.email).required.form-controls
+			hr
+			p#sub2.subheading
+			#user-cg.form-group
+				input#user-tf.input-xlarge.disabled(type='text', placeholder="Username", name='user', value= user.user).required.form-controls
+			#pass-cg.form-group
+				input#pass-tf.input-xlarge(type='password', placeholder="Password", name='pass', value= user.pass).required.form-controls
+			.form-group
+				button(type='button')#account-form-btn1.btn
+				button(type="submit")#btn-login.btn.btn-primary Update
+
+// display form errors in a custom modal window //
+
+include ../modals/form-errors
