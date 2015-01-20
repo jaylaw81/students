@@ -3,12 +3,19 @@ var rte = {};
 rte = {
     init: function(){
         this.rteRender();
+        this.github();
+    },
+
+    github: function(){
+
     },
 
     rteRender: function(){
         $('textarea[data-editor]').each(function () {
             var textarea = $(this)
-                , lessonData = $(this).attr('name');
+                , lessonData = $(this).attr('name')
+                , output = $(this).data('output')
+                ;
 
             var mode = textarea.data('editor');
 
@@ -28,16 +35,20 @@ rte = {
 
             editor.getSession().on('change', function(e) {
                 var text = editor.getSession().getValue();
-                rte.checkInput(lessonData, text);
+                rte.checkInput(editor, lessonData, output, text);
             });
 
         });
     },
 
-    checkInput: function(lessonData, text){
+    checkInput: function(editor, lessonData, output, text){
         var lessonContainer = lessonData;
+        if(Boolean(output) === true){
+            var content = editor.getSession().getValue();
+            $('.output').html(content);
+        }
 
-        if(text.toLowerCase() == '<!doctype html>') {
+        if(text.indexOf('<!doctype html>') > -1) {
             console.log('success')
         }
 

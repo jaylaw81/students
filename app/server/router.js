@@ -2,6 +2,21 @@
 var CT = require('./modules/country-list');
 var AM = require('./modules/account-manager');
 var EM = require('./modules/email-dispatcher');
+var GitHubApi = require("github");
+
+var github = new GitHubApi({
+	// required
+	version: "3.0.0",
+	// optional
+	debug: true,
+	protocol: "https",
+	host: "api.github.com",
+
+	timeout: 5000,
+	headers: {
+		"user-agent": "My-Cool-GitHub-App", // GitHub is happy with a unique user agent
+	}
+});
 
 module.exports = function(app) {
 
@@ -15,7 +30,7 @@ module.exports = function(app) {
 	// attempt automatic login //
 			AM.autoLogin(req.cookies.user, req.cookies.pass, function(o){
 				if (o != null){
-				    req.session.user = o;
+					req.session.user = o;
 					res.redirect('/home');
 				}	else{
 					res.render('partials/login', { title: 'Hello - Please Login To Your Account' });
@@ -23,13 +38,13 @@ module.exports = function(app) {
 			});
 		}
 	});
-	
+
 	app.post('/', function(req, res){
 		AM.manualLogin(req.param('user'), req.param('pass'), function(e, o){
 			if (!o){
 				res.send(e, 400);
 			}	else{
-			    req.session.user = o;
+				req.session.user = o;
 				if (req.param('remember-me') == 'true'){
 					res.cookie('user', o.user, { maxAge: 900000 });
 					res.cookie('pass', o.pass, { maxAge: 900000 });
@@ -38,62 +53,62 @@ module.exports = function(app) {
 			}
 		});
 	});
-	
-// logged-in user homepage //
-	
-	app.get('/home', function(req, res) {
-	    if (req.session.user == null){
-		// if user is not logged-in redirect back to login page //
-	        res.redirect('/');
 
-	    } else {
+// logged-in user homepage //
+
+	app.get('/home', function(req, res) {
+		if (req.session.user == null){
+		// if user is not logged-in redirect back to login page //
+			res.redirect('/');
+
+		} else {
 
 			res.render('home', {
 				title : 'Profile',
 				udata : req.session.user
 			});
 
-	    }
+		}
 	});
 
 	app.get('/html', function(req, res) {
-	    if (req.session.user == null){
+		if (req.session.user == null){
 		// if user is not logged-in redirect back to login page //
-	        res.redirect('/');
+			res.redirect('/');
 
-	    } else {
+		} else {
 
 			res.render('html', {
 				title : 'HTML',
 				udata : req.session.user
 			});
-			
-	    }
+
+		}
 	});
 
 	app.get('/account', function(req, res) {
-	    if (req.session.user == null){
+		if (req.session.user == null){
 		// if user is not logged-in redirect back to login page //
-	        res.redirect('/');
+			res.redirect('/');
 
-	    } else {
+		} else {
 
 			res.render('account', {
 				title : 'Account',
 				udata : req.session.user
 			});
-			
-	    }
+
+		}
 	});
 
 	app.get('/logout', function(req, res) {
-	    res.clearCookie('user');
+		res.clearCookie('user');
 		res.clearCookie('pass');
-		req.session.destroy(function(e){ 
-			res.redirect('/'); 
+		req.session.destroy(function(e){
+			res.redirect('/');
 		});
 	});
-	
+
 	app.post('/account', function(req, res){
 		if (req.param('user') != undefined) {
 			AM.updateAccount({
@@ -109,7 +124,7 @@ module.exports = function(app) {
 			// update the user's login cookies if they exists //
 					if (req.cookies.user != undefined && req.cookies.pass != undefined){
 						res.cookie('user', o.user, { maxAge: 900000 });
-						res.cookie('pass', o.pass, { maxAge: 900000 });	
+						res.cookie('pass', o.pass, { maxAge: 900000 });
 					}
 					res.send('ok', 200);
 				}
@@ -120,13 +135,13 @@ module.exports = function(app) {
 			req.session.destroy(function(e){ res.send('ok', 200); });
 		}
 	});
-	
+
 // creating new accounts //
-	
+
 	app.get('/signup', function(req, res) {
 		res.render('signup', {  title: 'Signup', countries : CT });
 	});
-	
+
 	app.post('/signup', function(req, res){
 		AM.addNewAccount({
 			name 	: req.param('name'),
@@ -179,7 +194,7 @@ module.exports = function(app) {
 			}
 		})
 	});
-	
+
 	app.post('/reset-password', function(req, res) {
 		var nPass = req.param('pass');
 	// retrieve the user's email from the session to lookup their account and reset password //
@@ -194,33 +209,50 @@ module.exports = function(app) {
 			}
 		})
 	});
-	
+
 // view & delete accounts //
-	
+
 	app.get('/print', function(req, res) {
 		AM.getAllRecords( function(e, accounts){
 			res.render('print', { title : 'Account List', accts : accounts });
 		})
 	});
-	
+
 	app.post('/delete', function(req, res){
 		AM.deleteAccount(req.body.id, function(e, obj){
 			if (!e){
 				res.clearCookie('user');
 				res.clearCookie('pass');
-	            req.session.destroy(function(e){ res.send('ok', 200); });
+				req.session.destroy(function(e){ res.send('ok', 200); });
 			}	else{
 				res.send('record not found', 400);
 			}
-	    });
-	});
-	
-	app.get('/reset', function(req, res) {
-		AM.delAllRecords(function(){
-			res.redirect('/print');	
 		});
 	});
-	
+
+	app.get('/reset', function(req, res) {
+		AM.delAllRecords(function(){
+			res.redirect('/print');
+		});
+	});
+
+	app.get('/github', function(req, res){
+
+		var appRes = res;
+		var query = req;
+		 github.user.getFollowingFromUser({
+			// optional:
+			// headers: {
+			//     "cookie": "blahblah"
+			// },
+			user: "mikedeboer"
+		}, function(err, res) {
+
+			appRes.json(JSON.stringify(res));
+		});
+
+	});
+
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });
 
 };

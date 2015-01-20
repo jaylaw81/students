@@ -1,5 +1,14 @@
 
  .editor {
-    height: 400px;
+    height: 200px;
     width: 40%;
+    float: right;
+}
+
+.output {
+    float: right;
+    clear: both;
+    width: 40%;
+    height: 200px;
+    background-color: white;
 }
