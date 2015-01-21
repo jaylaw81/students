@@ -142,6 +142,8 @@ module.exports = function(app) {
 
 			res.render('badges', {
 				title : 'Badges',
+				section: 'badges',
+				navLinks: navLinks,
 				udata : req.session.user
 			});
 
@@ -157,6 +159,8 @@ module.exports = function(app) {
 
 			res.render('support', {
 				title : 'Support',
+				section: 'support',
+				navLinks: navLinks,
 				udata : req.session.user
 			});
 
@@ -172,6 +176,8 @@ module.exports = function(app) {
 
 			res.render('account', {
 				title : 'Account',
+				section: 'account',
+				navLinks: navLinks,
 				udata : req.session.user
 			});
 

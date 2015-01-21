@@ -3,8 +3,6 @@ div.navigation
 		each link in navLinks
 			- var isActive = (link.key == section ? 'active' : '')
 			a(href=link.path, title=link.label, class=isActive)= link.label
-
-
 	div.nav
 		label(for="has-dropdown") #{user.name}
 		input(type="checkbox", id="has-dropdown")
