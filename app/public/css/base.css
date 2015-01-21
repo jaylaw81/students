@@ -19,12 +19,12 @@
 }
 
 .button.white {
-  border-color: white;
-  color: white;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 .button.white:hover {
-  background-color: white;
+  background-color: #ffffff;
   color: #666666;
 }
 
@@ -35,7 +35,7 @@
 
 .button.blue:hover {
   background-color: #21adde;
-  color: white;
+  color: #ffffff;
 }
 
 .button.green {
@@ -45,7 +45,7 @@
 
 .button.green:hover {
   background-color: #a8bd5d;
-  color: white;
+  color: #ffffff;
 }
 
 .links {
@@ -85,7 +85,7 @@ body.app {
 }
 .login-register .heading {
   background-color: #737373;
-  color: white;
+  color: #ffffff;
   padding: 20px;
 }
 .login-register form {
@@ -99,7 +99,7 @@ body.app {
 .login-register form input,
 .login-register form input.form-control {
   width: 96%;
-  background: white;
+  background: #ffffff;
   border: 1px solid #ccc;
   padding: 20px 2%;
   color: gray;
@@ -131,7 +131,7 @@ body.app {
 .navigation .nav label {
   background-color: #1a8ab2;
   padding: 20px 30px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -175,12 +175,12 @@ body.app {
   right: 0;
   top: 60px;
   text-align: right;
-  background-color: white;
+  background-color: #ffffff;
   width: 250px;
   z-index: 100;
 }
 .navigation .nav .dropdown a {
-  background-color: white;
+  background-color: #ffffff;
   display: block;
   color: #666666;
   font-weight: normal;
@@ -215,6 +215,9 @@ body.app {
 .pagecontainer a {
   font-family: "Arial", sans-serif;
 }
+.pagecontainer .text-right {
+  text-align: right;
+}
 .pagecontainer > div {
   width: 50%;
   float: left;
@@ -240,5 +243,7 @@ body.app {
 .output {
   float: right;
   clear: both;
-  background-color: white;
+  background-color: #ffffff;
 }
+
+/*# sourceMappingURL=base.css.map */
