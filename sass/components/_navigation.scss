@@ -46,15 +46,16 @@
 			margin-left: -10px;
 		}
 
-		a:first-of-type {
-			background-image: url('/img/rhino-horns.png');
-			background-repeat: no-repeat;
-			background-color: inherit;
-			background-position: 8px 7px;
-			text-indent: -9999px;
-			margin-left: 15px;
-			margin-right: 15px;
-
+		&:first-of-type {
+			a:first-of-type {
+				background-image: url('/img/rhino-horns.png');
+				background-repeat: no-repeat;
+				background-color: inherit;
+				background-position: 8px 7px;
+				text-indent: -9999px;
+				margin-left: 15px;
+				margin-right: 15px;
+			}
 		}
 
 		a:first-of-type:hover {
