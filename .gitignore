@@ -1,7 +1,9 @@
 .DS_Store
 node_modules
 app/server/modules/email-settings-mine.js
+app/public/css
 app/public/css/base.css
+app/public/css/editor.css
 app/public/css/base.css.map
 students
 .sass-cache

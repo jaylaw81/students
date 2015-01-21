@@ -24,10 +24,11 @@ rte = {
                 'class': textarea.attr('class')
             }).insertBefore(textarea);
 
-            textarea.css('visibility', 'hidden');
+            textarea.css('display', 'none');
 
             var editor = ace.edit(editDiv[0]);
-            editor.renderer.setShowGutter(true);
+            editor.renderer.setShowGutter(false);
+            editor.setHighlightActiveLine(false);
             editor.setShowPrintMargin(false);
             editor.getSession().setValue(textarea.val());
             editor.getSession().setMode("ace/mode/" + mode);
@@ -45,7 +46,7 @@ rte = {
         var lessonContainer = lessonData;
         if(Boolean(output) === true){
             var content = editor.getSession().getValue();
-            $('.output').html(content);
+            $('.output .display').html(content);
         }
 
         if(text.indexOf('<!doctype html>') > -1) {
