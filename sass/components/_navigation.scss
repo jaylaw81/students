@@ -11,7 +11,7 @@
 		a,
 		label {
 			background-color: darken($rhinocoderBlue, 10%);
-			padding: 25px 35px;
+			padding: 20px 30px;
 			color: $white;
 			text-decoration: none;
 			@include transition(all, 0.2s, ease-in-out);
@@ -35,8 +35,10 @@
 		a.home {
 			background-image: url('/img/rhino-horns.png');
 			background-repeat: no-repeat;
-			background-color: none;
+			background-color: inherit;
+			background-position: 8px 7px;
 			text-indent: -9999px;
+			padding: 20px 6px;
 		}
 
 		a.home:hover {

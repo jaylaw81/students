@@ -69,7 +69,7 @@ body.app {
 .navigation .nav a,
 .navigation .nav label {
   background-color: #1a8ab2;
-  padding: 25px 35px;
+  padding: 20px 30px;
   color: #ffffff;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
@@ -94,8 +94,10 @@ body.app {
 .navigation .nav a.home {
   background-image: url("/img/rhino-horns.png");
   background-repeat: no-repeat;
-  background-color: none;
+  background-color: inherit;
+  background-position: 8px 7px;
   text-indent: -9999px;
+  padding: 20px 6px;
 }
 .navigation .nav a.home:hover {
   background-color: none;
