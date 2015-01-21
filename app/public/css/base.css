@@ -13,6 +13,10 @@ body .container-fluid {
   padding-right: 0;
 }
 
+body.app {
+  background-color: #e6e6e6;
+}
+
 .login-register {
   background-color: #e6e6e6;
   width: 70%;
@@ -50,6 +54,95 @@ body .container-fluid {
 }
 .login-register form .btm-links a:hover {
   color: black;
+}
+
+.navigation {
+  display: block;
+  clear: both;
+  font-family: "Tahoma", arial;
+}
+.navigation .nav {
+  background-color: #21adde;
+  width: 50%;
+  float: left;
+}
+.navigation .nav a,
+.navigation .nav label {
+  background-color: #1a8ab2;
+  padding: 25px 35px;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 3px;
+  display: inline-block;
+  cursor: pointer;
+}
+.navigation .nav label {
+  text-transform: capitalize;
+}
+.navigation .nav label:hover,
+.navigation .nav a:hover,
+.navigation .nav a.selected {
+  background-color: #146885;
+}
+.navigation .nav a.home {
+  background-image: url("/img/rhino-horns.png");
+  background-repeat: no-repeat;
+  background-color: none;
+  text-indent: -9999px;
+}
+.navigation .nav a.home:hover {
+  background-color: none;
+}
+.navigation .nav input {
+  display: none;
+}
+.navigation .nav input:checked + .dropdown {
+  display: block;
+}
+.navigation .nav .dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 71px;
+  text-align: right;
+  background-color: #ffffff;
+  width: 250px;
+  z-index: 100;
+}
+.navigation .nav .dropdown a {
+  background-color: #ffffff;
+  display: block;
+  color: #666666;
+  font-weight: normal;
+  padding: 7px 0 7px 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  text-align: left;
+}
+.navigation .nav .dropdown a:hover {
+  background-color: #cccccc;
+}
+
+.navigation .nav:nth-child(2) {
+  text-align: right;
+}
+.navigation .nav:nth-child(2) label {
+  margin-right: 0;
+}
+
+.pagecontainer {
+  padding: 75px 40px;
 }
 
 /*# sourceMappingURL=base.css.map */

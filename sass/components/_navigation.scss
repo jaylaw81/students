@@ -1,0 +1,88 @@
+.navigation {
+	display: block;
+	clear: both;
+	font-family: "Tahoma", arial;
+
+	.nav {
+		background-color: $rhinocoderBlue;
+		width: 50%;
+		float: left;
+
+		a,
+		label {
+			background-color: darken($rhinocoderBlue, 10%);
+			padding: 25px 35px;
+			color: $white;
+			text-decoration: none;
+			@include transition(all, 0.2s, ease-in-out);
+			font-size: 16px;
+			font-weight: bold;
+			margin-right: 3px;
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		label {
+			text-transform: capitalize;
+		}
+
+		label:hover,
+		a:hover,
+		a.selected {
+			background-color: darken($rhinocoderBlue, 20%);
+		}
+
+		a.home {
+			background-image: url('/img/rhino-horns.png');
+			background-repeat: no-repeat;
+			background-color: none;
+			text-indent: -9999px;
+		}
+
+		a.home:hover {
+			background-color: none;
+		}
+
+		input {
+			display: none;
+		}
+
+		input:checked + .dropdown {
+			display: block;
+		}
+
+		.dropdown {
+			display: none;
+			position: absolute;
+			right: 0;
+			top: 71px;
+			text-align: right;
+			background-color: $white;
+			width: 250px;
+			z-index: 100;
+
+			a {
+				background-color: $white;
+				display: block;
+				color: $grey;
+				font-weight: normal;
+				padding: 7px 0 7px 10px;
+				@include transition(all, 0.2s, ease-in-out);
+				text-decoration: none;
+				text-align: left;
+			}
+
+			a:hover {
+				background-color: darken($white, 20%);
+			}
+		}
+	}
+}
+
+.navigation .nav:nth-child(2) {
+	text-align: right;
+
+	label {
+		margin-right: 0;
+	}
+}
