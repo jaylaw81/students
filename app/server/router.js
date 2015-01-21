@@ -24,6 +24,13 @@ module.exports = function(app) {
 
 // main login page //
 
+	var navLinks = [
+	  { label: 'Home', key: 'home', path: '/home', class: 'home' },
+	  { label: 'HTML', key: 'html', path: '/html' },
+	  { label: 'CSS', key: 'css', path: '/css' },
+	  { label: 'JS', key: 'js', path: '/javascript' }
+	]
+
 	app.get('/', function(req, res){
 	// check if the user's credentials are saved in a cookie //
 		if (req.cookies.user == undefined || req.cookies.pass == undefined){
@@ -67,6 +74,8 @@ module.exports = function(app) {
 
 			res.render('home', {
 				title : 'Profile',
+				section: 'home',
+				navLinks: navLinks,
 				udata : req.session.user
 			});
 
@@ -82,6 +91,8 @@ module.exports = function(app) {
 
 			res.render('html', {
 				title : 'HTML',
+				section: 'html',
+				navLinks: navLinks,
 				udata : req.session.user
 			});
 
@@ -97,6 +108,8 @@ module.exports = function(app) {
 
 			res.render('css', {
 				title : 'CSS',
+				section: 'css',
+				navLinks: navLinks,
 				udata : req.session.user
 			});
 
@@ -112,6 +125,8 @@ module.exports = function(app) {
 
 			res.render('javascript', {
 				title : 'Javascript',
+				section: 'js',
+				navLinks: navLinks,
 				udata : req.session.user
 			});
 
