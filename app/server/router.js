@@ -18,6 +18,8 @@ var github = new GitHubApi({
 	}
 });
 
+
+
 module.exports = function(app) {
 
 // main login page //
@@ -240,16 +242,69 @@ module.exports = function(app) {
 
 		var appRes = res;
 		var query = req;
-		 github.user.getFollowingFromUser({
-			// optional:
-			// headers: {
-			//     "cookie": "blahblah"
-			// },
-			user: "mikedeboer"
-		}, function(err, res) {
 
-			appRes.json(JSON.stringify(res));
+		var user = query.session.user.user;
+
+		var shaHex = require('crypto').randomBytes(20).toString('hex');
+
+		github.authenticate({
+			type: "basic",
+			username: "rhinocoders",
+			password: "nitrocoders2014"
 		});
+
+
+		github.gitdata.getReference({
+			"user": "rhinocoders",
+			"repo": "students",
+			"ref": "heads/" + user
+		}, function(err, res){
+
+			if(err){
+				appRes.redirect('/createBranch');
+			} else {
+				appRes.redirect('/checkout');
+			}
+
+		});
+	});
+
+	app.get('/createBranch', function(req, res){
+
+		var appRes = res;
+		var query = req;
+
+		var user = query.session.user.user;
+
+		var shaHex = require('crypto').randomBytes(20).toString('hex');
+
+		github.authenticate({
+			type: "basic",
+			username: "rhinocoders",
+			password: "nitrocoders2014"
+		});
+
+		github.gitdata.createReference({
+			"user": "rhinocoders",
+			"repo": "students",
+			"ref": "refs/heads/" + user,
+			"sha": "9da8d6baadb28bb6aaecf244ceaa2193106da105"
+		}, function(err, res){
+			console.log('createReference');
+			appRes.redirect('/checkout');
+		});
+	});
+
+	app.get('/checkout', function(req, res){
+		var user = req.session.user.user;
+		var clone = require("nodegit").Clone.clone;
+		var options = {checkout_branch: user};
+
+		// Clone a given repository into a tmp folder.
+		console.log('checkout');
+
+		clone("git://github.com/rhinocoders/students", 'students/' + user, options);
+
 
 	});
 

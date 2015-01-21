@@ -19,12 +19,12 @@
 }
 
 .button.white {
-  border-color: #ffffff;
-  color: #ffffff;
+  border-color: white;
+  color: white;
 }
 
 .button.white:hover {
-  background-color: #ffffff;
+  background-color: white;
   color: #666666;
 }
 
@@ -35,7 +35,7 @@
 
 .button.blue:hover {
   background-color: #21adde;
-  color: #ffffff;
+  color: white;
 }
 
 .button.green {
@@ -45,7 +45,7 @@
 
 .button.green:hover {
   background-color: #a8bd5d;
-  color: #ffffff;
+  color: white;
 }
 
 .links {
@@ -85,7 +85,7 @@ body.app {
 }
 .login-register .heading {
   background-color: #737373;
-  color: #ffffff;
+  color: white;
   padding: 20px;
 }
 .login-register form {
@@ -99,7 +99,7 @@ body.app {
 .login-register form input,
 .login-register form input.form-control {
   width: 96%;
-  background: #ffffff;
+  background: white;
   border: 1px solid #ccc;
   padding: 20px 2%;
   color: gray;
@@ -131,7 +131,7 @@ body.app {
 .navigation .nav label {
   background-color: #1a8ab2;
   padding: 20px 30px;
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -175,12 +175,12 @@ body.app {
   right: 0;
   top: 60px;
   text-align: right;
-  background-color: #ffffff;
+  background-color: white;
   width: 250px;
   z-index: 100;
 }
 .navigation .nav .dropdown a {
-  background-color: #ffffff;
+  background-color: white;
   display: block;
   color: #666666;
   font-weight: normal;
@@ -240,7 +240,5 @@ body.app {
 .output {
   float: right;
   clear: both;
-  background-color: #ffffff;
+  background-color: white;
 }
-
-/*# sourceMappingURL=base.css.map */
