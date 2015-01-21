@@ -1,15 +1,22 @@
 .pagecontainer {
-	padding: 75px 40px;
+
+	float: left;
+	width: 100%;
 
 	h1 {
-		font-family: "Verdana", tahoma, arial, sans-serif;
+		font-weight: 100;
 		text-transform: capitalize;
+		background-color: $black;
+		color: $white;
+		font-size: 13px;
+		text-align: center;
+		padding: 5px;
+		margin: 20px 0 0 0;
+		width: 96.5%;
 	}
 
 	p,
-	a {
-		font-family: "Arial", sans-serif;
-	}
+
 
 	div {
 

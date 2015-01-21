@@ -1,23 +1,21 @@
 .navigation {
 	display: block;
 	clear: both;
-	font-family: "Tahoma", arial;
+	font-weight: 100;
 
 	.nav {
 		background-color: $rhinocoderBlue;
 		width: 50%;
 		float: left;
-
 		a,
 		label {
-			background-color: darken($rhinocoderBlue, 10%);
+
 			padding: 20px 30px;
 			color: $white;
 			text-decoration: none;
 			@include transition(all, 0.2s, ease-in-out);
 			font-size: 16px;
-			font-weight: bold;
-			margin-right: 3px;
+
 			display: inline-block;
 			cursor: pointer;
 		}
@@ -38,7 +36,7 @@
 			background-color: inherit;
 			background-position: 8px 7px;
 			text-indent: -9999px;
-			padding: 20px 6px;
+			margin-left: 10px;
 		}
 
 		a.home:hover {

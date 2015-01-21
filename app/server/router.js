@@ -88,6 +88,66 @@ module.exports = function(app) {
 		}
 	});
 
+	app.get('/css', function(req, res) {
+		if (req.session.user == null){
+		// if user is not logged-in redirect back to login page //
+			res.redirect('/');
+
+		} else {
+
+			res.render('css', {
+				title : 'CSS',
+				udata : req.session.user
+			});
+
+		}
+	});
+
+	app.get('/javascript', function(req, res) {
+		if (req.session.user == null){
+		// if user is not logged-in redirect back to login page //
+			res.redirect('/');
+
+		} else {
+
+			res.render('javascript', {
+				title : 'Javascript',
+				udata : req.session.user
+			});
+
+		}
+	});
+
+	app.get('/badges', function(req, res) {
+		if (req.session.user == null){
+		// if user is not logged-in redirect back to login page //
+			res.redirect('/');
+
+		} else {
+
+			res.render('badges', {
+				title : 'Badges',
+				udata : req.session.user
+			});
+
+		}
+	});
+
+	app.get('/support', function(req, res) {
+		if (req.session.user == null){
+		// if user is not logged-in redirect back to login page //
+			res.redirect('/');
+
+		} else {
+
+			res.render('support', {
+				title : 'Support',
+				udata : req.session.user
+			});
+
+		}
+	});
+
 	app.get('/account', function(req, res) {
 		if (req.session.user == null){
 		// if user is not logged-in redirect back to login page //
