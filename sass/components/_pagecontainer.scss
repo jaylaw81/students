@@ -1,3 +1,23 @@
 .pagecontainer {
 	padding: 75px 40px;
+
+	h1 {
+		font-family: "Verdana", tahoma, arial, sans-serif;
+		text-transform: capitalize;
+	}
+
+	p,
+	a {
+		font-family: "Arial", sans-serif;
+	}
+
+	> div {
+		width: 50%;
+		float: left;
+	}
+
+	> div.full {
+		width: 100%;
+		float: none;
+	}
 }

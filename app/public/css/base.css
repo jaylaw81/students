@@ -3,6 +3,67 @@
   border-radius: 0;
 }
 
+.button {
+  border: 3px solid;
+  font-weight: bold;
+  padding: 7px 12px;
+  background-color: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.button.white {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.button.white:hover {
+  background-color: #ffffff;
+  color: #666666;
+}
+
+.button.blue {
+  border-color: #21adde;
+  color: #21adde;
+}
+
+.button.blue:hover {
+  background-color: #21adde;
+  color: #ffffff;
+}
+
+.button.green {
+  border-color: #a8bd5d;
+  color: #a8bd5d;
+}
+
+.button.green:hover {
+  background-color: #a8bd5d;
+  color: #ffffff;
+}
+
+.links {
+  color: #666666;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: black;
+  text-decoration: underline;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -112,7 +173,7 @@ body.app {
   display: none;
   position: absolute;
   right: 0;
-  top: 71px;
+  top: 60px;
   text-align: right;
   background-color: #ffffff;
   width: 250px;
@@ -145,6 +206,41 @@ body.app {
 
 .pagecontainer {
   padding: 75px 40px;
+}
+.pagecontainer h1 {
+  font-family: "Verdana", tahoma, arial, sans-serif;
+  text-transform: capitalize;
+}
+.pagecontainer p,
+.pagecontainer a {
+  font-family: "Arial", sans-serif;
+}
+.pagecontainer > div {
+  width: 50%;
+  float: left;
+}
+.pagecontainer > div.full {
+  width: 100%;
+  float: none;
+}
+
+.editor,
+.output {
+  height: 200px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 3px #666666;
+  -moz-box-shadow: 0px 0px 3px #666666;
+  box-shadow: 0px 0px 3px #666666;
+}
+
+.editor {
+  float: right;
+}
+
+.output {
+  float: right;
+  clear: both;
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=base.css.map */

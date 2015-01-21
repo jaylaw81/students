@@ -1,8 +1,14 @@
 div.pagecontainer
-    div
-        h1 HTML #{user.name}
-        textarea(name='html-doctype', data-editor='html', rows='15', class='editor', data-output='true')
-        div.output
+	div
+		h1 HTML
+	div
+		div
+			a(href="#", class="links", title="Images") Images
+			a(href="#", class="links", title="Document") Document
+			button(type="", class="button green") Save
+		div
+			textarea(name='html-doctype', data-editor='html', rows='15', class='editor', data-output='true')
+			div.output
 
 
 
