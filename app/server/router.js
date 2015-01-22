@@ -393,7 +393,7 @@ module.exports = function(app) {
 			"user": "rhinocoders",
 			"repo": "students",
 			"ref": "refs/heads/" + user,
-			"sha": "9da8d6baadb28bb6aaecf244ceaa2193106da105"
+			"sha": "3ad6635125d156aa22c0becf2c40c00f0597ece1"
 		}, function(err, res){
 			console.log('createReference');
 			appRes.redirect('/checkout');
@@ -402,10 +402,18 @@ module.exports = function(app) {
 
 	app.get('/checkout', function(req, res){
 		var user = req.session.user.user;
-		var clone = require("nodegit").Clone.clone;
-		var options = {checkoutBranch: user};
 
-		clone("git://github.com/rhinocoders/students", 'students/' + user, options);
+
+		require('shelljs/global');
+		cd(__dirname);
+
+		cd('../../students/');
+		mkdir('-p', user);
+		cd( user );
+
+		exec('git clone -b '+user+' git://github.com/rhinocoders/students .');
+
+		//clone("git://github.com/rhinocoders/students", 'students/' + user, options);
 
 		res.send('ok', 200);
 
