@@ -18,6 +18,30 @@ var github = new GitHubApi({
 	}
 });
 
+function getDateTime() {
+
+	var date = new Date();
+
+	var hour = date.getHours();
+	hour = (hour < 10 ? "0" : "") + hour;
+
+	var min  = date.getMinutes();
+	min = (min < 10 ? "0" : "") + min;
+
+	var sec  = date.getSeconds();
+	sec = (sec < 10 ? "0" : "") + sec;
+
+	var year = date.getFullYear();
+
+	var month = date.getMonth() + 1;
+	month = (month < 10 ? "0" : "") + month;
+
+	var day  = date.getDate();
+	day = (day < 10 ? "0" : "") + day;
+
+	return year + ":" + month + ":" + day + ":" + hour + ":" + min + ":" + sec;
+
+}
 
 
 module.exports = function(app) {
@@ -319,7 +343,7 @@ module.exports = function(app) {
 		});
 	});
 
-	app.get('/github', function(req, res){
+	app.post('/github', function(req, res){
 
 		var appRes = res;
 		var query = req;
@@ -379,12 +403,31 @@ module.exports = function(app) {
 	app.get('/checkout', function(req, res){
 		var user = req.session.user.user;
 		var clone = require("nodegit").Clone.clone;
-		var options = {checkout_branch: user};
-
-		// Clone a given repository into a tmp folder.
-		console.log('checkout');
+		var options = {checkoutBranch: user};
 
 		clone("git://github.com/rhinocoders/students", 'students/' + user, options);
+
+		res.send('ok', 200);
+
+	});
+
+	app.get('/commit', function(req, res){
+
+		var user = req.session.user.user;
+
+		require('simple-git')('students/' + user)
+			.init()
+			.add('./*')
+			.commit("Commit work for "+ user +" @ " + getDateTime());
+
+		require('simple-git')('students/' + user).removeRemote('origin').then(function(){
+			require('simple-git')('students/' + user).addRemote('origin', 'git@github.com:rhinocoders/students.git').then(function(){
+				require('child_process').exec('git push --set-upstream origin ' + user);
+				require('simple-git')('students/' + user).push('origin', user);
+			}).then(function(){
+				res.send('ok', 200);
+			});
+		});
 
 
 	});

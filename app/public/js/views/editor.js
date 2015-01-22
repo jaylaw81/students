@@ -3,11 +3,29 @@ var rte = {};
 rte = {
     init: function(){
         this.rteRender();
-        this.github();
+        this.events();
     },
 
-    github: function(){
+    events: function(){
+        $(document).on('click', '.save-work', function(e){
+            e.preventDefault();
+            rte.saveData();
+        });
+    },
 
+    saveData: function(){
+        $.ajax({
+            url: '/commit',
+            type: 'GET',
+        }).done(function(){
+            console.log('Successful push');
+        })
+        .fail(function(){
+            console.log('error');
+        })
+        .always(function(){
+            console.log('complete commit');
+        });
     },
 
     rteRender: function(){
