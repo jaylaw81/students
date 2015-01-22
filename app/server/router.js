@@ -415,6 +415,19 @@ module.exports = function(app) {
 
 		var user = req.session.user.user;
 
+		require('shelljs/global');
+		cd(__dirname);
+		console.log(pwd());
+		cd('../../students/' + user);
+		console.log(pwd());
+		exec('git add -A');
+		exec('git commit -m "Commit work for '+ user +' @ ' + getDateTime() + '"');
+		exec('git remote set-url origin git@github.com:rhinocoders/students.git');
+		exec('git push --set-upstream origin ' + user);
+		cd(__dirname);
+		console.log(pwd());
+		res.send('ok', 200);
+		/*
 		require('simple-git')('students/' + user)
 			.init()
 			.add('./*')
@@ -422,12 +435,16 @@ module.exports = function(app) {
 
 		require('simple-git')('students/' + user).removeRemote('origin').then(function(){
 			require('simple-git')('students/' + user).addRemote('origin', 'git@github.com:rhinocoders/students.git').then(function(){
-				require('child_process').exec('git push --set-upstream origin ' + user);
-				require('simple-git')('students/' + user).push('origin', user);
-			}).then(function(){
+
+				require('shelljs/global');
+				cd('../../students/' + user);
+				exec('git push --set-upstream origin ' + user);
 				res.send('ok', 200);
-			});
-		});
+
+				//require('simple-git')('students/' + user).push('origin', user);
+		*/
+
+
 
 
 	});
