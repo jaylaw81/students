@@ -427,25 +427,6 @@ module.exports = function(app) {
 		cd(__dirname);
 		console.log(pwd());
 		res.send('ok', 200);
-		/*
-		require('simple-git')('students/' + user)
-			.init()
-			.add('./*')
-			.commit("Commit work for "+ user +" @ " + getDateTime());
-
-		require('simple-git')('students/' + user).removeRemote('origin').then(function(){
-			require('simple-git')('students/' + user).addRemote('origin', 'git@github.com:rhinocoders/students.git').then(function(){
-
-				require('shelljs/global');
-				cd('../../students/' + user);
-				exec('git push --set-upstream origin ' + user);
-				res.send('ok', 200);
-
-				//require('simple-git')('students/' + user).push('origin', user);
-		*/
-
-
-
 
 	});
 
