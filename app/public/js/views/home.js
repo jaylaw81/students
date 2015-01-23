@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
 	//var hc = new HomeController();
@@ -16,6 +15,4 @@ $(document).ready(function(){
 	.always(function(){
 		//console.log('complete');
 	});
-
-
-})
+});

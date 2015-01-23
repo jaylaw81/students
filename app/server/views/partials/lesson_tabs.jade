@@ -1,9 +1,10 @@
-if section == "html"
-	span(class="tab html") HTML
-else if section == "css"
-	span(class="tab html") HTML
-	span(class="tab css") CSS
-else
-	span(class="tab html") HTML
-	span(class="tab css") CSS
-	span(class="tab js") JavaScript
+div.tabs
+	if section == "html"
+		span(class="tab html") HTML
+	else if section == "css"
+		span(class="tab html") HTML
+		span(class="tab css") CSS
+	else
+		span(class="tab html") HTML
+		span(class="tab css") CSS
+		span(class="tab js") JavaScript
