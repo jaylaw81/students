@@ -1,7 +1,7 @@
 // Load plugins
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass');
- 
+
 var env = process.env.NODE_ENV || 'development';
 
 // SASS
@@ -17,14 +17,20 @@ gulp.task('sass', function() {
     }
 
     return gulp.src('./sass/*.scss')
-    .pipe(sass(config)) 
+    .pipe(sass(config))
     .pipe(gulp.dest('./app/public/css'));
 });
- 
+
+// FONTS
+gulp.task('fonts', function() {
+    return gulp.src('./sass/fonts/*')
+    .pipe(gulp.dest('./app/public/fonts'));
+});
+
 // Watch
 gulp.task('watch', function() {
     gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
 // Default
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['fonts', 'sass']);

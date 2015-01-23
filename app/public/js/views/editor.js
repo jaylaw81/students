@@ -11,26 +11,41 @@ rte = {
     events: function(){
         $(document).on('click', '.save-work', function(e){
             e.preventDefault();
+            rte.loader('start');
             rte.saveData();
         });
     },
 
-    getFileData: function(){
+    loader: function(type){
+        if(type == 'start'){
+            $('.icon-loader-container').fadeIn(200);
+            $('.icon-loader').addClass('animate-spin');
+            $('.pagecontainer').addClass('blur');
+        } else {
+            $('.icon-loader-container').fadeOut(200);
+            $('.icon-loader').removeClass('animate-spin');
+            $('.pagecontainer').removeClass('blur');
+        }
+    },
+
+    getFileData: function(fileName){
 
         var activeTab = $('span.active-editor').data('section');
+        var mode = $('span.active-editor').data('mode');
         activeTab = activeTab.split('-')[1];
         $('.ace_editor').removeClass('active-editor');
         $('div[data-editor-type="'+activeTab+'"]').addClass('active-editor');
 
-        var file = rte.activeEditor();
+        var file = fileName || rte.activeEditor();
 
         $.ajax({
             url: '/readFile',
             type: 'POST',
             data: 'file=' + file
         }).done(function(data){
-
+            rte.editor.getSession().setMode("ace/mode/" + mode);
             rte.editor.getSession().setValue(data);
+
         })
         .fail(function(err){
             console.log('error: ' + err);
@@ -68,6 +83,7 @@ rte = {
             type: 'GET',
         }).done(function(){
             console.log('Successful push');
+            rte.loader('stop');
         })
         .fail(function(){
             console.log('error');
@@ -76,6 +92,8 @@ rte = {
             console.log('complete commit');
         });
     },
+
+
 
     activeEditor: function(){
 
@@ -105,6 +123,7 @@ rte = {
                 , output = $(this).data('output')
                 ;
 
+
             var mode = textarea.data('editor');
 
             var editDiv = $('<div>', {
@@ -123,14 +142,15 @@ rte = {
             rte.editor.getSession().setMode("ace/mode/" + mode);
             rte.editor.setTheme("ace/theme/github");
 
+
+
             rte.editor.getSession().on('change', function(e) {
                 var text = rte.editor.getSession().getValue();
-                rte.checkInput(rte.editor, lessonData, output, text);
+                rte.checkInput(rte.editor, $('div.active-editor').data('editor-type'), output, text);
             });
 
-
-
             rte.getFileData();
+
         });
 
     },
@@ -139,8 +159,9 @@ rte = {
 
     checkInput: function(editor, lessonData, output, text){
         var lessonContainer = lessonData;
+
         if(Boolean(output) === true){
-            var content = editor.getSession().getValue();
+            var content = rte.editor.getSession().getValue();
             $('.output .display').html(content);
         }
 

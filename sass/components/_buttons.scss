@@ -4,14 +4,20 @@
 }
 
 .button {
-    border: 3px solid;
-    font-weight: bold;
-    padding: 7px 12px;
-    background-color: none;
-    @include transition(all, 0.2s, ease-in-out);
-    cursor: pointer;
-    @include font-size(14px);
-    margin-bottom: 20px;
+
+    display:inline-block;
+    cursor:pointer;
+    font-size:14px;
+    padding:7px 26px;
+    text-decoration:none;
+
+    border: 0px;
+}
+
+.save-work {
+    @include font-size(13px);
+    text-transform: uppercase;
+    padding: 10px 30px;
 }
 
 .button.white {
@@ -35,11 +41,11 @@
 }
 
 .button.green {
-    border-color: $green;
-    color: $green;
+    background-color:#44c767;
+    color: $white;
 }
 
 .button.green:hover {
-    background-color: $green;
+    background-color: lighten(#5cbf2a, 2%);
     color: $white;
 }

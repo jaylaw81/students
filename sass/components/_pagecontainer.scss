@@ -1,6 +1,12 @@
 .pagecontainer {
 	float: left;
 	width: 100%;
+	&.blur {
+		-webkit-filter: blur(20px);
+		-moz-filter: blur(20px);
+		-o-filter: blur(20px);
+		filter: blur(20px);
+	}
 
 	h1 {
 		@include font-size(20px);

@@ -1,10 +1,10 @@
 div.tabs
-	if section == "html"
-		span(data-section="template-html", class="tab active-editor") HTML
-	else if section == "css"
-		span(data-section="template-html", class="tab") HTML
-		span(data-section="template-css", class="tab active-editor") CSS
-	else
-		span(data-section="template-html", class="tab") HTML
-		span(data-section="template-css", class="tab") CSS
-		span(data-section="template-js", class="tab active-editor") JavaScript
+    if section == "html"
+        span(data-mode="html", data-section="template-html", class="tab active-editor") HTML
+    else if section == "css"
+        span(data-mode="html", data-section="template-html", class="tab") HTML
+        span(data-mode="css", data-section="template-css", class="tab active-editor") CSS
+    else
+        span(data-mode="html", data-section="template-html", class="tab") HTML
+        span(data-mode="css", data-section="template-css", class="tab") CSS
+        span(data-mode="javascript", data-section="template-js", class="tab active-editor") JavaScript

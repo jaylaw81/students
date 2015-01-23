@@ -1,3 +1,28 @@
+div.icon-loader-container {
+    display: none;
+    @include font-size(88px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 999;
+    color: #21adde;
+
+   .icon-loader {
+        position: relative;
+        top: 39%;
+   }
+}
+
+.ace_editor {
+
+}
+
+.ace_editor.active-editor {
+    display: block !important;
+}
+
+
 .editor-container {
     position: relative;
     float: left;

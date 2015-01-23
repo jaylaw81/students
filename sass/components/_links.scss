@@ -1,11 +1,25 @@
-.links {
-	color: $grey;
-	@include transition(all, 0.2s, ease-in-out);
-	margin: 0 5px;
-	text-decoration: none;
+.tools {
+    position: relative;
+    top: 18px;
+    right: 28px;
 
-	&:hover {
-		color: darken($grey, 50%);
-		text-decoration: underline;
-	}
+    .links {
+        color: $grey;
+        @include transition(all, 0.2s, ease-in-out);
+        margin: 0 5px;
+        text-decoration: none;
+        @include font-size(10px);
+        display: inline-block;
+        i {
+            float: left;
+            margin-right: 5px;
+        }
+
+        &:hover {
+            color: darken($grey, 50%);
+        }
+        &:last-of-type {
+            margin-right: 20px;
+        }
+    }
 }

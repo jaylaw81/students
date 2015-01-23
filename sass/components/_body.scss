@@ -12,6 +12,11 @@ body {
     }
 }
 
+* {
+    outline: none;
+}
+
 body.app {
     background-color: lighten($grey, 50%);
 }
+
