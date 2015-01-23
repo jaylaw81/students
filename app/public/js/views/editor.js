@@ -17,6 +17,11 @@ rte = {
 
     getFileData: function(){
 
+        var activeTab = $('span.active-editor').data('section');
+        activeTab = activeTab.split('-')[1];
+        $('.ace_editor').removeClass('active-editor');
+        $('div[data-editor-type="'+activeTab+'"]').addClass('active-editor');
+
         var file = rte.activeEditor();
 
         $.ajax({
@@ -73,8 +78,9 @@ rte = {
     },
 
     activeEditor: function(){
-        var activeEditor = $('.active-editor');
-        var editorType = activeEditor.attr('data-editor-type');
+
+        var activeEditor = $('div.active-editor');
+        var editorType = activeEditor.data('editor-type');
         var file = '';
 
         switch(editorType){
@@ -102,7 +108,7 @@ rte = {
 
             var editDiv = $('<div>', {
                 'style': 'position: absolute',
-                'class': textarea.attr('class') + ' active-editor',
+                'class': textarea.attr('class'),
                 'data-editor-type': textarea.attr('name')
             }).insertBefore(textarea);
 
@@ -120,6 +126,8 @@ rte = {
                 var text = rte.editor.getSession().getValue();
                 rte.checkInput(rte.editor, lessonData, output, text);
             });
+
+
 
             rte.getFileData();
         });
