@@ -8,13 +8,13 @@ $(document).ready(function(){
 		url: "/github",
 		type: "POST",
 	}).done(function(){
-		console.log('Successful clone');
+		//console.log('Successful clone');
 	})
 	.fail(function(){
-		console.log('error');
+		//console.log('error');
 	})
 	.always(function(){
-		console.log('complete');
+		//console.log('complete');
 	});
 
 

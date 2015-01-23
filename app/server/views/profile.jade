@@ -1,14 +1,9 @@
-div.pagecontainer
-    div.profile
-        h1 Hello #{user.name}
-    div.badges
-        div.badge
-            a(href="/html") html
-        div.badge
-            a(href="/css") css
-        div.badge
-            a(href="/javascript") javascript
+extends partials/layout_app
 
+block content
+    include partials/navigation
+    include partials/user_profile
 
-
-
+block scripts
+    script(src='/vendor/jquery.min.js')
+    script(src='/js/views/home.js')

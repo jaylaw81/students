@@ -1,5 +1,4 @@
 .pagecontainer {
-
 	float: left;
 	width: 100%;
 
@@ -9,23 +8,9 @@
 		text-transform: capitalize;
 	}
 
-	&.lesson {
-		h1 {
-			font-weight: 100;
-			text-transform: capitalize;
-			background-color: $black;
-			color: $white;
-			@include font-size(13px);
-			text-align: center;
-			padding: 5px;
-			margin: 20px 0 0 0;
-			width: 96.6%;
-		}
+	p {
+
 	}
-
-
-	p,
-
 
 	div {
 
@@ -35,9 +20,17 @@
 		text-align: right;
 	}
 
+	.text-center {
+		text-align: center;
+	}
+
 	> div {
 		width: 50%;
 		float: left;
+
+		> div {
+			padding: 0 0 0 58px;
+		}
 	}
 
 	> div.full {
