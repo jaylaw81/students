@@ -5,16 +5,25 @@
     height: 100%;
     min-height: 500px;
 
+    .drawer {
+        float: right;
+        padding: 7px 10px 10px 7px;
+        background-color: $grey;
+        color: $white;
+        cursor: pointer;
+        display: inline-block;
+    }
+
     h1 {
-		font-weight: 100;
-		text-transform: capitalize;
-		background-color: $black;
-		color: $white;
-		@include font-size(13px);
-		text-align: center;
-		padding: 5px;
-		margin: 20px 0 0 0;
-		width: 96.6%;
-	}
+        font-weight: 100;
+        text-transform: capitalize;
+        background-color: $black;
+        color: $white;
+        @include font-size(13px);
+        text-align: center;
+        padding: 5px;
+        margin: 20px 0 0 0;
+        width: 96.6%;
+    }
 }
 

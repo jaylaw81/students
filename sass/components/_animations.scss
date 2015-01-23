@@ -1,0 +1,67 @@
+.hide-lesson {
+    -moz-animation: marginLeft 500ms forwards linear;
+      -o-animation: marginLeft 500ms forwards linear;
+      -webkit-animation: marginLeft 500ms forwards linear;
+      animation: marginLeft 500ms forwards linear;
+}
+
+.show-lesson {
+    -moz-animation: showLesson 500ms forwards linear;
+      -o-animation: showLesson 500ms forwards linear;
+      -webkit-animation: showLesson 500ms forwards linear;
+      animation: showLesson 500ms reverse forwards;
+}
+
+@-webkit-keyframes marginLeft {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -46.2%;
+  }
+}
+
+@-webkit-keyframes showLesson {
+  0% {
+    margin-left: -46.2%;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+.expand-editor {
+    -moz-animation: expand 500ms forwards linear;
+      -o-animation: expand 500ms forwards linear;
+      -webkit-animation: expand 500ms forwards linear;
+      animation: expand 500ms forwards linear;
+}
+
+.collapse-editor {
+    -moz-animation: collapseEditor 500ms forwards linear;
+      -o-animation: collapseEditor 500ms forwards linear;
+      -webkit-animation: collapseEditor 500ms forwards linear;
+      animation: collapseEditor 500ms forwards linear;
+}
+
+@-webkit-keyframes expand {
+  0% {
+    width: 50%;
+  }
+
+  100% {
+    width: 95%;
+  }
+}
+
+@-webkit-keyframes collapseEditor {
+  0% {
+    width: 95%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}

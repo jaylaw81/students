@@ -14,6 +14,30 @@ rte = {
             rte.loader('start');
             rte.saveData();
         });
+
+        $(document).on('click', '.drawer', function(e){
+            e.preventDefault();
+            rte.hideLesson();
+        });
+    },
+
+    hideLesson: function(){
+        if($('div.pagecontainer > div:first-child').hasClass('hide-lesson')){
+
+            $('.lesson-container .drawer').remove();
+            $('.lesson-container').append('<span class="drawer icon-expand"></span>');
+            $('div.pagecontainer > div:last-child').toggleClass('collapse-editor');
+            $('div.pagecontainer > div:first-child').toggleClass('show-lesson');
+
+        } else {
+            $('.lesson-container .drawer').remove()
+            $('.lesson-container').append('<span class="drawer icon-collapse"></span>');
+
+            $('div.pagecontainer > div:first-child').toggleClass('hide-lesson');
+            $('div.pagecontainer > div:last-child').toggleClass('expand-editor');
+
+        }
+
     },
 
     loader: function(type){
@@ -92,8 +116,6 @@ rte = {
             console.log('complete commit');
         });
     },
-
-
 
     activeEditor: function(){
 

@@ -136,8 +136,9 @@
   }
 }
 
-
 .icon-loader:before { content: '\e800'; } /* '' */
+.icon-expand:before { content: '\e803'; } /* '' */
+.icon-collapse:before { content: '\e804'; } /* '' */
 .icon-picture:before { content: '\e808'; } /* '' */
 .icon-documents:before { content: '\e80e'; } /* '' */
 .icon-video:before { content: '\e80f'; } /* '' */
