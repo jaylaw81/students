@@ -87,8 +87,9 @@ rte = {
             case 'html':
                 file = 'index.html';
             break;
-            case 'javascript':
+            case 'js':
                 file = 'scripts.js';
+            break;
             case 'css':
                 file = 'styles.css';
             break;
