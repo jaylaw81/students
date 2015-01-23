@@ -97,7 +97,7 @@ module.exports = function(app) {
 		} else {
 
 			res.render('home', {
-				title : 'Profile',
+				title : 'Home',
 				section: 'home',
 				navLinks: navLinks,
 				udata : req.session.user
@@ -150,6 +150,23 @@ module.exports = function(app) {
 			res.render('javascript', {
 				title : 'Javascript',
 				section: 'js',
+				navLinks: navLinks,
+				udata : req.session.user
+			});
+
+		}
+	});
+
+	app.get('/profile', function(req, res) {
+		if (req.session.user == null){
+		// if user is not logged-in redirect back to login page //
+			res.redirect('/');
+
+		} else {
+
+			res.render('profile', {
+				title : 'Profile',
+				section: 'profile',
 				navLinks: navLinks,
 				udata : req.session.user
 			});
@@ -395,7 +412,7 @@ module.exports = function(app) {
 			"ref": "refs/heads/" + user,
 			"sha": "3ad6635125d156aa22c0becf2c40c00f0597ece1"
 		}, function(err, res){
-			console.log('createReference');
+			//console.log('createReference');
 			appRes.redirect('/checkout');
 		});
 	});
