@@ -1,6 +1,8 @@
 var rte = {};
 
 rte = {
+    editor: {},
+
     init: function(){
         this.rteRender();
         this.events();
@@ -13,7 +15,49 @@ rte = {
         });
     },
 
+    getFileData: function(){
+
+        var file = rte.activeEditor();
+
+        $.ajax({
+            url: '/readFile',
+            type: 'POST',
+            data: 'file=' + file
+        }).done(function(data){
+
+            rte.editor.getSession().setValue(data);
+        })
+        .fail(function(err){
+            console.log('error: ' + err);
+        })
+        .always(function(){
+
+        });
+    },
+
     saveData: function(){
+
+        var code = rte.editor.getSession().getValue();
+
+        var file = rte.activeEditor();
+
+        $.ajax({
+            url: '/save',
+            type: 'POST',
+            data: 'file='+ file +'&code=' + code
+        }).done(function(){
+
+            rte.commitToGitHub();
+        })
+        .fail(function(err){
+            console.log('error: ' + err);
+        })
+        .always(function(){
+
+        });
+    },
+
+    commitToGitHub: function(){
         $.ajax({
             url: '/commit',
             type: 'GET',
@@ -28,6 +72,25 @@ rte = {
         });
     },
 
+    activeEditor: function(){
+        var activeEditor = $('.active-editor');
+        var editorType = activeEditor.attr('data-editor-type');
+        var file = '';
+
+        switch(editorType){
+            case 'html':
+                file = 'index.html';
+            break;
+            case 'javascript':
+                file = 'scripts.js';
+            case 'css':
+                file = 'styles.css';
+            break;
+        }
+
+        return file;
+    },
+
     rteRender: function(){
         $('textarea[data-editor]').each(function () {
             var textarea = $(this)
@@ -39,26 +102,31 @@ rte = {
 
             var editDiv = $('<div>', {
                 position: 'absolute',
-                'class': textarea.attr('class')
+                'class': textarea.attr('class') + ' active-editor',
+                'data-editor-type': textarea.attr('name')
             }).insertBefore(textarea);
 
             textarea.css('display', 'none');
 
-            var editor = ace.edit(editDiv[0]);
-            editor.renderer.setShowGutter(false);
-            editor.setHighlightActiveLine(false);
-            editor.setShowPrintMargin(false);
-            editor.getSession().setValue(textarea.val());
-            editor.getSession().setMode("ace/mode/" + mode);
-            editor.setTheme("ace/theme/github");
+            rte.editor = ace.edit(editDiv[0]);
+            rte.editor.renderer.setShowGutter(false);
+            rte.editor.setHighlightActiveLine(false);
+            rte.editor.setShowPrintMargin(false);
+            rte.editor.getSession().setValue(textarea.val());
+            rte.editor.getSession().setMode("ace/mode/" + mode);
+            rte.editor.setTheme("ace/theme/github");
 
-            editor.getSession().on('change', function(e) {
-                var text = editor.getSession().getValue();
-                rte.checkInput(editor, lessonData, output, text);
+            rte.editor.getSession().on('change', function(e) {
+                var text = rte.editor.getSession().getValue();
+                rte.checkInput(rte.editor, lessonData, output, text);
             });
 
+            rte.getFileData();
         });
+
     },
+
+
 
     checkInput: function(editor, lessonData, output, text){
         var lessonContainer = lessonData;

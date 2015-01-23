@@ -403,7 +403,6 @@ module.exports = function(app) {
 	app.get('/checkout', function(req, res){
 		var user = req.session.user.user;
 
-
 		require('shelljs/global');
 		cd(__dirname);
 
@@ -436,6 +435,63 @@ module.exports = function(app) {
 		cd(__dirname);
 
 		res.send('ok', 200);
+
+	});
+
+	app.post('/save', function(req, res){
+		var user = req.session.user.user;
+		var fs = require('fs');
+		require('shelljs/global');
+
+		var file = req.body.file;
+		var code = req.body.code;
+
+
+		cd(__dirname);
+		cd('../../students/' + user);
+
+		fs.truncate(file, 0);
+
+		var fileName = file;
+		var stream = fs.createWriteStream(fileName);
+
+		stream.once('open', function(fd) {
+		  stream.write(code);
+		  stream.end();
+		});
+
+		res.send('ok', 200);
+
+	});
+
+	app.post('/readFile', function(req, res){
+		require('shelljs/global');
+		var fs = require('fs');
+
+		var user = req.session.user.user;
+
+		var file = req.body.file;
+
+		cd(__dirname);
+
+		cd('../../students/' + user);
+
+		var filePath = pwd() + '/' + file;
+		console.log(filePath);
+		console.log(pwd());
+
+
+		fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
+			if (!err){
+			console.log('received data: ' + data);
+			res.writeHead(200, {'Content-Type': 'text/html'});
+			res.write(data);
+			res.end();
+			}else{
+				console.log(err);
+			}
+
+		});
 
 	});
 

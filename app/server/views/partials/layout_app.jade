@@ -4,6 +4,7 @@ html
 		title RhinoCoders Lesson Plans
 		link(rel='stylesheet', href='/css/base.css')
 		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Roboto:400,700,100')
+		- user = typeof(udata) != 'undefined' ? udata : { }
 		script(type='text/javascript')
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', '']);
@@ -14,6 +15,7 @@ html
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
+			var user = '#{user.user}';
 	body.app
 	// get userdata from object //
 	- user = typeof(udata) != 'undefined' ? udata : { }
