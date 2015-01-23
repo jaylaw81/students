@@ -101,7 +101,7 @@ rte = {
             var mode = textarea.data('editor');
 
             var editDiv = $('<div>', {
-                position: 'absolute',
+                'style': 'position: absolute',
                 'class': textarea.attr('class') + ' active-editor',
                 'data-editor-type': textarea.attr('name')
             }).insertBefore(textarea);

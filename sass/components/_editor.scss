@@ -1,3 +1,10 @@
+.editor-container {
+    position: relative;
+    float: left;
+    clear: both;
+    width: 91.6%;
+    min-height: 199px;
+}
 .editor,
 .output {
     height: 200px;
