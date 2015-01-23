@@ -100,7 +100,8 @@ module.exports = function(app) {
 				title : 'Home',
 				section: 'home',
 				navLinks: navLinks,
-				udata : req.session.user
+				udata : req.session.user,
+				userStyle: ''
 			});
 
 		}
@@ -117,7 +118,8 @@ module.exports = function(app) {
 				title : 'HTML',
 				section: 'html',
 				navLinks: navLinks,
-				udata : req.session.user
+				udata : req.session.user,
+				userStyle: ''
 			});
 
 		}
@@ -130,12 +132,31 @@ module.exports = function(app) {
 
 		} else {
 
-			res.render('css', {
-				title : 'CSS',
-				section: 'css',
-				navLinks: navLinks,
-				udata : req.session.user
+			require('shelljs/global');
+			var less = require('less');
+			var fs = require('fs');
+			var user = req.session.user.user;
+			var file = req.body.file;
+
+			cd(__dirname);
+
+			cd('../../students/' + user);
+
+			var filePath = pwd() + '/styles.css';
+
+			fs.readFile(filePath, 'utf8', function(err, text){
+				less.render('.display { '+text+' }', function (e, output) {
+				  text = output.css;
+				});
+				res.render('css', {
+					title : 'CSS',
+					section: 'css',
+					navLinks: navLinks,
+					udata : req.session.user,
+					userStyle: text
+				});
 			});
+
 
 		}
 	});
@@ -147,11 +168,28 @@ module.exports = function(app) {
 
 		} else {
 
-			res.render('javascript', {
-				title : 'Javascript',
-				section: 'js',
-				navLinks: navLinks,
-				udata : req.session.user
+			require('shelljs/global');
+			var less = require('less');
+			var fs = require('fs');
+			var user = req.session.user.user;
+			var file = req.body.file;
+
+			cd(__dirname);
+
+			cd('../../students/' + user);
+
+			var filePath = pwd() + '/styles.css';
+			fs.readFile(filePath, 'utf8', function(err, text){
+				less.render('.output { '+text+' }', function (e, output) {
+				  text = output.css;
+				});
+				res.render('javascript', {
+					title : 'Javascript',
+					section: 'js',
+					navLinks: navLinks,
+					udata : req.session.user,
+					userStyle: text
+				});
 			});
 
 		}
@@ -168,7 +206,8 @@ module.exports = function(app) {
 				title : 'Profile',
 				section: 'profile',
 				navLinks: navLinks,
-				udata : req.session.user
+				udata : req.session.user,
+				userStyle: ''
 			});
 
 		}
@@ -185,7 +224,8 @@ module.exports = function(app) {
 				title : 'Badges',
 				section: 'badges',
 				navLinks: navLinks,
-				udata : req.session.user
+				udata : req.session.user,
+				userStyle: ''
 			});
 
 		}
@@ -202,7 +242,8 @@ module.exports = function(app) {
 				title : 'Support',
 				section: 'support',
 				navLinks: navLinks,
-				udata : req.session.user
+				udata : req.session.user,
+				userStyle: ''
 			});
 
 		}
@@ -219,7 +260,8 @@ module.exports = function(app) {
 				title : 'Account',
 				section: 'account',
 				navLinks: navLinks,
-				udata : req.session.user
+				udata : req.session.user,
+				userStyle: ''
 			});
 
 		}
@@ -462,7 +504,6 @@ module.exports = function(app) {
 
 		var file = req.body.file;
 		var code = req.body.code;
-
 
 		cd(__dirname);
 		cd('../../students/' + user);

@@ -104,12 +104,15 @@ rte = {
         switch(editorType){
             case 'html':
                 file = 'index.html';
+                $('.output').show();
             break;
             case 'js':
                 file = 'scripts.js';
+                $('.output').hide();
             break;
             case 'css':
                 file = 'styles.css';
+                $('.output').hide();
             break;
         }
 
