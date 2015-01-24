@@ -30,7 +30,7 @@
   width: 1em;
   margin-right: .2em;
   text-align: center;
-  /* opacity: .8; */
+  /* opacity: .8; */  
 
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
@@ -138,8 +138,12 @@
 
 .icon-loader:before { content: '\e800'; } /* '' */
 .icon-user:before { content: '\e801'; } /* '' */
+.icon-lightbulb:before { content: '\e802'; } /* '' */
 .icon-expand:before { content: '\e803'; } /* '' */
 .icon-collapse:before { content: '\e804'; } /* '' */
+.icon-website:before { content: '\e805'; } /* '' */
+.icon-lifebuoy:before { content: '\e806'; } /* '' */
+.icon-logout:before { content: '\e807'; } /* '' */
 .icon-picture:before { content: '\e808'; } /* '' */
 .icon-documents:before { content: '\e80e'; } /* '' */
 .icon-video:before { content: '\e80f'; } /* '' */

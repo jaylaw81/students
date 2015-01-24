@@ -79,6 +79,30 @@
       "src": "fontawesome"
     },
     {
+      "uid": "ebffa4e734c8379ffee4fbfe49264d94",
+      "css": "lifebuoy",
+      "code": 59398,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "2d76f2c8d13be40694ecadfea7fb83c3",
+      "css": "logout",
+      "code": 59399,
+      "src": "entypo"
+    },
+    {
+      "uid": "cb89a11fa3722b7648ce26f40aaed8f0",
+      "css": "website",
+      "code": 59397,
+      "src": "elusive"
+    },
+    {
+      "uid": "599d6c088f4a1c64611b989459d65f6b",
+      "css": "lightbulb",
+      "code": 59394,
+      "src": "elusive"
+    },
+    {
       "uid": "c0a07aca383ff2a164a4d691fa46e35c",
       "css": "collapse",
       "code": 59396,

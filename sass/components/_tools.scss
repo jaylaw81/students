@@ -1,0 +1,9 @@
+.tools {
+    a.links {
+        @include font-size(15px);
+
+        &:before {
+            margin: 0 10px;
+        }
+    }
+}

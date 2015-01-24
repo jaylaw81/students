@@ -4,48 +4,46 @@
 }
 
 .button {
-
     display:inline-block;
     cursor:pointer;
     font-size:14px;
     padding:7px 26px;
     text-decoration:none;
-
     border: 0px;
-}
-
-.save-work {
     @include font-size(13px);
     text-transform: uppercase;
     padding: 10px 30px;
-}
+    border-radius: 2px;
 
-.button.white {
-    border-color: $white;
-    color: $white;
-}
+    &.white {
+        border-color: $white;
+        color: $white;
+    }
 
-.button.white:hover {
-    background-color: $white;
-    color: $grey;
-}
+    &.white:hover {
+        background-color: $white;
+        color: $grey;
+    }
 
-.button.blue {
-    border-color: $rhinocoderBlue;
-    color: $rhinocoderBlue;
-}
+    &.blue {
+        border-color: $rhinocoderBlue;
+        color: $rhinocoderBlue;
+    }
 
-.button.blue:hover {
-    background-color: $rhinocoderBlue;
-    color: $white;
-}
+    &.blue:hover {
+        background-color: $rhinocoderBlue;
+        color: $white;
+    }
 
-.button.green {
-    background-color:#44c767;
-    color: $white;
-}
+    &.green {
+        background-color: $green;
+        color: $white;
+        border-color: darken($green, 20%);
+        border-bottom: 2px solid darken($green, 20%);
+    }
 
-.button.green:hover {
-    background-color: lighten(#5cbf2a, 2%);
-    color: $white;
+    &.green:hover {
+        background-color: darken($green, 20%);
+        color: $white;
+    }
 }
