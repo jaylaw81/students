@@ -30,7 +30,7 @@
   width: 1em;
   margin-right: .2em;
   text-align: center;
-  /* opacity: .8; */  
+  /* opacity: .8; */
 
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
@@ -145,5 +145,6 @@
 .icon-lifebuoy:before { content: '\e806'; } /* '' */
 .icon-logout:before { content: '\e807'; } /* '' */
 .icon-picture:before { content: '\e808'; } /* '' */
+.icon-loader2:before { content: '\e809'; } /* '' */
 .icon-documents:before { content: '\e80e'; } /* '' */
 .icon-video:before { content: '\e80f'; } /* '' */

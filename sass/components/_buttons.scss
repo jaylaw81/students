@@ -39,7 +39,6 @@
         background-color: $green;
         color: $white;
         border-color: darken($green, 20%);
-        border-bottom: 2px solid darken($green, 20%);
     }
 
     &.green:hover {

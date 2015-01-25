@@ -43,11 +43,11 @@ rte = {
     loader: function(type){
         if(type == 'start'){
             $('.icon-loader-container').fadeIn(200);
-            $('.icon-loader').addClass('animate-spin');
+            $('.icon-loader2').addClass('animate-spin');
             $('.pagecontainer').addClass('blur');
         } else {
             $('.icon-loader-container').fadeOut(200);
-            $('.icon-loader').removeClass('animate-spin');
+            $('.icon-loader2').removeClass('animate-spin');
             $('.pagecontainer').removeClass('blur');
         }
     },
