@@ -1,9 +1,14 @@
 .tools {
     a.links {
+    	padding: 7px;
         @include font-size(15px);
 
         &:before {
             margin: 0 10px;
         }
+    }
+
+    a.links:hover {
+    	background-color: lighten($grey, 30%);
     }
 }

@@ -11,9 +11,11 @@
     text-decoration:none;
     border: 0px;
     @include font-size(13px);
+    @include transition(all, 0.2s, ease-in-out);
     text-transform: uppercase;
     padding: 10px 30px;
     border-radius: 2px;
+    border-bottom: 2px solid;
 
     &.white {
         border-color: $white;
