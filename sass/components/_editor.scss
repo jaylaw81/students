@@ -68,5 +68,11 @@ div.icon-loader-container {
 }
 
 .ace_content {
-    padding: 10px 10px 10px 5px;
+    margin-top: 15px !important;
+}
+
+.ace-github .ace_gutter {
+    background-color: white !important;
+    color: #ccc !important;
+    margin-top: 15px;
 }

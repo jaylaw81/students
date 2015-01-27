@@ -228,7 +228,6 @@ rte = {
                 , output = $(this).data('output')
                 ;
 
-
             var mode = textarea.data('editor');
 
             var editDiv = $('<div>', {
@@ -240,7 +239,7 @@ rte = {
             textarea.css('display', 'none');
 
             rte.editor = ace.edit(editDiv[0]);
-            rte.editor.renderer.setShowGutter(false);
+            rte.editor.renderer.setShowGutter(true);
             rte.editor.setHighlightActiveLine(false);
             rte.editor.setShowPrintMargin(false);
             rte.editor.getSession().setValue(textarea.val());
@@ -268,9 +267,14 @@ rte = {
     checkInput: function(editor, lessonData, output, text){
         var lessonContainer = lessonData;
 
-        if(Boolean(output) === true){
+        if(Boolean(output) === true && lessonContainer !== 'js'){
             var content = rte.editor.getSession().getValue();
             $('.output .display').html(content);
+        }
+
+        if(lessonContainer == 'js'){
+            var text = rte.editor.getSession().getValue();
+            //eval(text);
         }
 
         if(text.indexOf('<!doctype html>') > -1) {
