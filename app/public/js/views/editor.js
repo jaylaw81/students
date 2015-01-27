@@ -2,6 +2,9 @@ var rte = {};
 
 rte = {
     editor: {},
+    myDelay: 1000;
+    thisDelay: 1000;
+    start: Date.now();
 
     init: function(){
         this.rteRender();
@@ -113,7 +116,7 @@ rte = {
 
             });
 
-        }, 10000);
+        }, 20000);
 
     },
 
