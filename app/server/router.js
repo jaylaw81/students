@@ -113,7 +113,7 @@ module.exports = function(app) {
 		if (series == null){
 			res.redirect('/home');
 		} else {
-			res.redirect(series);
+			res.redirect(series + '/home');
 			series: series
 		}
 	});
@@ -578,7 +578,7 @@ module.exports = function(app) {
 
 	});
 
-	/*app.get('/:series', function(req, res) {
+	app.get('/:series/home', function(req, res) {
 
 		var series = req.params.series;
 		var title = '';
@@ -606,7 +606,7 @@ module.exports = function(app) {
 
 		}
 	});
-*/
+
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });
 
 };
