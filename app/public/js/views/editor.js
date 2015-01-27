@@ -6,6 +6,7 @@ rte = {
     init: function(){
         this.rteRender();
         this.events();
+        this.autoSave();
     },
 
     events: function(){
@@ -19,6 +20,9 @@ rte = {
             e.preventDefault();
             rte.hideLesson();
         });
+
+
+
     },
 
     hideLesson: function(){
@@ -79,6 +83,40 @@ rte = {
         });
     },
 
+    autoSave: function(){
+
+        setTimeout(function () {
+
+            var code = rte.editor.getSession().getValue();
+
+            var file = rte.activeEditor();
+
+            $('.save-work').trigger('hover').html('<i class="icon-loader2"></i> Saving');
+
+            $.ajax({
+                url: '/save',
+                type: 'POST',
+                data: 'file='+ file +'&code=' + code
+            }).done(function(){
+
+                rte.commitToGitHub();
+                rte.autoSave();
+                setTimeout(function(){
+
+                    $('.save-work').html('Save');
+                }, 2000);
+            })
+            .fail(function(err){
+                console.log('error: ' + err);
+            })
+            .always(function(){
+
+            });
+
+        }, 10000);
+
+    },
+
     saveData: function(){
 
         var code = rte.editor.getSession().getValue();
@@ -126,15 +164,15 @@ rte = {
         switch(editorType){
             case 'html':
                 file = 'index.html';
-                $('.output').show();
+                //$('.output').show();
             break;
             case 'js':
                 file = 'scripts.js';
-                $('.output').hide();
+                //$('.output').hide();
             break;
             case 'css':
                 file = 'styles.css';
-                $('.output').hide();
+                //$('.output').hide();
             break;
         }
 
@@ -169,12 +207,13 @@ rte = {
 
 
 
-            rte.editor.getSession().on('change', function(e) {
-                var text = rte.editor.getSession().getValue();
-                rte.checkInput(rte.editor, $('div.active-editor').data('editor-type'), output, text);
-            });
+                rte.editor.getSession().on('change', function(e) {
+                    var text = rte.editor.getSession().getValue();
+                    rte.checkInput(rte.editor, $('div.active-editor').data('editor-type'), output, text);
+                });
 
-            rte.getFileData();
+
+                rte.getFileData();
 
         });
 
