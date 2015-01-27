@@ -7,17 +7,24 @@
         width: 20%;
         max-width: 250px;
         min-height: 250px;
-        max-height: 250px;
-        @include box-shadow(0, 0, 3px, lighten($grey, 20%), $inset: false);
-        @include transition(all, 0.2s, ease-in-out);
+
         vertical-align: top;
+        float: left;
+
+        h3 {
+            margin: 0 0 20px 0;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
         img {
             width: 100%;
         }
 
-        &:hover {
-            @include box-shadow(0, 0, 0, lighten($grey, 20%), $inset: false);
+        p {
+            min-height: 125px;
         }
+
+
     }
 }
 

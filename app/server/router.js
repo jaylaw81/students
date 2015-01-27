@@ -121,6 +121,12 @@ module.exports = function(app) {
 	app.get('/:series', function(req, res) {
 
 		var series = req.params.series;
+		var title = '';
+		switch(series){
+			case 'thebasics':
+			title = 'The Basics';
+			break;
+		}
 
 		if (req.session.user == null){
 		// if user is not logged-in redirect back to login page //
@@ -129,11 +135,12 @@ module.exports = function(app) {
 		} else {
 
 			res.render('series', {
-				title : series + '| Home',
+				title : title + '| Home',
 				section: 'home',
 				navLinks: navLinks,
 				udata : req.session.user,
 				userStyle: '',
+				header: title,
 				series: series
 			});
 
