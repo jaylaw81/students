@@ -475,7 +475,7 @@ module.exports = function(app) {
 			"user": "rhinocoders",
 			"repo": "students",
 			"ref": "refs/heads/" + user,
-			"sha": "a6a3042871b2d6eac805b6e1a241eb7bb4509cd0"
+			"sha": "f0e772f9b57b232f44a9b7ec7022728d2b9d860f"
 		}, function(err, res){
 			//console.log('createReference');
 			appRes.redirect('/checkout');
