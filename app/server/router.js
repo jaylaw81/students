@@ -578,7 +578,7 @@ module.exports = function(app) {
 
 	});
 
-	app.get('/:series', function(req, res) {
+	/*app.get('/:series', function(req, res) {
 
 		var series = req.params.series;
 		var title = '';
@@ -606,7 +606,7 @@ module.exports = function(app) {
 
 		}
 	});
-
+*/
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });
 
 };
