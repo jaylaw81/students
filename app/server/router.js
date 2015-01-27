@@ -118,34 +118,7 @@ module.exports = function(app) {
 		}
 	});
 
-	app.get('/:series', function(req, res) {
 
-		var series = req.params.series;
-		var title = '';
-		switch(series){
-			case 'thebasics':
-			title = 'The Basics';
-			break;
-		}
-
-		if (req.session.user == null){
-		// if user is not logged-in redirect back to login page //
-			res.redirect('/');
-
-		} else {
-
-			res.render('series', {
-				title : title + '| Home',
-				section: 'home',
-				navLinks: navLinks,
-				udata : req.session.user,
-				userStyle: '',
-				header: title,
-				series: series
-			});
-
-		}
-	});
 
 	app.get('/:series/html', function(req, res) {
 
@@ -603,6 +576,35 @@ module.exports = function(app) {
 
 		});
 
+	});
+
+	app.get('/:series', function(req, res) {
+
+		var series = req.params.series;
+		var title = '';
+		switch(series){
+			case 'thebasics':
+			title = 'The Basics';
+			break;
+		}
+
+		if (req.session.user == null){
+		// if user is not logged-in redirect back to login page //
+			res.redirect('/');
+
+		} else {
+
+			res.render('series', {
+				title : title + '| Home',
+				section: 'home',
+				navLinks: navLinks,
+				udata : req.session.user,
+				userStyle: '',
+				header: title,
+				series: series
+			});
+
+		}
 	});
 
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });
