@@ -68,11 +68,20 @@ rte = {
         $('div[data-editor-type="'+activeTab+'"]').addClass('active-editor');
 
         var file = fileName || rte.activeEditor();
+        var path = '';
+        switch(file){
+            case 'styles.css':
+                path = 'styles/';
+            break;
+            case 'scripts.js':
+                path = 'scripts/';
+            break;
+        }
 
         $.ajax({
             url: '/readFile',
             type: 'POST',
-            data: 'file=' + file
+            data: 'file='+path+'' + file + '&series='+series
         }).done(function(data){
             rte.editor.getSession().setMode("ace/mode/" + mode);
             rte.editor.getSession().setValue(data);
@@ -93,13 +102,22 @@ rte = {
             var code = rte.editor.getSession().getValue();
 
             var file = rte.activeEditor();
+            var path = '';
+            switch(file){
+                case 'styles.css':
+                    path = 'styles/';
+                break;
+                case 'scripts.js':
+                    path = 'scripts/';
+                break;
+            }
 
             $('.save-work').trigger('hover').html('<i class="icon-loader2"></i> Saving');
 
             $.ajax({
                 url: '/save',
                 type: 'POST',
-                data: 'file='+ file +'&code=' + code
+                data: '&series='+series+'&file='+path+''+ file +'&code=' + code
             }).done(function(){
 
                 rte.commitToGitHub();
@@ -125,11 +143,21 @@ rte = {
         var code = rte.editor.getSession().getValue();
 
         var file = rte.activeEditor();
+        var path = '';
+            switch(file){
+                case 'styles.css':
+                    path = 'styles/';
+                break;
+                case 'scripts.js':
+                    path = 'scripts/';
+                break;
+
+            }
 
         $.ajax({
             url: '/save',
             type: 'POST',
-            data: 'file='+ file +'&code=' + code
+            data: '&series='+series+'&file='+path+''+ file +'&code=' + code
         }).done(function(){
 
             rte.commitToGitHub();

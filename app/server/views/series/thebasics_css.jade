@@ -1,0 +1,13 @@
+extends ../partials/layout_app
+
+block content
+    include ../partials/navigation
+    include ../partials/css_lesson
+
+block scripts
+    script
+        var series = '#{series}';
+    script(src='/vendor/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js')
+    script(src='/js/views/editor.js')
+    script(src='/js/views/tabs.js')

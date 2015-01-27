@@ -50,9 +50,9 @@ module.exports = function(app) {
 
 	var navLinks = [
 	  { label: 'Home', key: 'home', path: '/home', class: 'home' },
-	  { label: 'HTML', key: 'html', path: '/html' },
-	  { label: 'CSS', key: 'css', path: '/css' },
-	  { label: 'JS', key: 'js', path: '/javascript' }
+	  { label: 'HTML', key: 'html', path: '/thebasics/html' },
+	  { label: 'CSS', key: 'css', path: '/thebasics/css' },
+	  { label: 'JS', key: 'js', path: '/thebasics/javascript' }
 	]
 
 	app.get('/', function(req, res){
@@ -107,25 +107,32 @@ module.exports = function(app) {
 		}
 	});
 
-	app.get('/html', function(req, res) {
+	app.get('/:series/html', function(req, res) {
+
+		var series = req.params.series;
+
 		if (req.session.user == null){
 		// if user is not logged-in redirect back to login page //
 			res.redirect('/');
 
 		} else {
 
-			res.render('html', {
+			res.render('series/'+series+'_html', {
 				title : 'HTML',
 				section: 'html',
 				navLinks: navLinks,
 				udata : req.session.user,
-				userStyle: ''
+				userStyle: '',
+				series: series
 			});
 
 		}
 	});
 
-	app.get('/css', function(req, res) {
+	app.get('/:series/css', function(req, res) {
+
+		var series = req.params.series;
+
 		if (req.session.user == null){
 		// if user is not logged-in redirect back to login page //
 			res.redirect('/');
@@ -140,7 +147,7 @@ module.exports = function(app) {
 
 			cd(__dirname);
 
-			cd('../../students/' + user);
+			cd('../../students/' + user + '/' + series + '/styles/');
 
 			var filePath = pwd() + '/styles.css';
 
@@ -148,20 +155,22 @@ module.exports = function(app) {
 				less.render('.display { '+text+' }', function (e, output) {
 				  text = output.css;
 				});
-				res.render('css', {
+				res.render('series/'+series+'_css', {
 					title : 'CSS',
 					section: 'css',
 					navLinks: navLinks,
 					udata : req.session.user,
-					userStyle: text
+					userStyle: text,
+					series: series
 				});
 			});
-
 
 		}
 	});
 
-	app.get('/javascript', function(req, res) {
+	app.get('/:series/javascript', function(req, res) {
+		var series = req.params.series;
+
 		if (req.session.user == null){
 		// if user is not logged-in redirect back to login page //
 			res.redirect('/');
@@ -176,19 +185,20 @@ module.exports = function(app) {
 
 			cd(__dirname);
 
-			cd('../../students/' + user);
+			cd('../../students/' + user + '/' + series + '/styles/');
 
 			var filePath = pwd() + '/styles.css';
 			fs.readFile(filePath, 'utf8', function(err, text){
 				less.render('.output { '+text+' }', function (e, output) {
 				  text = output.css;
 				});
-				res.render('javascript', {
+				res.render('series/'+series+'_javascript', {
 					title : 'Javascript',
 					section: 'js',
 					navLinks: navLinks,
 					udata : req.session.user,
-					userStyle: text
+					userStyle: text,
+					series: series
 				});
 			});
 
@@ -452,7 +462,7 @@ module.exports = function(app) {
 			"user": "rhinocoders",
 			"repo": "students",
 			"ref": "refs/heads/" + user,
-			"sha": "15583f350a5cf71356548b006b14475218324213"
+			"sha": "a6a3042871b2d6eac805b6e1a241eb7bb4509cd0"
 		}, function(err, res){
 			//console.log('createReference');
 			appRes.redirect('/checkout');
@@ -503,10 +513,11 @@ module.exports = function(app) {
 		require('shelljs/global');
 
 		var file = req.body.file;
+		var series = req.body.series;
 		var code = req.body.code;
 
 		cd(__dirname);
-		cd('../../students/' + user);
+		cd('../../students/' + user + '/' + series + '/');
 
 		fs.truncate(file, 0);
 
@@ -529,10 +540,11 @@ module.exports = function(app) {
 		var user = req.session.user.user;
 
 		var file = req.body.file;
+		var series = req.body.series;
 
 		cd(__dirname);
 
-		cd('../../students/' + user);
+		cd('../../students/' + user + '/' + series);
 
 		var filePath = pwd() + '/' + file;
 		console.log(filePath);
