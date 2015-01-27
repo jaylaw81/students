@@ -2,14 +2,14 @@ var rte = {};
 
 rte = {
     editor: {},
-    myDelay: 1000;
-    thisDelay: 1000;
-    start: Date.now();
+    myDelay: 1000,
+    thisDelay: 1000,
+    start: Date.now(),
 
     init: function(){
         this.rteRender();
         this.events();
-        this.autoSave();
+        //this.autoSave();
     },
 
     events: function(){
