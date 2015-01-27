@@ -1,6 +1,9 @@
 .tools {
+    width: 98%;
+    clear: both;
+    z-index: 1;
     a.links {
-    	padding: 7px;
+        padding: 7px;
         @include font-size(15px);
 
         &:before {
@@ -9,6 +12,6 @@
     }
 
     a.links:hover {
-    	background-color: lighten($grey, 30%);
+        background-color: lighten($grey, 30%);
     }
 }

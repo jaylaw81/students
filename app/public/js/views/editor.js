@@ -29,18 +29,18 @@ rte = {
     },
 
     hideLesson: function(){
+        console.log($('div.pagecontainer > div:first-child').hasClass('hide-lesson'))
         if($('div.pagecontainer > div:first-child').hasClass('hide-lesson')){
 
             $('.lesson-container .drawer').remove();
-            $('.lesson-container').append('<span class="drawer icon-expand"></span>');
+            $('.lesson-container').append('<span class="drawer icon-collapse"></span>');
             $('div.pagecontainer > div:last-child').toggleClass('collapse-editor');
-            $('div.pagecontainer > div:first-child').toggleClass('show-lesson');
+            $('div.pagecontainer > div:first-child').removeClass('hide-lesson').toggleClass('show-lesson');
 
         } else {
             $('.lesson-container .drawer').remove()
-            $('.lesson-container').append('<span class="drawer icon-collapse"></span>');
-
-            $('div.pagecontainer > div:first-child').toggleClass('hide-lesson');
+            $('.lesson-container').append('<span class="drawer icon-expand"></span>');
+            $('div.pagecontainer > div:first-child').removeClass('show-lesson').toggleClass('hide-lesson');
             $('div.pagecontainer > div:last-child').toggleClass('expand-editor');
 
         }

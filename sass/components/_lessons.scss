@@ -6,7 +6,7 @@
     height: 100%;
     height: calc(100vh - 10vh);
     min-height: 500px;
-
+    z-index: 2;
     > div {
         padding: 10px 10px 10px 24px;
 
