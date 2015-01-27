@@ -24,12 +24,23 @@ rte = {
             rte.hideLesson();
         });
 
+        $(document).keydown(function(event) {
+
+            if((event.ctrlKey || event.metaKey) && event.which == 83 ) {
+                event.preventDefault();
+
+                rte.loader('start');
+                rte.saveData();
+                return false;
+            }
+            return true;
+        });
 
 
     },
 
     hideLesson: function(){
-        console.log($('div.pagecontainer > div:first-child').hasClass('hide-lesson'))
+
         if($('div.pagecontainer > div:first-child').hasClass('hide-lesson')){
 
             $('.lesson-container .drawer').remove();
@@ -236,15 +247,17 @@ rte = {
             rte.editor.getSession().setMode("ace/mode/" + mode);
             rte.editor.setTheme("ace/theme/github");
 
+            rte.editor.setOptions({
+                 maxLines: Infinity
+            });
+
+            rte.editor.getSession().on('change', function(e) {
+                var text = rte.editor.getSession().getValue();
+                rte.checkInput(rte.editor, $('div.active-editor').data('editor-type'), output, text);
+            });
 
 
-                rte.editor.getSession().on('change', function(e) {
-                    var text = rte.editor.getSession().getValue();
-                    rte.checkInput(rte.editor, $('div.active-editor').data('editor-type'), output, text);
-                });
-
-
-                rte.getFileData();
+            rte.getFileData();
 
         });
 

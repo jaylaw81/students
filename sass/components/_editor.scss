@@ -39,8 +39,9 @@ div.icon-loader-container {
     width: 51%;
     min-height: 199px;
     margin-bottom: 20px;
-    height: calc(100vh - 20vh);
+    height: calc(100% - 95px);
     background-color: white;
+    overflow-y: auto;
 }
 .editor,
 .output {
@@ -59,7 +60,7 @@ div.icon-loader-container {
     background-color: white;
 
     width: 48%;
-    height: calc(100vh - 20vh);
+    height: calc(100% - 95px);
     .display {
         padding: 10px;
     }
