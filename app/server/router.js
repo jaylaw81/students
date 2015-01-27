@@ -49,7 +49,6 @@ module.exports = function(app) {
 // main login page //
 
 	var navLinks = [
-	  { label: 'Home', key: 'home', path: '/home', class: 'home' },
 	  { label: 'HTML', key: 'html', path: '/thebasics/html' },
 	  { label: 'CSS', key: 'css', path: '/thebasics/css' },
 	  { label: 'JS', key: 'js', path: '/thebasics/javascript' }
@@ -102,6 +101,40 @@ module.exports = function(app) {
 				navLinks: navLinks,
 				udata : req.session.user,
 				userStyle: ''
+			});
+
+		}
+	});
+
+	app.get('/series/:series', function(req, res) {
+		
+		var series = req.params.series;
+		
+		if (series == null){
+			res.redirect('/home');
+		} else {
+			res.redirect('/:series');
+			series: series
+		}
+	});
+
+	app.get('/:series', function(req, res) {
+
+		var series = req.params.series;
+
+		if (req.session.user == null){
+		// if user is not logged-in redirect back to login page //
+			res.redirect('/');
+
+		} else {
+
+			res.render('series', {
+				title : series + '| Home',
+				section: 'home',
+				navLinks: navLinks,
+				udata : req.session.user,
+				userStyle: '',
+				series: series
 			});
 
 		}
@@ -547,18 +580,18 @@ module.exports = function(app) {
 		cd('../../students/' + user + '/' + series);
 
 		var filePath = pwd() + '/' + file;
-		console.log(filePath);
-		console.log(pwd());
+		//console.log(filePath);
+		//console.log(pwd());
 
 
 		fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
 			if (!err){
-			console.log('received data: ' + data);
+			//console.log('received data: ' + data);
 			res.writeHead(200, {'Content-Type': 'text/html'});
 			res.write(data);
 			res.end();
 			}else{
-				console.log(err);
+				//console.log(err);
 			}
 
 		});

@@ -1,8 +1,10 @@
 div.navigation
 	div.nav
-		each link in navLinks
-			- var isActive = (link.key == section ? 'active' : '')
-			a(href=link.path, title=link.label, class=isActive)= link.label
+		a(href="/home", title="home", class="home") Home
+		if (typeof(series) !== 'undefined')
+			each link in navLinks
+				- var isActive = (link.key == section ? 'active' : '')
+				a(href=link.path, title=link.label, class=isActive)= link.label
 	div.nav
 		a(href="http://www.rhinocoders.com", title="My Website", class="icon-website", target="_blank") 
 		a(href="http://www.rhinocoders.com", title="Knowledge", class="icon-lightbulb", target="_blank") 
