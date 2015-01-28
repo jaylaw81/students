@@ -113,32 +113,12 @@ module.exports = function(app) {
 		if (series == null){
 			res.redirect('/home');
 		} else {
-			res.redirect(series);
+			res.redirect(series + '/home');
 			series: series
 		}
 	});
 
-	app.get('/:series', function(req, res) {
 
-		var series = req.params.series;
-
-		if (req.session.user == null){
-		// if user is not logged-in redirect back to login page //
-			res.redirect('/');
-
-		} else {
-
-			res.render('series', {
-				title : series + '| Home',
-				section: 'home',
-				navLinks: navLinks,
-				udata : req.session.user,
-				userStyle: '',
-				series: series
-			});
-
-		}
-	});
 
 	app.get('/:series/html', function(req, res) {
 
@@ -311,6 +291,14 @@ module.exports = function(app) {
 	});
 
 	app.get('/logout', function(req, res) {
+		var user = req.session.user.user;
+
+		require('shelljs/global');
+		cd(__dirname);
+
+		cd('../../students/');
+		exec('rm -rf ' + user + '/');
+
 		res.clearCookie('user');
 		res.clearCookie('pass');
 		req.session.destroy(function(e){
@@ -495,7 +483,7 @@ module.exports = function(app) {
 			"user": "rhinocoders",
 			"repo": "students",
 			"ref": "refs/heads/" + user,
-			"sha": "a6a3042871b2d6eac805b6e1a241eb7bb4509cd0"
+			"sha": "f0e772f9b57b232f44a9b7ec7022728d2b9d860f"
 		}, function(err, res){
 			//console.log('createReference');
 			appRes.redirect('/checkout');
@@ -512,7 +500,7 @@ module.exports = function(app) {
 		mkdir('-p', user);
 		cd( user );
 
-		exec('git clone -b '+user+' git://github.com/rhinocoders/students .');
+		exec('git clone -b '+user+' git@github.com:rhinocoders/students.git .');
 
 		//clone("git://github.com/rhinocoders/students", 'students/' + user, options);
 
@@ -596,6 +584,35 @@ module.exports = function(app) {
 
 		});
 
+	});
+
+	app.get('/:series/home', function(req, res) {
+
+		var series = req.params.series;
+		var title = '';
+		switch(series){
+			case 'thebasics':
+			title = 'The Basics';
+			break;
+		}
+
+		if (req.session.user == null){
+		// if user is not logged-in redirect back to login page //
+			res.redirect('/');
+
+		} else {
+
+			res.render('series', {
+				title : title + '| Home',
+				section: 'home',
+				navLinks: navLinks,
+				udata : req.session.user,
+				userStyle: '',
+				header: title,
+				series: series
+			});
+
+		}
 	});
 
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });

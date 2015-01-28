@@ -24,23 +24,34 @@ rte = {
             rte.hideLesson();
         });
 
+        $(document).keydown(function(event) {
+
+            if((event.ctrlKey || event.metaKey) && event.which == 83 ) {
+                event.preventDefault();
+
+                rte.loader('start');
+                rte.saveData();
+                return false;
+            }
+            return true;
+        });
 
 
     },
 
     hideLesson: function(){
+
         if($('div.pagecontainer > div:first-child').hasClass('hide-lesson')){
 
             $('.lesson-container .drawer').remove();
-            $('.lesson-container').append('<span class="drawer icon-expand"></span>');
+            $('.lesson-container').append('<span class="drawer icon-collapse"></span>');
             $('div.pagecontainer > div:last-child').toggleClass('collapse-editor');
-            $('div.pagecontainer > div:first-child').toggleClass('show-lesson');
+            $('div.pagecontainer > div:first-child').removeClass('hide-lesson').toggleClass('show-lesson');
 
         } else {
             $('.lesson-container .drawer').remove()
-            $('.lesson-container').append('<span class="drawer icon-collapse"></span>');
-
-            $('div.pagecontainer > div:first-child').toggleClass('hide-lesson');
+            $('.lesson-container').append('<span class="drawer icon-expand"></span>');
+            $('div.pagecontainer > div:first-child').removeClass('show-lesson').toggleClass('hide-lesson');
             $('div.pagecontainer > div:last-child').toggleClass('expand-editor');
 
         }
@@ -217,7 +228,6 @@ rte = {
                 , output = $(this).data('output')
                 ;
 
-
             var mode = textarea.data('editor');
 
             var editDiv = $('<div>', {
@@ -229,22 +239,24 @@ rte = {
             textarea.css('display', 'none');
 
             rte.editor = ace.edit(editDiv[0]);
-            rte.editor.renderer.setShowGutter(false);
+            rte.editor.renderer.setShowGutter(true);
             rte.editor.setHighlightActiveLine(false);
             rte.editor.setShowPrintMargin(false);
             rte.editor.getSession().setValue(textarea.val());
             rte.editor.getSession().setMode("ace/mode/" + mode);
             rte.editor.setTheme("ace/theme/github");
 
+            rte.editor.setOptions({
+                 maxLines: Infinity
+            });
+
+            rte.editor.getSession().on('change', function(e) {
+                var text = rte.editor.getSession().getValue();
+                rte.checkInput(rte.editor, $('div.active-editor').data('editor-type'), output, text);
+            });
 
 
-                rte.editor.getSession().on('change', function(e) {
-                    var text = rte.editor.getSession().getValue();
-                    rte.checkInput(rte.editor, $('div.active-editor').data('editor-type'), output, text);
-                });
-
-
-                rte.getFileData();
+            rte.getFileData();
 
         });
 
@@ -255,9 +267,14 @@ rte = {
     checkInput: function(editor, lessonData, output, text){
         var lessonContainer = lessonData;
 
-        if(Boolean(output) === true){
+        if(Boolean(output) === true && lessonContainer !== 'js'){
             var content = rte.editor.getSession().getValue();
             $('.output .display').html(content);
+        }
+
+        if(lessonContainer == 'js'){
+            var text = rte.editor.getSession().getValue();
+            //eval(text);
         }
 
         if(text.indexOf('<!doctype html>') > -1) {

@@ -1,7 +1,7 @@
 .pagecontainer {
 	float: left;
 	width: 100%;
-	
+	height: calc(100% - 60px);
 	&.blur {
 		-webkit-filter: blur(20px);
 		-moz-filter: blur(20px);
@@ -12,9 +12,18 @@
 	&.lesson {
 
 		> div {
-			width: 50%;
+			height: 100%;
+			&:first-of-type {
+				width: 30%;
+			}
+
+			&:last-of-type {
+				width: 70%;
+			}
+
 			float: left;
 		}
+
 
 	}
 
