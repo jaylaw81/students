@@ -1,6 +1,6 @@
 #!/usr/bin/expect -r
 # set variables
-set password software
+set password @marnie2037
 spawn git push
 # Look for password prompt
 expect "'/home/ec2-user/.ssh/id_rsa':"

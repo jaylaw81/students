@@ -15,8 +15,12 @@ rte = {
     events: function(){
         $(document).on('click', '.save-work', function(e){
             e.preventDefault();
-            rte.loader('start');
-            rte.saveData();
+            if($('.ace_error').size() <= 0){
+                rte.loader('start');
+                rte.saveData();
+            } else {
+                alert('please check for syntax errors!');
+            }
         });
 
         $(document).on('click', '.drawer', function(e){
@@ -28,9 +32,12 @@ rte = {
 
             if((event.ctrlKey || event.metaKey) && event.which == 83 ) {
                 event.preventDefault();
-
-                rte.loader('start');
-                rte.saveData();
+                if($('.ace_error').size() <= 0){
+                    rte.loader('start');
+                    rte.saveData();
+                } else {
+                    alert('please check for syntax errors!');
+                }
                 return false;
             }
             return true;
@@ -106,49 +113,6 @@ rte = {
         });
     },
 
-    autoSave: function(){
-
-        setTimeout(function () {
-
-            var code = rte.editor.getSession().getValue();
-
-            var file = rte.activeEditor();
-            var path = '';
-            switch(file){
-                case 'styles.css':
-                    path = 'styles/';
-                break;
-                case 'scripts.js':
-                    path = 'scripts/';
-                break;
-            }
-
-            $('.save-work').trigger('hover').html('<i class="icon-loader2"></i> Saving');
-
-            $.ajax({
-                url: '/save',
-                type: 'POST',
-                data: '&series='+series+'&file='+path+''+ file +'&code=' + code
-            }).done(function(){
-
-                rte.commitToGitHub();
-                rte.autoSave();
-                setTimeout(function(){
-
-                    $('.save-work').html('Save');
-                }, 2000);
-            })
-            .fail(function(err){
-                console.log('error: ' + err);
-            })
-            .always(function(){
-
-            });
-
-        }, 20000);
-
-    },
-
     saveData: function(){
 
         var code = rte.editor.getSession().getValue();
@@ -164,21 +128,26 @@ rte = {
                 break;
 
             }
+        if($('.ace_error').size() <= 0){
 
-        $.ajax({
-            url: '/save',
-            type: 'POST',
-            data: '&series='+series+'&file='+path+''+ file +'&code=' + code
-        }).done(function(){
+            $.ajax({
+                url: '/save',
+                type: 'POST',
+                data: '&series='+series+'&file='+path+''+ file +'&code=' + code
+            }).done(function(){
 
-            rte.commitToGitHub();
-        })
-        .fail(function(err){
-            console.log('error: ' + err);
-        })
-        .always(function(){
+                rte.commitToGitHub();
+            })
+            .fail(function(err){
+                console.log('error: ' + err);
+            })
+            .always(function(){
 
-        });
+            });
+
+        } else {
+            alert('please check for syntax errors!');
+        }
     },
 
     commitToGitHub: function(){
