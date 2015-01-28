@@ -466,6 +466,7 @@ module.exports = function(app) {
 
 	app.post('/app-git-update-project', function(req, res){
 		require('shelljs/global');
+		cd(__dirname);
 		exec('expect ../../ssh-git-update.sh');
 		res.send('ok', 200);
 	});
