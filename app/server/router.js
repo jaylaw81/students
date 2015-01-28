@@ -517,6 +517,7 @@ module.exports = function(app) {
 
 		cd('../../students/' + user);
 		exec('eval $(ssh-agent)');
+
 		exec('ssh-add')
 		exec('git add -A');
 		exec('git commit -m "Commit work for '+ user +' @ ' + getDateTime() + '"');
