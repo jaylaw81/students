@@ -10,6 +10,32 @@ rte = {
         this.rteRender();
         this.events();
         //this.autoSave();
+
+    },
+
+    getTasks: function(type){
+        var tasks = $('[data-task]');
+        var i = 0;
+        for(i = 0; i < tasks.length; i++){
+            var task = $(tasks[i]);
+            var taskVal = task.data('task');
+            if(rte.editor.getSession().getValue().toLowerCase().indexOf(taskVal) >= 0){
+                console.log(taskVal + ' completed');
+                task.addClass('completed');
+
+                if(type == 'save'){
+                    rte.saveData();
+                } else {
+                    rte.loader('stop');
+                }
+
+            } else {
+                rte.saveData();
+            }
+        }
+        console.log(tasks);
+
+        //rte.saveData();
     },
 
     events: function(){
@@ -17,7 +43,8 @@ rte = {
             e.preventDefault();
             if($('.ace_error').size() <= 0){
                 rte.loader('start');
-                rte.saveData();
+                rte.getTasks('save');
+
             } else {
                 alert('please check for syntax errors!');
             }
@@ -103,7 +130,7 @@ rte = {
         }).done(function(data){
             rte.editor.getSession().setMode("ace/mode/" + mode);
             rte.editor.getSession().setValue(data);
-
+            rte.getTasks();
         })
         .fail(function(err){
             console.log('error: ' + err);
@@ -137,6 +164,7 @@ rte = {
             }).done(function(){
 
                 rte.commitToGitHub();
+                rte.loader('stop');
             })
             .fail(function(err){
                 console.log('error: ' + err);
@@ -246,9 +274,7 @@ rte = {
             //eval(text);
         }
 
-        if(text.indexOf('<!doctype html>') > -1) {
-            console.log('success')
-        }
+
 
     }
 }

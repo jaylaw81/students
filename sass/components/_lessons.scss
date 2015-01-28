@@ -9,6 +9,10 @@
         margin-top: 0;
     }
 
+    li.completed {
+        text-decoration: line-through;
+    }
+
     min-height: 500px;
     z-index: 2;
     > div {
