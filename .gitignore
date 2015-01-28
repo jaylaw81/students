@@ -4,3 +4,4 @@ app/server/modules/email-settings-mine.js
 app/public/css
 students
 .sass-cache
+ssh-prompt.sh

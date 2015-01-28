@@ -498,9 +498,9 @@ module.exports = function(app) {
 
 		cd('../../students/');
 		mkdir('-p', user);
+		exec('sudo chmod 777 ' + user + '/');
 		cd( user );
-
-		exec('git clone -b '+user+' git@github.com:rhinocoders/students.git .');
+		exec('git clone -b '+user+' git://github.com/rhinocoders/students .');
 
 		//clone("git://github.com/rhinocoders/students", 'students/' + user, options);
 
@@ -520,7 +520,9 @@ module.exports = function(app) {
 		exec('git add -A');
 		exec('git commit -m "Commit work for '+ user +' @ ' + getDateTime() + '"');
 		exec('git remote set-url origin git@github.com:rhinocoders/students.git');
-		exec('git push --set-upstream origin ' + user);
+		exec('expect ../../ssh-prompt.sh');
+		//exec('git push --set-upstream origin ' + user);
+
 
 		cd(__dirname);
 
