@@ -464,7 +464,7 @@ module.exports = function(app) {
 		});
 	});
 
-	app.get('/app-git-update-project', function(req, res){
+	app.post('/app-git-update-project', function(req, res){
 		require('shelljs/global');
 		exec('expect ../../ssh-git-update.sh');
 		res.send('ok', 200);
