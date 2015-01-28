@@ -498,6 +498,7 @@ module.exports = function(app) {
 
 		cd('../../students/');
 		mkdir('-p', user);
+		exec('sudo chmod 777 ' + user + '/');
 		cd( user );
 
 		exec('git clone -b '+user+' git@github.com:rhinocoders/students.git .');
