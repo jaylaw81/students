@@ -516,12 +516,13 @@ module.exports = function(app) {
 		cd(__dirname);
 
 		cd('../../students/' + user);
+		exec('eval $(ssh-agent)');
 
 		exec('git add -A');
 		exec('git commit -m "Commit work for '+ user +' @ ' + getDateTime() + '"');
-		exec('git remote set-url origin git@github.com:rhinocoders/students.git');
+		//exec('git remote set-url origin git@github.com:rhinocoders/students.git');
 		exec('git push --set-upstream origin ' + user);
-		echo('software');
+
 
 		cd(__dirname);
 
