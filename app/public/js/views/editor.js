@@ -20,7 +20,7 @@ rte = {
             var task = $(tasks[i]);
             var taskVal = task.data('task');
             if(rte.editor.getSession().getValue().toLowerCase().indexOf(taskVal) >= 0){
-                console.log(taskVal + ' completed');
+
                 task.addClass('completed');
 
                 if(type == 'save'){
@@ -33,9 +33,7 @@ rte = {
                 rte.saveData();
             }
         }
-        console.log(tasks);
 
-        //rte.saveData();
     },
 
     events: function(){
@@ -183,14 +181,14 @@ rte = {
             url: '/commit',
             type: 'GET',
         }).done(function(){
-            console.log('Successful push');
+
             rte.loader('stop');
         })
         .fail(function(){
             console.log('error');
         })
         .always(function(){
-            console.log('complete commit');
+
         });
     },
 
