@@ -291,6 +291,14 @@ module.exports = function(app) {
 	});
 
 	app.get('/logout', function(req, res) {
+		var user = req.session.user.user;
+
+		require('shelljs/global');
+		cd(__dirname);
+
+		cd('../../students/');
+		exec('rm -rf ' + user + '/');
+
 		res.clearCookie('user');
 		res.clearCookie('pass');
 		req.session.destroy(function(e){
@@ -492,7 +500,7 @@ module.exports = function(app) {
 		mkdir('-p', user);
 		cd( user );
 
-		exec('git clone -b '+user+' git://github.com/rhinocoders/students .');
+		exec('git clone -b '+user+' git@github.com:rhinocoders/students.git .');
 
 		//clone("git://github.com/rhinocoders/students", 'students/' + user, options);
 
