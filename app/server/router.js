@@ -521,7 +521,7 @@ module.exports = function(app) {
 		exec('git commit -m "Commit work for '+ user +' @ ' + getDateTime() + '"');
 		exec('git remote set-url origin git@github.com:rhinocoders/students.git');
 		exec('git push --set-upstream origin ' + user);
-		exec('software');
+		echo('software');
 
 		cd(__dirname);
 
