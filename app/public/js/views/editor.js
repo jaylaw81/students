@@ -10,7 +10,7 @@ rte = {
         this.rteRender();
         this.events();
         //this.autoSave();
-
+        console.log('init');
     },
 
     getTasks: function(type){
