@@ -10,10 +10,28 @@ rte = {
         this.rteRender();
         this.events();
         //this.autoSave();
+
     },
 
+    createTasks: function(){
+
+        var activeEditor = $('div.active-editor');
+        var editorType = activeEditor.data('editor-type');
+
+        for( items in tasks['series'][series][editorType]){
+            var task = tasks['series'][series][editorType][items].task;
+            var step = tasks['series'][series][editorType][items].step;
+            var pattern = tasks['series'][series][editorType][items].pattern;
+            var html = '<li data-task="'+pattern+'">'+task+'</li>';
+
+            $('div[data-step=' + step + '] ol.task-list').append(html);
+        }
+
+        rte.getTasks();
+    },
     getTasks: function(type){
         var tasks = $('[data-task]');
+        var currentStep = $('div[data-step]:visible');
         var i = 0;
         for(i = 0; i < tasks.length; i++){
             var task = $(tasks[i]);
@@ -34,7 +52,7 @@ rte = {
             }
         }
 
-        if($('ol.task-list').find('li').length === $('ol.task-list').find('li.completed').length){
+        if($('div[data-step]:visible ol.task-list').find('li').length === $('div[data-step]:visible ol.task-list').find('li.completed').length){
             // Completed All Tasks, give this kid a badge
             console.log('Completed all tasks for this section!');
             $('.lesson-container .success').animate({
@@ -141,7 +159,8 @@ rte = {
         }).done(function(data){
             rte.editor.getSession().setMode("ace/mode/" + mode);
             rte.editor.getSession().setValue(data);
-            rte.getTasks();
+            rte.createTasks();
+
         })
         .fail(function(err){
             console.log('error: ' + err);
