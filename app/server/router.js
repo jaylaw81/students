@@ -142,6 +142,24 @@ module.exports = function(app) {
 		}
 	});
 
+	app.get('/admin/home', function(req, res) {
+		if (req.session.adminuser == null){
+		// if user is not logged-in redirect back to login page //
+			res.redirect('/admin');
+
+		} else {
+
+			res.render('adminhome', {
+				title : 'Admin Home',
+				section: 'home',
+				navLinks: navLinks,
+				audata : req.session.adminuser,
+				userStyle: ''
+			});
+
+		}
+	});
+
 	app.get('/series/:series', function(req, res) {
 
 		var series = req.params.series;
