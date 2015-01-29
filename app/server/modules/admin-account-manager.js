@@ -15,14 +15,14 @@ var db = new MongoDB(dbName, new Server(dbHost, dbPort, {auto_reconnect: true}),
 	if (e) {
 		console.log(e);
 	}	else{
-		console.log('connected to database :: ' + dbName);
+		console.log('connected to database :: ' + dbName + ' :: admins');
 	}
 });
 var admins = db.collection('admins');
 
 /* login validation methods */
 
-exports.autoAdminLogin = function(user, pass, callback)
+exports.autoAdminLogin = function(adminuser, adminpass, callback)
 {
 	admins.findOne({adminuser:adminuser}, function(e, o) {
 		if (o){
@@ -33,7 +33,7 @@ exports.autoAdminLogin = function(user, pass, callback)
 	});
 }
 
-exports.manualAdminLogin = function(user, pass, callback)
+exports.manualAdminLogin = function(adminuser, adminpass, callback)
 {
 	admins.findOne({adminuser:adminuser}, function(e, o) {
 		if (o == null){
@@ -96,7 +96,7 @@ exports.updateAdminAccount = function(newData, callback)
 	});
 }
 
-exports.updateAdminPassword = function(email, newPass, callback)
+exports.updateAdminPassword = function(adminemail, newPass, callback)
 {
 	admins.findOne({adminemail:adminemail}, function(e, o){
 		if (e){
@@ -117,12 +117,12 @@ exports.deleteAdminAccount = function(id, callback)
 	admins.remove({_id: getObjectId(id)}, callback);
 }
 
-exports.getAdminAccountByEmail = function(email, callback)
+exports.getAdminAccountByEmail = function(adminemail, callback)
 {
 	admins.findOne({adminemail:adminemail}, function(e, o){ callback(o); });
 }
 
-exports.validateAdminResetLink = function(email, passHash, callback)
+exports.validateAdminResetLink = function(adminemail, passHash, callback)
 {
 	admins.find({ $and: [{adminemail:adminemail, adminpass:passHash}] }, function(e, o){
 		callback(o ? 'ok' : null);
@@ -160,7 +160,7 @@ var md5 = function(str) {
 	return crypto.createHash('md5').update(str).digest('hex');
 }
 
-var saltAndHash = function(pass, callback)
+var saltAndHash = function(adminpass, callback)
 {
 	var salt = generateSalt();
 	callback(salt + md5(pass + salt));
