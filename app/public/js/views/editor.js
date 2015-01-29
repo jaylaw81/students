@@ -33,6 +33,10 @@ rte = {
         var tasks = $('[data-task]');
         var currentStep = $('div[data-step]:visible');
         var i = 0;
+        if(type === 'save' && tasks.length === 0){
+
+            rte.saveData();
+        }
         for(i = 0; i < tasks.length; i++){
             var task = $(tasks[i]);
             var taskVal = task.data('task');
