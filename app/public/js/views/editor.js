@@ -60,6 +60,8 @@ rte = {
                 opacity: 1
             }, 200);
 
+            rte.saveData();
+
         } else {
             // Keep on working! Your almost there!
             console.log('Still have some more work to do in this section.');
