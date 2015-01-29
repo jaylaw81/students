@@ -1,0 +1,33 @@
+extends admin_layout
+
+block content
+	#login-container.container-fluid.login-register
+		div.heading
+			h1 Admin Login
+		form(method="post")#admin-login-form
+			div.form-group
+				input(type="text", placeholder="Username", name="adminuser", id='user-tf').required.form-control
+			div.form-group
+				input(type="password", placeholder="Password", name="adminpass", id='pass-tf').required.form-control
+			div.form-group
+				button(type="submit")#btn-login.btn.btn-primary Sign in
+			div.clear-fix
+			hr
+			div.btm-links.pull-left
+				a(href='#')#forgot-password Forgot Your Password?
+			div.btm-links.pull-right
+				a(href='/adminsignup')#create-account Create Admin Account
+			div.clearfix
+
+	include ../modals/alert
+	include ../modals/lost-password
+
+block scripts
+	script(src='/vendor/jquery.min.js')
+	script(src='/vendor/jquery.form.js')
+	script(src='/vendor/bootstrap-modal.js')
+	script(src='/vendor/bootstrap-transition.js')
+	script(src='/js/views/login.js')
+	script(src='/js/controllers/loginController.js')
+	script(src='/js/form-validators/loginValidator.js')
+	script(src='/js/form-validators/emailValidator.js')

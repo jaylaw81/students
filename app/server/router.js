@@ -1,6 +1,6 @@
-
 var CT = require('./modules/country-list');
 var AM = require('./modules/account-manager');
+var AM = require('./modules/admin-account-manager');
 var EM = require('./modules/email-dispatcher');
 var GitHubApi = require("github");
 
@@ -54,6 +54,7 @@ module.exports = function(app) {
 	  { label: 'JS', key: 'js', path: '/thebasics/javascript' }
 	]
 
+	// student login
 	app.get('/', function(req, res){
 	// check if the user's credentials are saved in a cookie //
 		if (req.cookies.user == undefined || req.cookies.pass == undefined){
@@ -71,6 +72,7 @@ module.exports = function(app) {
 		}
 	});
 
+	// user post data
 	app.post('/', function(req, res){
 		AM.manualLogin(req.param('user'), req.param('pass'), function(e, o){
 			if (!o){
@@ -80,6 +82,40 @@ module.exports = function(app) {
 				if (req.param('remember-me') == 'true'){
 					res.cookie('user', o.user, { maxAge: 900000 });
 					res.cookie('pass', o.pass, { maxAge: 900000 });
+				}
+				res.send(o, 200);
+			}
+		});
+	});
+
+	//admin login
+	app.get('/admin', function(req, res){
+	// check if the user's credentials are saved in a cookie //
+		if (req.cookies.adminuser == undefined || req.cookies.adminpass == undefined){
+			res.render('partials/adminlogin', { title: 'Hi Admin. Please login.' });
+		}	else {
+	// attempt automatic login //
+			AM.autoLogin(req.cookies.adminuser, req.cookies.adminpass, function(o){
+				if (o != null){
+					req.session.adminuser = o;
+					res.redirect('/adminhome');
+				}	else{
+					res.render('partials/adminlogin', { title: 'Hi Admin. Please login.' });
+				}
+			});
+		}
+	});
+
+	// admin post data
+	app.post('/admin', function(req, res){
+		AM.manualLogin(req.param('adminuser'), req.param('adminpass'), function(e, o){
+			if (!o){
+				res.send(e, 400);
+			}	else {
+				req.session.adminuser = o;
+				if (req.param('remember-me') == 'true'){
+					res.cookie('adminuser', o.adminuser, { maxAge: 900000 });
+					res.cookie('adminpass', o.adminpass, { maxAge: 900000 });
 				}
 				res.send(o, 200);
 			}
@@ -334,6 +370,7 @@ module.exports = function(app) {
 
 // creating new accounts //
 
+	// create new user account
 	app.get('/signup', function(req, res) {
 		res.render('signup', {  title: 'Signup', countries : CT });
 	});
@@ -345,6 +382,24 @@ module.exports = function(app) {
 			user 	: req.param('user'),
 			pass	: req.param('pass'),
 			//country : req.param('country')
+		}, function(e){
+			if (e){
+				res.send(e, 400);
+			}	else{
+				res.send('ok', 200);
+			}
+		});
+	});
+
+	// create new admin account
+	app.get('/adminsignup', function(req, res) {
+		res.render('adminsignup', {  title: 'Signup'});
+	});
+
+	app.post('/adminsignup', function(req, res){
+		AM.addNewAdminAccount({
+			adminuser 	: req.param('adminuser'),
+			adminpass	: req.param('adminpass'),
 		}, function(e){
 			if (e){
 				res.send(e, 400);
