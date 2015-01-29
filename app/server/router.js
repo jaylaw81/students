@@ -7,7 +7,7 @@ var GitHubApi = require("github");
 var github = new GitHubApi({
 	// required
 	version: "3.0.0",
-	// optional
+	// optional setting
 	debug: true,
 	protocol: "https",
 	host: "api.github.com",
