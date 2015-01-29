@@ -582,7 +582,8 @@ module.exports = function(app) {
 		mkdir('-p', user);
 		exec('sudo chmod 777 ' + user + '/');
 		cd( user );
-		exec('git clone -b '+user+' git@github.com:rhinocoders/students.git .');
+		exec("expect ../../ssh-github-clone.sh", user);
+		//exec('git clone -b '+user+' git@github.com:rhinocoders/students.git .');
 
 		//clone("git://github.com/rhinocoders/students", 'students/' + user, options);
 
