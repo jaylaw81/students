@@ -22,7 +22,7 @@ var admins = db.collection('admins');
 
 /* login validation methods */
 
-exports.autoLogin = function(user, pass, callback)
+exports.autoAdminLogin = function(user, pass, callback)
 {
 	admins.findOne({adminuser:adminuser}, function(e, o) {
 		if (o){
@@ -33,13 +33,13 @@ exports.autoLogin = function(user, pass, callback)
 	});
 }
 
-exports.manualLogin = function(user, pass, callback)
+exports.manualAdminLogin = function(user, pass, callback)
 {
 	admins.findOne({adminuser:adminuser}, function(e, o) {
 		if (o == null){
 			callback('user-not-found');
 		}	else{
-			validatePassword(adminpass, o.adminpass, function(err, res) {
+			validateAdminPassword(adminpass, o.adminpass, function(err, res) {
 				if (res){
 					callback(null, o);
 				}	else{
@@ -52,26 +52,33 @@ exports.manualLogin = function(user, pass, callback)
 
 /* record insertion, update & deletion methods */
 
-exports.addNewAccount = function(newData, callback)
+exports.addNewAdminAccount = function(newData, callback)
 {
 	admins.findOne({adminuser:newData.adminuser}, function(e, o) {
 		if (o){
 			callback('username-taken');
 		}	else{
-			saltAndHash(newData.adminpass, function(hash){
-				newData.adminpass = hash;
-			// append date stamp when record was created //
-				newData.date = moment().format('MMMM Do YYYY, h:mm:ss a');
-				admins.insert(newData, {safe: true}, callback);
+			admins.findOne({adminemail:newData.adminemail}, function(e, o) {
+				if (o){
+					callback('email-taken');
+				}	else{
+					saltAndHash(newData.adminpass, function(hash){
+						newData.adminpass = hash;
+					// append date stamp when record was created //
+						newData.date = moment().format('MMMM Do YYYY, h:mm:ss a');
+						admins.insert(newData, {safe: true}, callback);
+					});
+				}
 			});
 		}
 	});
 }
 
-exports.updateAccount = function(newData, callback)
+exports.updateAdminAccount = function(newData, callback)
 {
 	admins.findOne({adminuser:newData.adminuser}, function(e, o){
-		o.adminuser 		= newData.adminuser;
+		o.adminname 		= newData.adminname;
+		o.adminemail 	= newData.adminemail;
 		if (newData.adminpass == ''){
 			admins.save(o, {safe: true}, function(err) {
 				if (err) callback(err);
@@ -89,9 +96,9 @@ exports.updateAccount = function(newData, callback)
 	});
 }
 
-exports.updatePassword = function(email, newPass, callback)
+exports.updateAdminPassword = function(email, newPass, callback)
 {
-	admins.findOne({adminuser:adminuser}, function(e, o){
+	admins.findOne({adminemail:adminemail}, function(e, o){
 		if (e){
 			callback(e, null);
 		}	else{
@@ -105,24 +112,24 @@ exports.updatePassword = function(email, newPass, callback)
 
 /* account lookup methods */
 
-exports.deleteAccount = function(id, callback)
+exports.deleteAdminAccount = function(id, callback)
 {
 	admins.remove({_id: getObjectId(id)}, callback);
 }
 
-exports.getAccountByEmail = function(email, callback)
+exports.getAdminAccountByEmail = function(email, callback)
 {
-	admins.findOne({adminuser:adminuser}, function(e, o){ callback(o); });
+	admins.findOne({adminemail:adminemail}, function(e, o){ callback(o); });
 }
 
-exports.validateResetLink = function(email, passHash, callback)
+exports.validateAdminResetLink = function(email, passHash, callback)
 {
-	admins.find({ $and: [{adminuser:adminuser, adminpass:passHash}] }, function(e, o){
+	admins.find({ $and: [{adminemail:adminemail, adminpass:passHash}] }, function(e, o){
 		callback(o ? 'ok' : null);
 	});
 }
 
-exports.getAllRecords = function(callback)
+exports.getAllAdminRecords = function(callback)
 {
 	admins.find().toArray(
 		function(e, res) {
@@ -131,9 +138,9 @@ exports.getAllRecords = function(callback)
 	});
 };
 
-exports.delAllRecords = function(callback)
+exports.delAllAdminRecords = function(callback)
 {
-	admins.remove({}, callback); // reset accounts collection for testing //
+	admins.remove({}, callback); // reset admins collection for testing //
 }
 
 /* private encryption & validation methods */
@@ -153,13 +160,13 @@ var md5 = function(str) {
 	return crypto.createHash('md5').update(str).digest('hex');
 }
 
-var saltAndHash = function(adminpass, callback)
+var saltAndHash = function(pass, callback)
 {
 	var salt = generateSalt();
-	callback(salt + md5(adminpass + salt));
+	callback(salt + md5(pass + salt));
 }
 
-var validatePassword = function(plainPass, hashedPass, callback)
+var validateAdminPassword = function(plainPass, hashedPass, callback)
 {
 	var salt = hashedPass.substr(0, 10);
 	var validHash = salt + md5(plainPass + salt);

@@ -95,7 +95,7 @@ module.exports = function(app) {
 			res.render('partials/adminlogin', { title: 'Hi Admin. Please login.' });
 		}	else {
 	// attempt automatic login //
-			AM.autoLogin(req.cookies.adminuser, req.cookies.adminpass, function(o){
+			AM.autoAdminLogin(req.cookies.adminuser, req.cookies.adminpass, function(o){
 				if (o != null){
 					req.session.adminuser = o;
 					res.redirect('/adminhome');
@@ -108,7 +108,7 @@ module.exports = function(app) {
 
 	// admin post data
 	app.post('/admin', function(req, res){
-		AM.manualLogin(req.param('adminuser'), req.param('adminpass'), function(e, o){
+		AM.manualAdminLogin(req.param('adminuser'), req.param('adminpass'), function(e, o){
 			if (!o){
 				res.send(e, 400);
 			}	else {
@@ -398,8 +398,11 @@ module.exports = function(app) {
 
 	app.post('/adminsignup', function(req, res){
 		AM.addNewAdminAccount({
+			adminname 	: req.param('adminname'),
+			adminemail 	: req.param('adminemail'),
 			adminuser 	: req.param('adminuser'),
 			adminpass	: req.param('adminpass'),
+			//country : req.param('country')
 		}, function(e){
 			if (e){
 				res.send(e, 400);

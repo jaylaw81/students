@@ -1,27 +1,25 @@
 // preset form values if we receive a userdata object //
-- user = typeof(udata) != 'undefined' ? udata : { }
+- adminuser = typeof(audata) != 'undefined' ? audata : { }
 // store the userId on the client side in a hidden input field //
-input(type='hidden', value= user._id)#userId
+input(type='hidden', value= adminuser._id)#adminuserId
 
 #account-form-container.container-fluid.login-register
 	div.heading
-		h1 Signup
-	form( method="post")#account-form.form-horizontal
-		p#sub1.subheading Please tell us a little about yourself.
+		h1 Admin Signup
+	form( method="post")#admin-account-form.form-horizontal
 		fieldset
-			#name-cg.form-group
-				input#name-tf.input-xlarge(type='text', placeholder="Full name", name='name', value= user.name).required.form-controls
-			#email-cg.form-group
-				input#email-tf.input-xlarge(type='text', placeholder="Email address", name='email', value= user.email).required.form-controls
+			#adminname-cg.form-group
+				input#name-tf.input-xlarge(type='text', placeholder="Full name", name='adminname', value= adminuser.adminname).required.form-controls
+			#adminemail-cg.form-group
+				input#email-tf.input-xlarge(type='text', placeholder="Email address", name='adminemail', value= adminuser.adminemail).required.form-controls
 			hr
-			p#sub2.subheading
-			#user-cg.form-group
-				input#user-tf.input-xlarge.disabled(type='text', placeholder="Username", name='user', value= user.user).required.form-controls
-			#pass-cg.form-group
-				input#pass-tf.input-xlarge(type='password', placeholder="Password", name='pass', value='').required.form-controls
+			#adminuser-cg.form-group
+				input#user-tf.input-xlarge.disabled(type='text', placeholder="Username", name='adminuser', value= adminuser.adminuser).required.form-controls
+			#adminpass-cg.form-group
+				input#pass-tf.input-xlarge(type='password', placeholder="Password", name='adminpass', value='').required.form-controls
 			.form-group
-				button(type='button')#account-form-btn1.btn
-				button(type="submit")#btn-login.btn.btn-primary Create Account
+				button(type='button')#admin-account-form-btn1.btn Cancel
+				button(type="submit")#btn-login.btn.btn-primary Create Admin Account
 
 // display form errors in a custom modal window //
 

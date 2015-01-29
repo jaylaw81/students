@@ -5,9 +5,8 @@ input(type='hidden', value= user._id)#userId
 
 #account-form-container.container-fluid.login-register
 	div.heading
-		h1 Signup
+		h1 Student Signup
 	form( method="post")#account-form.form-horizontal
-		p#sub1.subheading Please tell us a little about yourself.
 		fieldset
 			#name-cg.form-group
 				input#name-tf.input-xlarge(type='text', placeholder="Full name", name='name', value= user.name).required.form-controls
@@ -20,7 +19,7 @@ input(type='hidden', value= user._id)#userId
 			#pass-cg.form-group
 				input#pass-tf.input-xlarge(type='password', placeholder="Password", name='pass', value='').required.form-controls
 			.form-group
-				button(type='button')#account-form-btn1.btn
+				button(type='button')#account-form-btn1.btn Cancel
 				button(type="submit")#btn-login.btn.btn-primary Create Account
 
 // display form errors in a custom modal window //
