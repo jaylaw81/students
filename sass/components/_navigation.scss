@@ -106,3 +106,9 @@
 		margin-right: 0;
 	}
 }
+
+body.admin {
+	.nav {
+		background-color: lighten(red, 50%);
+	}
+}
