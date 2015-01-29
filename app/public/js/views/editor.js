@@ -187,7 +187,7 @@ rte = {
         $('.ace_editor').removeClass('active-editor');
         $('div[data-editor-type="'+activeTab+'"]').addClass('active-editor');
 
-        var file = fileName || rte.activeEditor();
+        var file = rte.activeEditor();
         var path = '';
         switch(file){
             case 'styles.css':
