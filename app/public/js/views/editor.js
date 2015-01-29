@@ -80,7 +80,6 @@ rte = {
         });
 
         if(location.hash !== ''){
-            console.log(location.hash)
             var locationHash = location.hash.split('#/step-')[1];
             $('[data-step]').hide();
             $('[data-step="'+locationHash+'"]').show();
@@ -94,7 +93,7 @@ rte = {
         $(document).on('click', '.success', function(e){
             e.preventDefault();
             $(this).parent().fadeOut(500);
-            $(this).parent().next().delay(500).slideToggle(500);
+            $(this).parent().next().delay(700).slideToggle(500);
             var currentStep = $(this).parent().next().data('step');
             location.hash = '/step-' + currentStep;
             $('.success').hide();
