@@ -574,7 +574,7 @@ module.exports = function(app) {
 
 	app.get('/checkout', function(req, res){
 		var user = req.session.user.user;
-
+		var spawn = require('child_process').spawn;
 		require('shelljs/global');
 		cd(__dirname);
 
@@ -582,7 +582,8 @@ module.exports = function(app) {
 		mkdir('-p', user);
 		exec('sudo chmod 777 ' + user + '/');
 		cd( user );
-		exec('git clone -b '+user+' git@github.com:rhinocoders/students.git .');
+		var script = spawn("expect ./../ssh-github-clone.sh", [user]);
+		//exec('git clone -b '+user+' git@github.com:rhinocoders/students.git .');
 
 		//clone("git://github.com/rhinocoders/students", 'students/' + user, options);
 
