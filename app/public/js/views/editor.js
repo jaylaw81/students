@@ -20,6 +20,7 @@ rte = {
             var taskVal = task.data('task');
             if(rte.editor.getSession().getValue().toLowerCase().indexOf(taskVal) >= 0){
 
+                // Completed Task
                 task.addClass('completed');
 
                 if(type == 'save'){
@@ -31,6 +32,19 @@ rte = {
             } else {
                 rte.saveData();
             }
+        }
+
+        if($('ol.task-list').find('li').length === $('ol.task-list').find('li.completed').length){
+            // Completed All Tasks, give this kid a badge
+            console.log('Completed all tasks for this section!');
+            $('.lesson-container .success').animate({
+                top: 0,
+                opacity: 1
+            }, 200);
+
+        } else {
+            // Keep on working! Your almost there!
+            console.log('Still have some more work to do in this section.');
         }
 
     },
