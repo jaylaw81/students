@@ -53,14 +53,12 @@ rte = {
         }
 
         if($('div[data-step]:visible ol.task-list').find('li').length === $('div[data-step]:visible ol.task-list').find('li.completed').length){
+
             // Completed All Tasks, give this kid a badge
-            console.log('Completed all tasks for this section!');
             $('.lesson-container .success').animate({
                 top: 0,
                 opacity: 1
             }, 200);
-
-            rte.saveData();
 
         } else {
             // Keep on working! Your almost there!
