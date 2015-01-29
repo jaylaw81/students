@@ -1,0 +1,10 @@
+div.navigation
+	div.nav
+		a(href="/admin/home", title="Admin Home", class="home") Home
+	div.nav 
+		label(for="has-dropdown") #{adminuser.adminname}
+		input(type="checkbox", id="has-dropdown")
+		div.dropdown
+			a(href='/profile', class="icon-user", title="Profile") Profile
+			a(href='/support', class="icon-lifebuoy", title="Support")  Support
+			a(href='/logout', class="icon-logout", title="Logout") Logout
