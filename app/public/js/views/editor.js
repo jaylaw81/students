@@ -64,7 +64,15 @@ rte = {
             $('.lesson-container .success').animate({
                 top: 0,
                 opacity: 1
-            }, 200);
+            }, 200, function(){
+               var counter = 0;
+                for( i = 0; i < 100; i++){
+                    demo.spawn( 195, 76, i );
+                }
+                setTimeout(function(){
+                    $('.success canvas').hide();
+                }, 2000);
+            })
 
         } else {
             // Keep on working! Your almost there!

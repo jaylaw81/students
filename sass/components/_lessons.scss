@@ -98,7 +98,14 @@
         opacity: 0;
         position: relative;
         top: 20px;
+        overflow: hidden;
+        canvas {
+            position: absolute;
+            top: 0px;
+
+        }
         a {
+            position: relative;
 
             @extend .button.green;
             padding: 30px 10px;
