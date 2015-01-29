@@ -6,4 +6,5 @@ students
 .sass-cache
 ssh-prompt.sh
 ssh-git-update.sh
+ssh-github-clone.sh
 .htaccess
