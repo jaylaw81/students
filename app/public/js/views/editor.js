@@ -18,6 +18,8 @@ rte = {
         var activeEditor = $('div.active-editor');
         var editorType = activeEditor.data('editor-type');
 
+        $('ol.task-list').empty();
+
         for( items in tasks['series'][series][editorType]){
             var task = tasks['series'][series][editorType][items].task;
             var step = tasks['series'][series][editorType][items].step;
