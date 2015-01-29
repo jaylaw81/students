@@ -76,7 +76,6 @@ rte = {
                     });
                 }, 1000);
 
-
                 setTimeout(function(){
                     $('.success canvas').hide();
                 }, 3000);
@@ -114,15 +113,21 @@ rte = {
 
         $(document).on('click', '.success', function(e){
             e.preventDefault();
-            $(this).parent().fadeOut(500).removeClass('active');
-            $(this).parent().next().delay(700).slideToggle(500).addClass('active');
             var currentStep = $(this).parent().next().data('step');
-            location.hash = '/step-' + currentStep;
-            $('.success').css('opacity', 0);
+            if(currentStep !== undefined){
+                $(this).parent().fadeOut(500).removeClass('active');
+                $(this).parent().next().delay(700).slideToggle(500).addClass('active');
 
-            setTimeout(function(){
-                rte.getTasks();
-            }, 1200);
+
+                location.hash = '/step-' + currentStep;
+                $('.success').css('opacity', 0);
+
+                setTimeout(function(){
+                    rte.getTasks();
+                }, 1200);
+            } else {
+                // Show completed all sections
+            }
         });
 
         $(document).keydown(function(event) {
