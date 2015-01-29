@@ -61,17 +61,25 @@ rte = {
         if($('div[data-step]:visible ol.task-list').find('li').length === $('div[data-step]:visible ol.task-list').find('li.completed').length){
 
             // Completed All Tasks, give this kid a badge
+
+
             $('.lesson-container .success').animate({
                 top: 0,
                 opacity: 1
             }, 200, function(){
-               var counter = 0;
-                for( i = 0; i < 100; i++){
-                    demo.spawn( 195, 76, i );
-                }
+
+                setTimeout(function(){
+                    $.getScript('/js/views/particle.js', function(){
+                        for( i = 0; i < 100; i++){
+                            demo.spawn( 195, 76 );
+                        }
+                    });
+                }, 1000);
+
+
                 setTimeout(function(){
                     $('.success canvas').hide();
-                }, 2000);
+                }, 3000);
             })
 
         } else {
@@ -95,8 +103,8 @@ rte = {
 
         if(location.hash !== ''){
             var locationHash = location.hash.split('#/step-')[1];
-            $('[data-step]').hide();
-            $('[data-step="'+locationHash+'"]').show();
+            $('[data-step]').removeClass('active').hide();
+            $('[data-step="'+locationHash+'"]').addClass('active').show();
         }
 
         $(document).on('click', '.drawer', function(e){
@@ -106,12 +114,15 @@ rte = {
 
         $(document).on('click', '.success', function(e){
             e.preventDefault();
-            $(this).parent().fadeOut(500);
-            $(this).parent().next().delay(700).slideToggle(500);
+            $(this).parent().fadeOut(500).removeClass('active');
+            $(this).parent().next().delay(700).slideToggle(500).addClass('active');
             var currentStep = $(this).parent().next().data('step');
             location.hash = '/step-' + currentStep;
-            $('.success').hide();
-            rte.getTasks();
+            $('.success').css('opacity', 0);
+
+            setTimeout(function(){
+                rte.getTasks();
+            }, 1200);
         });
 
         $(document).keydown(function(event) {

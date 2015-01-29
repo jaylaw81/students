@@ -57,7 +57,7 @@ var particles = [];
 var pool = [];
 
 var demo = Sketch.create({
-    container: document.querySelector( '.success' )
+    container: document.querySelector('div[data-step].active .success')
 });
 
 demo.setup = function() {
@@ -117,7 +117,6 @@ demo.draw = function() {
     }
 
 };
-
 
 
 
