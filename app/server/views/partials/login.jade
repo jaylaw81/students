@@ -3,7 +3,7 @@ extends layout
 block content
 	#login-container.container-fluid.login-register
 		div.heading
-			img(src="/img/rhinocoders.png", alt="RhinoCoders")
+			img(src="/img/rhinocoders-logo.png", alt="RhinoCoders")
 			h1 Student Login
 		form(method="post")#login-form
 			div.form-group
@@ -19,8 +19,6 @@ block content
 			div.btm-links.pull-right
 				a(href='/signup')#create-account Create An Account
 			div.clearfix
-			div.clearfix
-
 
 	include ../modals/alert
 	include ../modals/lost-password
