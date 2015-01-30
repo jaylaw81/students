@@ -631,7 +631,7 @@ module.exports = function(app) {
 		stream.once('open', function(fd) {
 		  stream.write(code);
 		  stream.end();
-		});
+		}, function(){});
 
 		res.send('ok', 200);
 
