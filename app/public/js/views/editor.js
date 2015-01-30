@@ -62,7 +62,7 @@ rte = {
 
             // Completed All Tasks, give this kid a badge
 
-
+ //test
             $('.lesson-container .success').animate({
                 top: 0,
                 opacity: 1
