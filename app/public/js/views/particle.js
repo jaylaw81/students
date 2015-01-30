@@ -68,7 +68,7 @@ demo.setup = function() {
     for ( i = 0; i < 20; i++ ) {
         x = ( demo.width * 0.5 ) + random( -100, 100 );
         y = ( demo.height * 0.5 ) + random( -100, 100 );
-        demo.spawn( x, y );
+        //demo.spawn( x, y );
     }
 };
 
