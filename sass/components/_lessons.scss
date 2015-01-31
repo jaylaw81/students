@@ -12,13 +12,14 @@
         float: left;
         clear: both;
         position: absolute;
-        width: 100%;
-        top: 102px;
+        width: 70%;
+        top: 100px;
         left: 23px;
-        border-radius: 5px;
-        -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.94);
-        -moz-box-shadow:    0px 1px 3px 0px rgba(0, 0, 0, 0.94);
-        box-shadow:         0px 1px 3px 0px rgba(0, 0, 0, 0.94);
+        border-radius: 0px 5px 5px 5px;
+        -webkit-box-shadow: 5px 1px 3px 0px rgba(0, 0, 0, 0.7);
+        -moz-box-shadow:    5px 1px 3px 0px rgba(0, 0, 0, 0.7);
+        box-shadow:         5px 1px 3px 0px rgba(0, 0, 0, 0.7);
+        overflow: hidden;
 
         li {
             margin: 0;
@@ -33,12 +34,20 @@
                 display: block;
                 float: left;
                 clear: both;
-                width: 100%;
+                width: 97%;
                 @include font-size(12px);
                 text-decoration: none;
                 background-color: #146885;
                 color: $white;
                 padding: 10px 0px 10px 10px;
+
+                i {
+                    @include font-size(9px);
+                    float: right;
+                    padding-right: 13px;
+                    position: relative;
+                    top: 2px;
+                }
 
                 &:hover {
                     background-color: $rhinocoderBlue;
@@ -50,6 +59,11 @@
 
     [data-step]:not(:first-of-type){
         display: none;
+    }
+
+    h3 .active-dropdown {
+        color: $white;
+        background-color: $rhinocoderBlue;
     }
 
     [data-step] h3:not(.task) > span {

@@ -106,6 +106,9 @@ rte = {
             e.preventDefault();
             e.stopPropagation();
             e.stopImmediatePropagation();
+
+            $('h3 .dropdown').toggleClass('active-dropdown');
+
                 var stepsData = '<ul class="steps-dropdown active">';
                 $('[data-step] h3:first-of-type').each(function(i, el){
                     var text = $(el).html();
@@ -113,7 +116,7 @@ rte = {
                     step = step.split('</span>')[0];
 
                     var activeLesson = $('[data-step].active');
-                    stepsData += '<li><a class="step" href="#/step-'+step+'">'+text+'</a></li>';
+                    stepsData += '<li><a class="step" href="#/step-'+step+'">'+text+' <i class="icon-expand"></i></a></li>';
 
                 });
                 stepsData += '</ul>';
