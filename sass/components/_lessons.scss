@@ -52,7 +52,7 @@
         display: none;
     }
 
-    [data-step] h3 > span {
+    [data-step] h3:not(.task) > span {
         display: inline-block;
         padding: 5px;
         -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.94);
