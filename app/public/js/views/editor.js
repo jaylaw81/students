@@ -100,6 +100,34 @@ rte = {
             }
         });
 
+
+
+        $(document).on('click', '[data-step] h3:first-of-type span', function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+                var stepsData = '<ul class="steps-dropdown active">';
+                $('[data-step] h3:first-of-type').each(function(i, el){
+                    var text = $(el).html();
+                    var step = text.split('.')[1];
+                    step = step.split('</span>')[0];
+
+                    var activeLesson = $('[data-step].active');
+                    stepsData += '<li><a class="step" href="#/step-'+step+'">'+text+'</a></li>';
+
+                });
+                stepsData += '</ul>';
+                if($('.steps-dropdown').size() <= 0){
+                    $('[data-step].active h3:first-of-type').after(stepsData);
+
+                } else {
+                    $('.steps-dropdown').remove();
+
+
+                }
+
+        });
+
         if(location.hash !== ''){
             var locationHash = location.hash.split('#/step-')[1];
             $('[data-step]').removeClass('active').hide();
@@ -111,20 +139,37 @@ rte = {
             rte.hideLesson();
         });
 
-        $(document).on('click', '.success', function(e){
+        $(document).on('click', '.success, .step', function(e){
             e.preventDefault();
+            var targetClass = $(this).attr('class');
             var currentStep = $(this).parent().next().data('step');
+
+            if(targetClass == 'step'){
+                $('[data-step].active').fadeOut(500).removeClass('active');
+                    var passedStep = $(this).attr('href').split('-')[1];
+                    $('[data-step="'+passedStep+'"]').delay(700).slideToggle(500).addClass('active');
+                    $('.success').css('opacity', 0);
+                    location.hash = '/step-' + passedStep;
+                    $('.steps-dropdown').remove();
+                    setTimeout(function(){
+                        rte.getTasks();
+                    }, 1200);
+                return false;
+            }
+
             if(currentStep !== undefined){
                 $(this).parent().fadeOut(500).removeClass('active');
-                $(this).parent().next().delay(700).slideToggle(500).addClass('active');
+
+                    $(this).parent().next().delay(700).slideToggle(500).addClass('active');
 
 
-                location.hash = '/step-' + currentStep;
-                $('.success').css('opacity', 0);
+                    location.hash = '/step-' + currentStep;
+                    $('.success').css('opacity', 0);
 
-                setTimeout(function(){
-                    rte.getTasks();
-                }, 1200);
+                    setTimeout(function(){
+                        rte.getTasks();
+                    }, 1200);
+
             } else {
                 // Show completed all sections
             }
