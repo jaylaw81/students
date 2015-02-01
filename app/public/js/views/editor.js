@@ -62,7 +62,8 @@ rte = {
 
             // Completed All Tasks, give this kid a badge
 
- //test
+
+
             $('.lesson-container .success').animate({
                 top: 0,
                 opacity: 1
@@ -116,7 +117,7 @@ rte = {
                     step = step.split('</span>')[0];
 
                     var activeLesson = $('[data-step].active');
-                    stepsData += '<li><a class="step" href="#/step-'+step+'">'+text+' <i class="icon-expand"></i></a></li>';
+                    stepsData += '<li><a data-step="'+step+'" class="step" href="#/step-'+step+'">'+text+' <i class="icon-expand"></i></a></li>';
 
                 });
                 stepsData += '</ul>';
