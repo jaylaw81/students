@@ -21,6 +21,8 @@ rte = {
         $('ol.task-list').empty();
 
         for( items in tasks['series'][series][editorType]){
+            var seriesType = tasks['series'][series][editorType];
+            console.log(seriesType.length)
             var task = tasks['series'][series][editorType][items].task;
             var step = tasks['series'][series][editorType][items].step;
             var pattern = tasks['series'][series][editorType][items].pattern;
@@ -108,7 +110,8 @@ rte = {
             e.stopPropagation();
             e.stopImmediatePropagation();
 
-            $('h3 .dropdown').toggleClass('active-dropdown');
+
+            $('.dropdown').toggleClass('active-dropdown');
 
                 var stepsData = '<ul class="steps-dropdown active">';
                 $('[data-step] h3:first-of-type').each(function(i, el){
@@ -133,6 +136,7 @@ rte = {
         });
 
         if(location.hash !== ''){
+            $('h3 .dropdown').removeClass('active-dropdown');
             var locationHash = location.hash.split('#/step-')[1];
             $('[data-step]').removeClass('active').hide();
             $('[data-step="'+locationHash+'"]').addClass('active').show();
@@ -155,6 +159,7 @@ rte = {
                     $('.success').css('opacity', 0);
                     location.hash = '/step-' + passedStep;
                     $('.steps-dropdown').remove();
+                    $('.dropdown').removeClass('active-dropdown');
                     setTimeout(function(){
                         rte.getTasks();
                     }, 1200);
@@ -169,13 +174,15 @@ rte = {
 
                     location.hash = '/step-' + currentStep;
                     $('.success').css('opacity', 0);
-
+                    $('.dropdown').removeClass('active-dropdown');
                     setTimeout(function(){
                         rte.getTasks();
+
                     }, 1200);
 
             } else {
                 // Show completed all sections
+                $('.dropdown').removeClass('active-dropdown');
             }
         });
 
