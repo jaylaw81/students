@@ -82,7 +82,7 @@
         border-radius: 5px;
         cursor: pointer;
         overflow: hidden;
-        width: 8%;
+        width: 13%;
         height: 26px;
         clear: both;
         position: relative;
@@ -90,13 +90,21 @@
         span {
             position: relative;
             display: block;
+            float: left;
         }
         i {
-            clear: both;
             display: inline-block;
-
-            left: 6px;
-            top: 40px;
+            left: 0px;
+            top: 8px;
+            float: right;
+            font-size: 10px;
+            position: relative;
+        }
+        &.active-dropdown {
+            i:before {
+                content: '\e80b';
+                top: 6px;
+            }
         }
     }
 
