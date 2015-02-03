@@ -607,7 +607,7 @@ module.exports = function(app) {
 
 		cd(__dirname);
 
-		res.send('ok', 200);
+		res.end();
 
 	});
 
@@ -636,6 +636,8 @@ module.exports = function(app) {
 		res.send('ok', 200);
 
 	});
+
+
 
 	app.post('/readFile', function(req, res){
 		require('shelljs/global');
@@ -696,6 +698,35 @@ module.exports = function(app) {
 			});
 
 		}
+	});
+
+	app.post('/upload/images', function(req, res){
+
+		var fs = require('fs');
+		require('shelljs/global');
+
+		var user = req.session.user.user;
+
+		cd(__dirname);
+
+		cd('../../students/' + user + '/');
+		mkdir('-p', 'images');
+		cd('images/');
+
+		var filePath = pwd() + '/' + req.files.displayImage.name;
+
+		fs.readFile(req.files.displayImage.path, function (err, data) {
+		  // ...
+		  var newPath = filePath;
+		  fs.writeFile(newPath, data, function (err) {
+			exec('git add -A');
+			exec('git commit -m "Commit work for '+ user +' @ ' + getDateTime() + '"');
+			exec('git remote set-url origin git@github.com:rhinocoders/students.git');
+			exec('expect ../../../ssh-prompt.sh');
+
+			res.redirect("back");
+		  });
+		});
 	});
 
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });

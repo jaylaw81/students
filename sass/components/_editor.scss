@@ -1,3 +1,67 @@
+.md-modal  {
+    left: 55%;
+    .md-content {
+        float: left;
+    }
+
+    h3 {
+        clear: both;
+        width: 93%;
+        text-align: center;
+    }
+
+    .local-images {
+        float: left;
+        width: 81%;
+    }
+
+    .upload {
+        float: left;
+        width: 81%;
+    }
+
+    h5.seperator {
+        margin-top: 50px;
+        text-align: center;
+        position: relative;
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        span {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 10px 23px;
+            background-color: white;
+            border-radius: 31px;
+            position: relative;
+            z-index: 2;
+        }
+
+        &:after {
+            content: '';
+            height: 1px;
+            width: 25%;
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            background-color: #ccc;
+            z-index: 1;
+        }
+        &:before {
+            content: '';
+            height: 1px;
+            width: 25%;
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            background-color: #ccc;
+            z-index: 1;
+        }
+    }
+}
+
+
+
 div.icon-loader-container {
     display: none;
     @include font-size(20px);

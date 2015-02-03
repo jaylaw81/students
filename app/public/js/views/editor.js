@@ -64,7 +64,9 @@ rte = {
 
             // Completed All Tasks, give this kid a badge
 
-
+            $(document).on('click', '.icon-picture', function(e){
+                console.log('image click')
+            });
 
             $('.lesson-container .success').animate({
                 top: 0,
@@ -92,6 +94,7 @@ rte = {
     },
 
     events: function(){
+
         $(document).on('click', '.save-work', function(e){
             e.preventDefault();
             if($('.ace_error').size() <= 0){
@@ -102,8 +105,6 @@ rte = {
                 alert('please check for syntax errors!');
             }
         });
-
-
 
         $(document).on('click', '[data-step] h3:first-of-type span', function(e){
             e.preventDefault();
@@ -129,8 +130,6 @@ rte = {
 
                 } else {
                     $('.steps-dropdown').remove();
-
-
                 }
 
         });
