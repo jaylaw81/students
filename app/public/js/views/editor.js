@@ -22,7 +22,6 @@ rte = {
 
         for( items in tasks['series'][series][editorType]){
             var seriesType = tasks['series'][series][editorType];
-            console.log(seriesType.length)
             var task = tasks['series'][series][editorType][items].task;
             var step = tasks['series'][series][editorType][items].step;
             var pattern = tasks['series'][series][editorType][items].pattern;
@@ -96,7 +95,7 @@ rte = {
                 url: '/dir/images/',
                 type: 'post'
             }).done(function(data){
-                console.log(data);
+
                 var html = '';
                 $.each(data, function(i, el){
                     html += '<li>/'+user+'/images/'+el+'</li>';
