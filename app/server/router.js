@@ -350,7 +350,7 @@ module.exports = function(app) {
 		cd(__dirname);
 
 		cd('../../students/');
-		exec('rm -rf ' + user + '/');
+		//exec('rm -rf ' + user + '/');
 
 		res.clearCookie('user');
 		res.clearCookie('pass');
