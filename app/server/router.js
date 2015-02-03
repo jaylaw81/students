@@ -707,7 +707,11 @@ module.exports = function(app) {
 		var user = req.session.user.user;
 
 		cd(__dirname);
-		cd('../../students/' + user + '/' + type + '/');
+		cd('../../students/' + user + '/');
+		mkdir('-p', 'images');
+
+		cd(type + '/');
+
 		var files = ls('*.*');
 		res.send(files, 200);
 	});
@@ -722,7 +726,7 @@ module.exports = function(app) {
 		cd(__dirname);
 
 		cd('../../students/' + user + '/');
-		mkdir('-p', 'images');
+
 		cd('images/');
 
 		var filePath = pwd() + '/' + req.files.displayImage.name;
