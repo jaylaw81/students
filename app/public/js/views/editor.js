@@ -90,6 +90,18 @@ rte = {
 
     events: function(){
 
+        $(document).on('click', '.remove-asset', function(e){
+            var type = $(this).data('type');
+            var file = $(this).data('asset');
+
+            $.ajax({
+                url: '/remove/'+type+'/'+file,
+                type: 'post'
+            }).done(function(data){
+                $(this).parent().remove();
+            });
+        });
+
          $(document).on('click', '.icon-picture', function(e){
             $.ajax({
                 url: '/dir/images/',
@@ -98,7 +110,7 @@ rte = {
 
                 var html = '';
                 $.each(data, function(i, el){
-                    html += '<li>/'+user+'/images/'+el+'</li>';
+                    html += '<li>/'+user+'/images/'+el+' <i data-type="images" data-asset="'+el+'" class="remove-asset icon-remove"></i></li>';
                 });
                 $('.local-images ul').html(html);
             })
