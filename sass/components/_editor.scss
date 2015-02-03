@@ -20,6 +20,19 @@
         width: 81%;
     }
 
+    .local-images {
+        padding: 10px 0 0 20px;
+
+        ul {
+            margin: 0;
+        }
+        li {
+            @include font-size(11px);
+            padding: 0 0 5px 0;
+            margin: 0;
+        }
+    }
+
     h5.seperator {
         margin-top: 50px;
         text-align: center;
@@ -27,6 +40,7 @@
         color: black;
         font-size: 16px;
         font-weight: 500;
+        clear: both;
         span {
             display: inline-block;
             border: 1px solid #ccc;

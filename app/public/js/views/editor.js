@@ -64,10 +64,6 @@ rte = {
 
             // Completed All Tasks, give this kid a badge
 
-            $(document).on('click', '.icon-picture', function(e){
-                console.log('image click')
-            });
-
             $('.lesson-container .success').animate({
                 top: 0,
                 opacity: 1
@@ -94,6 +90,20 @@ rte = {
     },
 
     events: function(){
+
+         $(document).on('click', '.icon-picture', function(e){
+            $.ajax({
+                url: '/dir/images/',
+                type: 'post'
+            }).done(function(data){
+                console.log(data);
+                var html = '';
+                $.each(data, function(i, el){
+                    html += '<li>/'+user+'/images/'+el+'</li>';
+                });
+                $('.local-images ul').html(html);
+            })
+        });
 
         $(document).on('click', '.save-work', function(e){
             e.preventDefault();
@@ -397,7 +407,10 @@ rte = {
 
         if(Boolean(output) === true && lessonContainer !== 'js'){
             var content = rte.editor.getSession().getValue();
+
             $('.output .display').html(content);
+
+
         }
 
         if(lessonContainer == 'js'){

@@ -700,6 +700,18 @@ module.exports = function(app) {
 		}
 	});
 
+	app.post('/dir/:type/', function(req, res){
+		var type = req.params.type;
+
+		require('shelljs/global');
+		var user = req.session.user.user;
+
+		cd(__dirname);
+		cd('../../students/' + user + '/' + type + '/');
+		var files = ls('*.*');
+		res.send(files, 200);
+	});
+
 	app.post('/upload/images', function(req, res){
 
 		var fs = require('fs');
@@ -727,6 +739,19 @@ module.exports = function(app) {
 			res.redirect("back");
 		  });
 		});
+	});
+
+	app.get('/:user/images/:asset', function(req, res){
+		var user = req.params.user;
+		var asset = req.params.asset;
+		var fs = require('fs');
+		require('shelljs/global');
+
+		cd(__dirname);
+		cd('../../students/' + user + '/images/');
+
+		var img = fs.readFileSync('./' + asset);
+		res.end(img, 'binary');
 	});
 
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });
