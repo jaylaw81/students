@@ -1,1 +1,1 @@
-alert('joi');
+document.write('');
