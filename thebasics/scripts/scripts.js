@@ -1,2 +1,1 @@
-document.write('')
-sd
+document.write('');
