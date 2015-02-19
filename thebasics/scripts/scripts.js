@@ -1,1 +1,1 @@
-var username = 'jason';
+var myVariable = "";
