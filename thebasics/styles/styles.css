@@ -3,3 +3,8 @@ h1 {
     text-decoration: underline;
     font-size: 40px;
 }
+.main-header {
+    background-color: #22acdb;
+    margin: 0 auto;
+    width: 90%;
+}
