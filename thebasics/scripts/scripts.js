@@ -6,3 +6,5 @@ var myFullString = "A string may contain as many " stringPartLetters ", " string
 document.querySelector("#my-string").innerHTML = myFullString;
 var count = 10;
 var multiplier = 20;
+var calculateNumers = 10 * 20;
+var calculateVariables = count * multiplier;
