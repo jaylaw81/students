@@ -8,3 +8,4 @@ var count = 10;
 var multiplier = 20;
 
 var calculateVariables = "I have "+(count * multiplier)+" friends on 'facebook'.";
+console.log(calculateVariables);
