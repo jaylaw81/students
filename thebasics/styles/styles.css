@@ -12,3 +12,7 @@ h2 {
     width: 90%;
     margin: 0 auto;
 }
+.main-header .logo { 
+    max-width: 120px; 
+    width: 75%;
+}
