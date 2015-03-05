@@ -7,3 +7,8 @@ h1 {
 h2 {
     color: green;
 }
+.main-header {
+    background-color: #22acdb;
+    width: 90%;
+    margin: 0 auto;
+}
