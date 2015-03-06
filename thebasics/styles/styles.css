@@ -16,4 +16,4 @@
     margin: 40px 0 0 0;
     padding: 0;
 }
-.main-header .nav .nav-links{ display: inline-block; float: right;}
+.main-header .nav .nav-links .link{ display: inline-block; float: right;}
