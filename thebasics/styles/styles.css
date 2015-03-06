@@ -23,3 +23,8 @@
 .gallery-main-image { margin-bottom: 10px; }
 .main-header .nav .nav-links .link a { color: #fff; padding: 10px; transition: all, 0.2s, ease-in-out; text-decoration: none; }
 .main-header .nav .nav-links .link a:hover { color: #999; background-color: #333; }
+.photo-gallery { margin: 0; padding: 0; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+
