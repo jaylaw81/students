@@ -1,6 +1,7 @@
 h1 {
     color: red;
     font-size: 100px;
+    border: 1px solid red;
     text-decoration: underline;
     font-family: Arial;
 }
