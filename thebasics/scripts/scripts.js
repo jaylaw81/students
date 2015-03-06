@@ -1,4 +1,4 @@
-var myVariable = "value2";
+var myVariable = "value33";
 var stringPartLetters = "letters";
 var stringPartNumbers = "numbers";
 var stringPartCharacters = "characters";
