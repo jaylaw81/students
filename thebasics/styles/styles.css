@@ -28,5 +28,6 @@
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 .photo-gallery li { float: left; list-style: none; max-height: 165px; overflow: hidden; position: relative; width: 25%; }
-
+.main-footer { background-color: #105b74; padding: 20px; }
+.main-footer .copyright, .main-footer .terms { color: #fff; font-size: 13px; font-weight: bold; margin: 0; padding: 0; }
 
