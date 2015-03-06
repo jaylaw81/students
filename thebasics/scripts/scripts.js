@@ -1,2 +1,2 @@
-//document.write('');
+document.write('');
 //alert('hi');
