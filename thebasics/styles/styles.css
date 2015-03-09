@@ -2,4 +2,5 @@ h1 {
     text-transform: lowercase;
     color: green;
     display: block;
+    background-color: red;
 }
