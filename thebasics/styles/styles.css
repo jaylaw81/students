@@ -7,3 +7,4 @@
     width: 75%;
 }
 .main-header .nav{ display: inline-block; float: right;}
+.main-header .nav .nav-links{ display: inline-block; float: right;}
