@@ -11,3 +11,6 @@ img {
 .main-body { width: 65%; float: left; }
 .gallery-main-image { margin-bottom: 10px; }
 .image-container { height: 600px; margin: 0 auto; width: 800px; }
+.photo-gallery { margin: 0; padding: 0; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
