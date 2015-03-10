@@ -2,3 +2,4 @@
 .main-header { 
     background-color:  #22acdb;
 }
+.main-header .logo{ max-width: 120px; width: 75%;}
