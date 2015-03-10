@@ -6,3 +6,4 @@
     max-width: 120px;
     width: 75%;
 }
+.main-header .nav{ display: inline-block; float: right;}
