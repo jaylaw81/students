@@ -16,7 +16,7 @@ body {
 .main-header .logo {
     max-width: 120px;
     width: 80%;
-        border: 25px dashed red;
+        border: 10px dashed red;
         border-radius: 20px;
 }
 
