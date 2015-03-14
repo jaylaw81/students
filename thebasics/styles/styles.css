@@ -13,8 +13,8 @@ body {
 .main-header .logo {
     max-width: 125px;
     width: 75%; 
-    border: 20px solid #0099FF;
-    border-radius: 20px; 
+    border: 10px solid #0099FF;
+    border-radius: 10px; 
     }
 .main-header .nav {
     float: right;
