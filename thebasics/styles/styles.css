@@ -84,3 +84,8 @@ body {
     max-height: 165px;
     width: 100%
 }
+
+.main-footer { 
+    background-color: #1045b74;
+    padding: 20px;
+}
