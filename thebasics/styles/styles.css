@@ -34,11 +34,28 @@ body{background-color: lightblue;}
 }
 
 .main-header .nav .nav-links .link a:hover { 
-    color: blue; background-color: lightblue;}
-    .main-body { 
-        width: 85%; float: left; 
-        }
-    .gallery-main-image {
-        margin-bottom: 10px; }
-        .image-container { height: 600px; margin: 0 auto; width: 800px; }
+    color: blue; 
+    background-color: lightblue;
+}
+.main-body { 
+    width: 85%; 
+    float: left; 
+}
+.gallery-main-image {
+    margin-bottom: 10px; 
+}
+.image-container { 
+    height: 600px;
+    margin: 0 auto; 
+    width: 800px; 
+}
+.photo-gallery { 
+    margin: 0; padding: 0; 
+}
+.clearfix:before, .clearfix:after { 
+    content: " "; display: table; 
+}
+.clearfix:after { 
+    clear: both; 
+}
         
