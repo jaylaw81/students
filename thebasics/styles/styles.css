@@ -1,15 +1,15 @@
 body {
-    background-color: red;
+    background-color: Blue;
 }
 
 .main-header, .section-container, .main-footer { 
     width: 90%; 
     margin: 0 auto; 
-    background-color: yellow; 
+    background-color: grey; 
     padding: 20px; 
 }
 .main-header {
-    background-color: green;
+    background-color: white;
 }
 .main-header .logo {
     max-width: 120px; 
