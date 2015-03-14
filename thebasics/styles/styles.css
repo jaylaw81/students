@@ -26,7 +26,7 @@ body{background-color: lightblue;}
 .main-header .nav .nav-links .link {
     display: inline;
     margin-left: 0px;
-    padding-top: 20px;
+    
 }
 .main-header .nav .nav-links .link a{
     color: white; 
@@ -39,6 +39,7 @@ body{background-color: lightblue;}
 .main-header .nav .nav-links .link a:hover { 
     color: blue; 
     background-color: lightblue;
+    padding-top: 25px
 }
 .main-body { 
     width: 85%; 
