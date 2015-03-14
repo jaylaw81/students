@@ -1,3 +1,8 @@
+body {
+    backround-color: red;
+}
+
+
 .main-header, .section-container, .main-footer 
 { width: 90%; 
 margin: 0 auto; 
