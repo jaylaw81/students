@@ -11,3 +11,5 @@ body {
 .main-header {
     background-color: beige;
 }
+
+.main-header .nav .nav-links {margin: 40px 0 0; padding: 0px }
