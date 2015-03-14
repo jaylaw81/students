@@ -86,7 +86,7 @@ body {
     font-style: italic;
     font-weight: normal;
 }
-.main-footer a {
+.main-footer a, .main-footer li {
     color: white;
     text-decoration: none;
     }
