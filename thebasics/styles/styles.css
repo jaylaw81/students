@@ -11,4 +11,6 @@ body {
 .main-header {
     background-color: pink;
 }
-.main-header .logo {max-width: 120px; width: 75%; }
+.main-header .logo {
+    max-width: 120px; width: 75%; 
+}
