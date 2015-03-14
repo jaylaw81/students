@@ -65,7 +65,7 @@ body{background-color: lightblue;}
     height: auto; max-height: 165px; width: 100% 
 }
 .main-footer { 
-    background-color: maroon; padding: 20px; 
+    background-color: red; padding: 20px; 
 }
 .main-footer .copyright, .main-footer .terms {
     color: maroon; font-size: 13px; font-weight: bold; margin: 0; padding: 0; 
