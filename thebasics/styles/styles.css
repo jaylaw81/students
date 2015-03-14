@@ -18,3 +18,5 @@ body {
     max-width: 120px;
     width: 75%;
 }
+
+.main-header .nav .nav-links .link { display: inline; margin-left: 10px }
