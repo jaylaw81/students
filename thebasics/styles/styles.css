@@ -78,3 +78,7 @@ body {
     bold; margin: 0; 
     paddling: 0 
 }
+.main-footer .terms { 
+    font-style: italic; 
+    font-weight: normal; 
+}
