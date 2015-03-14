@@ -29,4 +29,4 @@ background-color: green;
                 color: white;
                 padding: 10px; transition:all, 0.2, ease-in-out; text-decoration:none;
             }.main-header .nav .nav-links .link a:hover
-            { color: gold; background-color:purple ; }
+            { color: purple; background-color:gold ; }
