@@ -53,4 +53,9 @@ body {
 .photo-gallery li .photo { 
     height: auto; max-height: 165px; width: 100%;
 }
-.main-footer { backround-color: #105b74; padding: 20px; }
+.main-footer { 
+    backround-color: #105b74; padding: 20px; 
+}
+.main-footer .copyright, .main-footer .terms { 
+    color: #fff; font-size: 13px; font-weight: bold; margin: 0; padding: 0; 
+}
