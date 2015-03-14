@@ -52,11 +52,17 @@ body {
     margin-bottom: 10px;
 }
 
-.image-container, .image-container img{
+.image-container{
     height:600px;
     margin: 0 auto;
     width: 800px;
 }
+
+.image-container img{
+    max-height: 600px;
+    width: 100%;
+}
+
 
 .photo-gallery { 
     margin:0;
