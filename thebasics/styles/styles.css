@@ -30,4 +30,7 @@ body {
     color:red;
     background-color: green;
 }
-.main-body { width: 85%; float: left; }
+.main-body { 
+    width: 85%;
+    float: left;
+}
