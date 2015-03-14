@@ -38,6 +38,7 @@ body {
 .main-header .nav .nav-links .link a:hover {
     color: white;
     background-color: black; 
+    border: 10px dotted black;
 }
 
 .main-body {
