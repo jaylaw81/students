@@ -31,7 +31,7 @@ body {
 .main-header .nav .nav-links .link a {
     color: green;
     padding: 10px;
-    transition: all, 1s, ease-in-out;
+    transition: all, 0.2s, ease-in-out;
     text-decoration: none;
 }
 .main-header .nav .nav-links .link a:hover {
