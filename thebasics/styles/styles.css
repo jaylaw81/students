@@ -45,7 +45,7 @@ body {
 }
 .image-container {
     height: 600px; 
-    margin: 0 auto; 
+    margin: 0 auto 20px; 
     width: 800px; 
 }
 .image-container img {
