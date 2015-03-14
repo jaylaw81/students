@@ -30,3 +30,4 @@ body {
     color:red;
     background-color: green;
 }
+.main-body { width: 82%; float: left; }
