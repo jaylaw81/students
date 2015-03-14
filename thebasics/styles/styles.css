@@ -12,6 +12,7 @@ body {
 .main-header {
     background-color: silver;
 }
+
 .main-header .logo { 
     max-width: 120px;
     width: 90%;
@@ -30,10 +31,19 @@ body {
     color:red;
     background-color: green;
 }
+
 .main-body { 
     width: 85%;
     float: left;
 }
+
 .gallery-main-image {
     margin-bottom: 10px;
 }
+
+.image-container {
+    height: 600px;
+    margin: 0 auto;
+    width: 800px;
+}
+    
