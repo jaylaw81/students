@@ -29,5 +29,5 @@ body {
     color: #000000;
     padding: 10px 20px 10 px 20px;
     transition: all, 0.2s, ease-in-out;
-    text-decoration: none;
+    text-decoration: strong;
 }
