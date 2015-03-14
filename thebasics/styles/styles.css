@@ -81,7 +81,7 @@ body {
     padding: 20px;
 }
 
-.main-footer .copyright, .main-footer .terms {
+.main-footer p {
     color: white;
     font-size: 13px;
     font-weight: bold;
