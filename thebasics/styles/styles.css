@@ -13,7 +13,7 @@ body{background-color: lightblue;}
 .main-header .logo {
     max-width: 120px; 
     width: 75%; 
-    border: 5px dashed red;
+    border: 5px dashed lightblue;
 } 
 .main-header .nav {
     float: right;
