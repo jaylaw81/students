@@ -33,6 +33,8 @@ background-color: green;
     color: gray; 
     background-color: green; 
 }
+.main-body 
+{ width: 85%; float: left; }
         
         
         
