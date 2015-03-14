@@ -31,7 +31,7 @@ body {
 .main-header .nav .nav-links .link a {
     color : black;
     padding: 10px;
-    transition: all, 0.0000001s, ease-in-out;
+    transition: all, 5s, ease-in-out;
     text-decoration: none;
 }
 
