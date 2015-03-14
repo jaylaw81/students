@@ -58,7 +58,7 @@ margin-bottom: 10px;
 
 
 .clearfix:before, .clearfix:after {
-content: "hello"; display: table; 
+content: ""; display: table; 
 }
 
 .clearfix:after {
