@@ -33,7 +33,7 @@ background-color: green;
 
 .main-header .nav .nav-links .link a { color: #fff; padding: 10px; transition: all, 0.2s, ease-in-out; text-decoration: none; }
 
-.main-header .nav .nav-links .link a:hover  { 
+.main-header .nav .nav-links .link a.secondlink:hover  { 
     color: green; 
     background-color:yellow;
     padding-top: 75px
