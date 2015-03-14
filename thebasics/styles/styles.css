@@ -35,7 +35,7 @@ background-color: green;
 .main-header .nav .nav-links .link a:hover  { 
     color: gray; 
     background-color: green;
-    padding-top: 50px
+    padding-top: 100px
 }
 .main-body 
 { width: 85%; float: left;
