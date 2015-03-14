@@ -75,3 +75,10 @@ body {
     background-color: #105b74; 
     padding: 20px;
 }
+.main-footer .copyright, .main-footer .terms {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
