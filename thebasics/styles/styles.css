@@ -1,7 +1,11 @@
+body {
+    background-color: red;
+}
+
 .main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
-    background-color:
-    #fff; padding: 20px; }
+    background-color: white;
+    padding: 20px; }
 .main-header .logo { max-width: 120px; width: 75% }
 .main-header .nav { float: right; }
