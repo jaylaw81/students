@@ -53,13 +53,13 @@ body {
 }
 
 .image-container{
-    height:600px;
+    height:450px;
     margin: 0 auto;
     width: 800px;
+    overflow: hidden;
 }
 
 .image-container img{
-    max-height: 600px;
     width: 100%;
 }
 
