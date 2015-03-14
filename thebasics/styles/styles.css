@@ -37,7 +37,7 @@ background-color: gray;
 .main-header .nav .nav-links .link a:hover  { 
     color: gray; 
     background-color: white;
-    padding-top: 0.25px
+    padding-top: 25px
 }
 .gallery-main-image { margin-bottom: 10px; }
 .image-container { height: 600px; margin: 0 auto; width: 800px; overflow: hidden; }
