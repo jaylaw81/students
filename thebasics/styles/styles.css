@@ -63,7 +63,8 @@ background-color: gray;
     }
     
 .main-header .logo {
-    max-width: 60px;
+    max-width: 80
+px;
     width: 75%;
     border: 5px solid black;
 }
