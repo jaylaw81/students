@@ -10,7 +10,7 @@ background-color: green;
 }
 .main-header {
     background-color: teal;
-    dotted:5px solid grey;
+    dashed:5px solid grey;
 }
 .main-header .logo {
     max-width: 120px;
