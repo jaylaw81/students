@@ -67,7 +67,7 @@ body{background-color: lightblue;}
 .main-footer { 
     background-color: maroon; padding: 20px; 
 }
-.main-footer .copyright .main-footer .terms {
+.main-footer .copyright, .main-footer .terms {
     color: pink; font-size: 13px; font-weight: bold; margin: 0; padding: 0; }
 
     
