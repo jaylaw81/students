@@ -75,7 +75,6 @@ body {
 }
 .main-footer {
     background-color: black;
-    font-style: underline;
 }
 .main-footer .copyright, .main-footer .terms { 
     color: white; 
