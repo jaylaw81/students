@@ -5,7 +5,7 @@ background-color: green;
 .main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
-    background-color:pink
+    background-color:gray
 ;
     padding: 20px 20px 20px 20px;
 }
