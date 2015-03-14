@@ -56,3 +56,8 @@ body {
     margin: 0 auto;
     width: 800px;
 }
+
+.photo-gallery { 
+    margin:0;
+    padding:0;
+}
