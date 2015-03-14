@@ -32,4 +32,8 @@ body {
     color: red; 
     background-color: orange;
 }
-.main-body {width: 85%; float:left; }
+.main-body {width: 85%; float:left; 
+}
+.gallery-main-image {
+    margine-bottom: 10px;
+}
