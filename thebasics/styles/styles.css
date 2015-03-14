@@ -1,6 +1,14 @@
+body {
+    background-color: black;
+}
+
 .main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
+}
+
+.main-header {
+    background-color: blue;
 }
