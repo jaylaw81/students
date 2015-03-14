@@ -48,6 +48,10 @@ body {
     margin: 0 auto; 
     width: 800px; 
 }
+.image-container img {
+    width: 800px;
+    height:600px;
+}
 .photo-gallery { 
     margin: 0; 
     padding: 0; 
