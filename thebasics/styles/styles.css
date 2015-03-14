@@ -26,6 +26,7 @@ body{background-color: lightblue;}
 .main-header .nav .nav-links .link {
     display: inline;
     margin-left: 0px;
+    padding-top: 20px;
 }
 .main-header .nav .nav-links .link a{
     color: white; 
