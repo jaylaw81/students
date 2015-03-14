@@ -16,4 +16,7 @@ body {
     width: 75%;
 }
 
+.main-header .nav {
+    float: right;
+}
     
