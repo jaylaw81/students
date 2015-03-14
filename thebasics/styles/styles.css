@@ -17,6 +17,7 @@ background-color: green;
     max-width: 120px;
     width: 75%;
     border:5px dashed green;
+    border-radius: 20px 0 20px 0
 }
 .main-header .nav {
     float: right;
