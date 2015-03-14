@@ -11,7 +11,7 @@ body {
 .main-header 
 { 
     background-color: black; 
-    border: 5px double blue;
+    border: 5px dashed blue;
 }
 .main-header .logo {
     max-width: 120px; 
