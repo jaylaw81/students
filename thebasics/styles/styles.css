@@ -29,7 +29,7 @@ body{background-color: lightblue;}
 .main-header .nav .nav-links .link a{
     color: white; 
     padding: 10px;
-    transition: all, 0.10s, ease-in-out; 
+    transition: all, 0.1s, ease-in-out; 
     text-decoration: none;
     
 }
