@@ -1,4 +1,4 @@
-body {
+.body {
     background-color: #0099FF;
 }
 .main-header, .section-container, .main-footer {
@@ -46,4 +46,8 @@ body {
     height: 600px;
     margin: 0 auto;
     width: 800px;
+}
+.photo-gallery {
+    margin: 0;
+    padding: 0;
 }
