@@ -35,3 +35,7 @@ body {
     color: aqua;
     background-color: #FF9933;
 }
+.main-body {
+    width: 85%;
+    float: left;
+}
