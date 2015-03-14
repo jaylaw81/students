@@ -11,6 +11,7 @@ background-color: green;
 .main-header {
     background-color: teal;
    border:5px dashed green;
+
 }
 .main-header .logo {
     max-width: 120px;
@@ -33,7 +34,8 @@ background-color: green;
 
 .main-header .nav .nav-links .link a:hover  { 
     color: gray; 
-    background-color: green; 
+    background-color: green;
+    padding-bottom: 25px
 }
 .main-body 
 { width: 85%; float: left;
