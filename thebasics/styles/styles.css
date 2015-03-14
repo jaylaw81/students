@@ -26,7 +26,7 @@ body {
 }
 
 .main-header .nav .nav-links .link {
-    display: inline;
+    display: inline bold;
     margin-left: 10px;
 }
 
