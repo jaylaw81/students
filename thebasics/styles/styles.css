@@ -43,10 +43,12 @@ body {
 
 .main-header .nav .nav-links .link a.firstlink:hover {
     padding-bottom: 45px;
+    background-color: blue;
 }
 
 .main-header .nav .nav-links .link a.secondlink:hover {
     padding-bottom: 5px;
+    background-color: pink;
 }
 
 .main-body {
