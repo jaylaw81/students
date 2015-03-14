@@ -42,10 +42,10 @@ body {
 .main-header .nav .nav-links .link a:hover {
     color: white;
     background-color: black; 
-    padding-bottom: 22250px;
-    padding-top: 22250px;
-    padding-left: 22250px;
-    padding-right: 22250px;
+    padding-bottom: 250px;
+    padding-top: 250px;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
 .main-body {
