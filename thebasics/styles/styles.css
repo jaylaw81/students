@@ -39,8 +39,8 @@ background-color: green;
     padding-top: 75px
 }
 .main-header .nav .nav-links .link a.firstlink:hover  { 
-    color: blue; 
-    background-color: green;
+    color: orange; 
+    background-color: red;
     padding-top: 75px
 }
 .main-body 
