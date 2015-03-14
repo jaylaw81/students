@@ -1,11 +1,11 @@
 body {
-background-color: green;
+background-color: gray;
 }
 
 .main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
-    background-color:gray;
+    background-color:beige;
     padding:20px 20px 20px 20px;
 }
 .main-header {
@@ -36,7 +36,7 @@ background-color: green;
 
 .main-header .nav .nav-links .link a:hover  { 
     color: gray; 
-    background-color: green; 
+    background-color: white; 
 }
         
         
