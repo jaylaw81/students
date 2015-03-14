@@ -41,8 +41,11 @@ background-color: green;
     .image-container
     { height: 600px; margin: 0 auto; width: 800px; }    
     .photo-gallery { margin: 0; padding: 0; }
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }    
+.clearfix:before, .clearfix:after 
+{ content: " "; display: table; }
+.clearfix:after 
+{ clear: both;
+}    
         
         
         
