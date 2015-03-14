@@ -11,3 +11,8 @@ body {
 .main-header{
     background-color: green;
 }
+
+.main-header .logo {
+    max-width: 120px;
+    width: 80%;
+}
