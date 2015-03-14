@@ -12,7 +12,8 @@ body {
     background-color: pink;
 }
 .main-header .logo {
-    max-width: 120px; width: 75%; 
+    max-width: 120px; 
+    width: 75%; 
 }
 .main-header .nav { 
     float: right; 
