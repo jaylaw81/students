@@ -25,5 +25,13 @@ body{background-color: lightblue;}
     display: inline;
     margin-left: 0px;
 }
-.main-header .nav .nav-links .link a{ color: white; padding: 10px;
-transition: all, 0.2s, ease-in-out; text-decoration: none; }
+.main-header .nav .nav-links .link a{
+    color: white; 
+    padding: 10px;
+    transition: all, 0.2s, ease-in-out; 
+    text-decoration: none;
+    
+}
+
+.main-header .nav .nav-links .link a:hover { 
+    color: blue; background-color: light blue;}
