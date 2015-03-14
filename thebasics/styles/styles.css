@@ -43,7 +43,7 @@ body{background-color: lightblue;}
 }
 .main-header .nav .nav-links .link a.firstlink:hover { 
     color: blue; 
-    background-color: lightblue;
+    background-color: red;
     padding-top: 30px
 }
 
