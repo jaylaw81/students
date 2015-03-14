@@ -33,7 +33,7 @@ body {
     text-decoration: none; 
 }
 .main-header .nav .nav-links .link a:hover { 
-    color: grey; 
+    color: white; 
     background-color: blue; 
 }
 .main-body {
