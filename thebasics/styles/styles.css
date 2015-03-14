@@ -44,7 +44,8 @@ body {
 }
 
 .main-body {
-    display: block;
+    width: 85%;
+    float: left;
 }
 
 
