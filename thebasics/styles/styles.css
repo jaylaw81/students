@@ -91,8 +91,10 @@ body {
 
 .main-footer .terms {
     font-size: 56px;
-    color: red;
+    color: maroon;
     text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 
