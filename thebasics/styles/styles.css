@@ -84,6 +84,7 @@ font-weight: bold;
 margin: 0;
 padding: 0;
 }
-.main-footer .terms { font-style: italic;
+.main-footer .terms { 
+    font-style: italic;
 font-weight: normal;
 }
