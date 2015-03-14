@@ -45,15 +45,17 @@ width: 85%;
 float: left; 
 }
 
-.gallery-main-image {
-margin-bottom: 10px;
-}
-
 .image-container { 
 height: 600px;
 margin: 0 auto;
 width: 800px;
 }
+
+
+.gallery-main-image {
+margin-bottom: 10px;
+}
+
 
 .clearfix:before, .clearfix:after {
 contentdisplay: table; 
