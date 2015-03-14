@@ -1,3 +1,6 @@
+body {
+    background-color: blue;
+}
 .main-header, .section-container, .main-footer {
     width:90%;
     margin: 0 auto; 
