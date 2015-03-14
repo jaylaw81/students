@@ -1,11 +1,11 @@
 body {
-    background-color: lightblue;
+    background-color: blue;
 }
 
 .main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
-    background-color: beige;
+    background-color: darkbeige;
     padding: 20px; }
 .main-header .logo { max-width: 120px; width: 75% }
 .main-header .nav { float: right; }
