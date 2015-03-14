@@ -66,3 +66,6 @@ body {
     position: relative;
     width: 25%;
 }
+.main-header .nav {
+    float: right;
+}
