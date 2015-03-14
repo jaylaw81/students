@@ -34,3 +34,6 @@ body {
     width: 85%;
     float: left;
 }
+.gallery-main-image {
+    margin-bottom: 10px;
+}
