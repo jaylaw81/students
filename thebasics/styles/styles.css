@@ -62,3 +62,8 @@ background-color: gray;
     padding: 0;
     }
     
+.main-header .logo {
+    max-width: 120px;
+    width: 75%;
+    border: 1px solid gray;
+}
