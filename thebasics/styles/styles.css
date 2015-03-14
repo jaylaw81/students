@@ -30,6 +30,7 @@ body {
     padding: 10px 20px 10 px 20px;
     transition: all, 0.8s, ease-in-out;
     text-decoration: none;
+    padding-top: 10px
 }
 .main-header .nav .nav-links .link a:hover {
     color: aqua;
