@@ -36,3 +36,4 @@ body{background-color: lightblue;}
 .main-header .nav .nav-links .link a:hover { 
     color: blue; background-color: lightblue;}
     .main-body { width: 85%; float: left; }
+    .gallery-main-image {margin-bottom: 10px; }
