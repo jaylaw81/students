@@ -27,7 +27,7 @@ background-color: green;
         }
             .main-header .nav .nav-links .link a {
                 color: white;
-                padding: 10px; transition:all, 0.5, ease-in-out; text-decoration:none;
+                padding: 10px; transition:all, 0.5, ease-in-out; text-decoration: none;
             }
     .main-header .nav .nav-links .link a:hover  { 
         color: gray; 
