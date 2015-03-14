@@ -57,7 +57,7 @@ width: 800px;
 .clearfix:after { clear: both; }
 
 
-.photo-gallery li .photo { height: auto; max-height: 165px; width: 100%; }
+.photo-gallery li .photo { height: auto; max-height: 300px; width: 100%; }
 
 
 .main-footer .copyright, .main-footer .terms {
