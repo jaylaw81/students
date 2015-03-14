@@ -9,11 +9,14 @@ body {
 }
 .main-header {
     background-color: #cceeec;
+   
 }
 
 .main-header .logo {
     max-width: 120px;
     width: 75%;
+    border: 10px #cceeec;
+    border-radius: 20px;
 }
 
 .main-header .nav {
