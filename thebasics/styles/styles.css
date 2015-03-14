@@ -33,7 +33,11 @@ body {
     color:red;
     background-color: green;
     padding-top: 1000000px;
+    padding-bottom: 1000000px;
+    padding-left: 1000000px;
+    padding-right: 1000000px;  
 }
+
 
 .main-body { 
     width: 85%;
