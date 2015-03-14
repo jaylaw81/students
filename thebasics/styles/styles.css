@@ -1,43 +1,32 @@
 body {
-    background-color: darkgray;
+background-color: green;
 }
 
 .main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
-    background-color: beige;
-    padding: 20px 20px 20px 20px;
+    background-color:gray;
+    padding:20px 20px 20px 20px;
 }
 .main-header {
-    background-color: beige;
+    background-color: teal;
 }
-
-.main-header .nav .nav-links {margin: 40px 0 0; padding: 10px }
-
 .main-header .logo {
     max-width: 120px;
     width: 75%;
-}
-
-.main-header .nav {
-    float: right;
-}
-
-.main-header .nav .nav-links .link { display: inline; margin-left: 10px }
-
-.main-header .nav .nav-links .link a {
-    color: black;
-    padding: 10px 10px 10px 10px;
-transition: all, 0.2s, ease-in-out; text-decoration: none; 
-}
-
-.main-body { width: 85%; float: left; }
-
-.gallery-main-image { margin-bottom: 10px; }
-
-.image-container { height: 600px; margin: 0 auto; width: 800px; }
-
-.main-header .nav .nav-links .link a:hover {
-    color: white;
-    background-color: white; 
     }
+    .main-header .nav {
+        float: right;
+        }
+        .main-header .nav .nav-links { margin: 40px 0 0;
+        padding: 0px;
+        }
+        .main-header .nav .nav-links .link
+        { display: inline;
+        margin-left: 10px;
+        }
+            .main-header .nav .nav-links .link a {
+                color: white;
+                padding: 10px; transition:all, 0.5, ease-in-out; text-decoration:none;
+            }.main-header .nav .nav-links .link a:hover
+            { color: gray; background-color:green ; }
