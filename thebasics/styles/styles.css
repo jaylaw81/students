@@ -5,7 +5,7 @@ body {
 .main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
-    background-color: darkbeige;
+    background-color: beige;
     padding: 20px; }
 .main-header .logo { max-width: 120px; width: 75% }
 .main-header .nav { float: right; }
