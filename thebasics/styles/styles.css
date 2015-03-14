@@ -42,7 +42,7 @@ body {
 .gallery-main-image {
     margin-bottom: 10px;
 }
-.image-container {
+.image-container, .image-container img {
     height: 600px;
     margin: 0 auto;
     width: 800px;
