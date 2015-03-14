@@ -44,7 +44,7 @@ body{background-color: lightblue;}
 .main-header .nav .nav-links .link a.firstlink:hover { 
     color: blue; 
     background-color: red;
-    padding-top: 30px
+    padding-top: 10px
 }
 
 .main-body { 
