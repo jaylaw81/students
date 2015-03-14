@@ -10,3 +10,7 @@ body {
 .main-header {
     background-color: aqua;
 }
+.main-header .logo {
+    max-width: 120px;
+    width: 75%; 
+}
