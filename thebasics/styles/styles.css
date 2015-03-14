@@ -67,7 +67,7 @@ ul.photo-gallery {
     width: 100%;
 }
 .main-footer .copyright, .main-footer .terms {
-    color: silver; 
+    background-color: silver; 
     font-size: 13px;
     font-weight: bold;
     margin: 0;
