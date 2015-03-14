@@ -5,11 +5,11 @@ body {
 .main-header, .section-container, .main-footer { 
     width: 90%; 
     margin: 0 auto; 
-    background-color: white; 
+    background-color: yellow; 
     padding: 20px; 
 }
 .main-header {
-    background-color: pink;
+    background-color: green;
 }
 .main-header .logo {
     max-width: 120px; 
@@ -33,8 +33,8 @@ body {
     text-decoration: none; 
 }
 .main-header .nav .nav-links .link a:hover { 
-    color: purple; 
-    background-color: green; 
+    color: red; 
+    background-color: yellow; 
 }
 .main-body {
     width: 85%; 
@@ -72,11 +72,11 @@ body {
     width: 100%;
 }
 .main-footer { 
-    backround-color: #105b74; 
+    backround-color: green; 
     padding: 20px; 
 }
 .main-footer .copyright, .main-footer .terms { 
-    color: #fff; 
+    color: red; 
     font-size: 13px; 
     font-weight: bold; 
     margin: 0; 
