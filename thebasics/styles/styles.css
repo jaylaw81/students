@@ -9,11 +9,11 @@ body {
 }
 .main-header, .main-footer {
     background-color: #bdc3c7;
-    border: 10px thick navy;
 }
 .main-header .logo {
     max-width: 120px;
     width: 75%;
+    border: 10px thick navy;
 }
 .main-header .nav {
     float: right;
