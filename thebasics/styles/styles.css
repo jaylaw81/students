@@ -36,6 +36,7 @@ body {
     transition: all, 0.2s, ease-in-out;
     text-decoration: none;
     font-weight: bold;
+    text-transform:  uppercase;
 }
 
 .main-header .nav .nav-links .link a:hover {
