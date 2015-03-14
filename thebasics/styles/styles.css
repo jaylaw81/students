@@ -13,6 +13,7 @@ body {
 .main-header .logo {
     max-width: 100px;
     width: 75%; 
+  
     }
 .main-header .nav {
     float: right;
@@ -28,7 +29,7 @@ body {
 .main-header .nav .nav-links .link a {
     color: #000000;
     padding: 10px 20px 10 px 20px;
-    transition: all, 0.8s, ease-in-out;
+    transition: all, 0.5s, ease-in-out;
     text-decoration: none;
     padding-top: 10px
 }
