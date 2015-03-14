@@ -37,11 +37,16 @@ body {
 .main-header .nav .nav-links .link a:hover {
     color: purple;
     background-color: green;
+    margin-top: 5px;
 }
 .main-body {
     width: 85%;
     float: left;
 }
+
+.main-body h1 {
+}
+
 .gallery-main-image {
     margin-bottom: 10px;
 }
