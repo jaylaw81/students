@@ -55,4 +55,6 @@ width: 25%;
 .photo-gallery li .photo 
 { height: auto; max-height: 165px; width: 100%;
 }       
-        
+.main-footer 
+{ background-color: #105b74; padding: 20px;
+}        
