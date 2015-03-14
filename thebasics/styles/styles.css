@@ -8,6 +8,7 @@ body{background-color: lightblue;}
 
 .main-header{
     background-color: teal;
+    margin:20px;
 }
 
 .main-header .logo {
