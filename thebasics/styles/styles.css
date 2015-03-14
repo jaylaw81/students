@@ -59,6 +59,9 @@ body {
     position: relative;
     width: 25%; 
 }
+ul.photo-gallery {
+    border: 3px solid black;
+    }
 .photo-gallery li .photo {
     height: auto; max-height: 165px; 
     width: 100%;
