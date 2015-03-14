@@ -12,3 +12,7 @@ body {
 {
     background-color: silver;
 }
+.main-header .logo {
+    max-width: 120px;
+    width: 75%;
+}
