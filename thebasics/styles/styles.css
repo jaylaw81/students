@@ -1,3 +1,5 @@
+.main-header, .section-container, .main-footer { width: 90%; margin: 0 auto; background-color: #fff; padding: 20px; }
+
 h1 {
     text-transform: lowercase;
     color: green;
