@@ -14,7 +14,7 @@ background-color: green;
 .main-header .logo {
     max-width: 120px;
     width: 75%;
-    }
+}
 .main-header .nav {
     float: right;
 }
@@ -36,11 +36,11 @@ background-color: green;
 .main-body 
 { width: 85%; float: left;
  }
-    .gallery-main-image 
-    { margin-bottom: 10px; }    
-    .image-container
-    { height: 600px; margin: 0 auto; width: 800px; }    
-    .photo-gallery { margin: 0; padding: 0; }
+.gallery-main-image { 
+    margin-bottom: 10px; 
+}    
+.image-container{ height: 600px; margin: 0 auto; width: 800px; }    
+.photo-gallery { margin: 0; padding: 0; }
 .clearfix:before, .clearfix:after 
 { content: " "; display: table; }
 .clearfix:after 
@@ -63,6 +63,7 @@ width: 25%;
 ; margin: 0; padding: 0;
 }
 .main-footer .terms 
-{ font-style: italic;
-font-weight: normal;
+{ 
+    font-style: italic;
+    font-weight: normal;
 }
