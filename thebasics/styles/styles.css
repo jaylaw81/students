@@ -12,3 +12,4 @@ background-color: green;
 .main-header {
     background-color: teal;
 }
+.main-header .logo { max-width: 120px; width: 75%; }
