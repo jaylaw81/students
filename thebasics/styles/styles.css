@@ -32,3 +32,4 @@ body {
     color: red; 
     background-color: orange;
 }
+.main-body {width: 85%; float:left; }
