@@ -46,7 +46,7 @@ body{background-color: lightblue;}
     background-color: red;
     padding-top: 10px
 }
-.main-header .nav .nav-links .link a.secondtlink:hover { 
+.main-header .nav .nav-links .link a.secondlink:hover { 
     color: blue; 
     background-color: blue;
     padding-top: 20px
