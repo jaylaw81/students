@@ -11,7 +11,7 @@ body {
     background-color: aqua;
 }
 .main-header .logo {
-    max-width: 220px;
+    max-width: 300px;
     width: 75%; 
 }
 .main-header .nav {
