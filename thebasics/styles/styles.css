@@ -15,7 +15,7 @@ background-color: green;
 .main-header .logo {
     max-width: 120px;
     width: 75%;
-    border:1px solid grey
+    border:1px solid grey;
 }
 .main-header .nav {
     float: right;
