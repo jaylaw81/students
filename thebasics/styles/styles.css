@@ -39,7 +39,7 @@ body {
 }
 .image-container, .image-container img {
     height: 600px; 
-    margin: 0 auto; 
+    margin: 0 auto 20px; 
     width: 800px; 
 }    
 .photo-gallery {
