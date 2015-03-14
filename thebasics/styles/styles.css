@@ -34,7 +34,7 @@ body {
 }
 .main-header .nav .nav-links .link a:hover { 
     color: white; 
-    background-color: blue; 
+    background-color: #22acdb; 
 }
 .main-body {
     width: 85%; 
