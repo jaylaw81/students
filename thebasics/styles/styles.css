@@ -38,8 +38,8 @@ body {
 }
 
 .main-header .nav .nav-links .link a:hover {
-    color: #777260;
-    background-color: black;
+    color: white;
+    background-color: #777260;
 }
 
 .main-body {
