@@ -1,5 +1,5 @@
 body {
-    background-color: silver;
+    background-color: gold;
 }
 
 .main-header, .section-container, .main-footer {
@@ -10,5 +10,5 @@ body {
 }
 
 .main-header {
-    background-color: gold;
+    background-color: silver;
 }
