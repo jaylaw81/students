@@ -11,6 +11,7 @@ body {
 .main-header 
 { 
     background-color: black; 
+    border: 5px dotted blue;
 }
 .main-header .logo {
     max-width: 120px; width: 75%; 
