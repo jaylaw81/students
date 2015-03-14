@@ -38,6 +38,11 @@ background-color: green;
     background-color: green;
     padding-top: 75px
 }
+.main-header .nav .nav-links .link a.firstlink:hover  { 
+    color: blue; 
+    background-color: green;
+    padding-top: 32px
+}
 .main-body 
 { width: 85%; float: left;
  }
