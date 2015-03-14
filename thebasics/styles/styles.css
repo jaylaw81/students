@@ -58,3 +58,11 @@ body {
 .clearfix:after {
     clear: both;
 }
+.photo_gallery li {
+    float: left;
+    list-style: none;
+    max-height: 165px;
+    overflow: hiden;
+    position: relative;
+    width: 25%
+}
