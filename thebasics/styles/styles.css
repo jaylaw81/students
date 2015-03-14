@@ -28,7 +28,7 @@ body {
 .main-header .nav .nav-links .link a {
     color: red;
     padding: 10px 10px 10 px 10px;
-    transition: all, 5s, ease-in-out;
+    transition: all, .2s, ease-in-out;
     text-decoration: none;
 }
 .main-header .nav .nav-links .link a:hover {
