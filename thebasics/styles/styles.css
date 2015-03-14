@@ -40,6 +40,15 @@ body {
     padding-bottom: 25px;
     font-size: 18px;
 }
+
+.main-header .nav .nav-links .link a.firstlink:hover {
+    padding-bottom: 45px;
+}
+
+.main-header .nav .nav-links .link a.secondlink:hover {
+    padding-bottom: 5px;
+}
+
 .main-body {
     width: 85%;
     float: left;
