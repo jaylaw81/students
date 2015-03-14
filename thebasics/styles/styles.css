@@ -10,7 +10,7 @@ body {
 }
 .main-header {
     background-color: green;
-    border: 4px dotted black;
+    border: 8px dotted black;
 }
 
 .main-header .logo {
