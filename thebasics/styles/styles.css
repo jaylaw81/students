@@ -91,7 +91,8 @@ body {
 
 .main-footer .terms {
     font-size: 56px;
-    color: blue;
+    color: red;
+    text-decoration: underline;
 }
 
 
