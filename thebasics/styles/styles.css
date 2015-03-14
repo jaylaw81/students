@@ -10,10 +10,10 @@ body {
 }
 .main-header 
 { 
-    background-color: #22acdb; 
+    background-color: black; 
 }
 .main-header .logo {
-    max-width: 120px; width: 75%; 
+    max-width: 12000px; width: 75%; 
 }
     
     
