@@ -30,7 +30,9 @@ body {
     color: #252525; 
     padding: 10px; 
     transition: all, 0.2s, ease-in-out; 
-    text-decoration: none; 
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .main-header .nav .nav-links .link a:hover { 
     color: white; 
