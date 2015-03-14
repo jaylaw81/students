@@ -27,7 +27,7 @@ body {
 
 .main-header .nav .nav-links .link a {
     color: black;
-    padding: 10px 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 transition: all, 0.2s, ease-in-out; text-decoration: none; }
 
 .main-body { width: 85%; float: left; }
