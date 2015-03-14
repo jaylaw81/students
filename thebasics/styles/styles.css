@@ -11,12 +11,12 @@ body {
 .main-header {
     background-color: green;
     border: 10px dotted black;
-    border: 10px dashed red;
 }
 
 .main-header .logo {
     max-width: 120px;
     width: 80%;
+        border: 10px dashed red;
 }
 .main-header .nav { float: right; }
 
