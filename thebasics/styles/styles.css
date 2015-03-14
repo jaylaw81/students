@@ -66,6 +66,8 @@ body {
     position: relative;
     width: 25%;
 }
-.main-header .nav {
-    float: right;
+.photo-gallery li .photo {
+    height: auto;
+    max-height: 165px;
+    width: 100%;
 }
