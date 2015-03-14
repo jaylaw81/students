@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: blue;
 }
 
 .main-header, .section-container, .main-footer { 
@@ -33,7 +33,7 @@ body {
     text-decoration: none; 
 }
 .main-header .nav .nav-links .link a:hover { 
-    color: blue; 
+    color: grey; 
     background-color: blue; 
 }
 .main-body {
