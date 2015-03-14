@@ -55,7 +55,7 @@ background-color: gray;
     width: 25%; }
 .photo-gallery li .photo { height: auto; max-height: 165px; width: 100%; }
 .main-footer .copyright, .main-footer .terms { 
-    color: #fff; 
+    color: maroon; 
     font-size: 13px;
     font-weight: bold;
     margin: 0; 
