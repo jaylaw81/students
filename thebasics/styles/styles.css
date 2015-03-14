@@ -67,12 +67,12 @@ body {
     max-height: 165px;
     overflow: hidden;
     position: relative;
-    width: 25%;
+    width: 33%;
 }
 .photo-gallery li .photo {
     height: auto;
     max-height: 165px;
-    width: 50%;
+    width: 100%;
 }
 .main-footer {
     background-color: #105b74;
