@@ -73,6 +73,9 @@ body {
     max-height: 165px; 
     width: 100%; 
 }
+.main-footer {
+    background-color: red;
+}
 .main-footer .copyright, .main-footer .terms { 
     color: black; 
     font-size: 13px; 
