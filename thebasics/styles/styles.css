@@ -59,4 +59,7 @@ body {
     position: relative;
     width: 25%; 
 }
-
+.photo-gallery li .photo {
+    height: auto; max-height: 165px; 
+    width: 100%;
+}
