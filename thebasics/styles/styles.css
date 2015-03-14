@@ -31,7 +31,7 @@ body {
     transition: all, 0.2s, ease-in-out;
     text-decoration: none;
 }
-.main-body {
-    width: 85%;
-    float: left;
+.main-header .nav .nav-links .link a:hover {
+    color: #999;
+    background-color: #333;
 }
