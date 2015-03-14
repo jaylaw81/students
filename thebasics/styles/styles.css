@@ -1,10 +1,10 @@
-biody{
+body {
     background-color: red;
 }
-.main-header, section-container, main-footer {
+.main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
-    background-color: white;
+    background-color: red;
     padding:20px 20px 20px 20px; 
-    }
+}
     
