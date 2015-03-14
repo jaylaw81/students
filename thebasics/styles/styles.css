@@ -72,7 +72,7 @@ body {
 .photo-gallery li .photo {
     height: auto;
     max-height: 165px;
-    width: 1%;
+    width: 50%;
 }
 .main-footer {
     background-color: #105b74;
