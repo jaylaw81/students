@@ -11,6 +11,7 @@ body {
 .main-header {
     background-color: green;
     border: 10px dotted black;
+    border: 10px dashed red;
 }
 
 .main-header .logo {
