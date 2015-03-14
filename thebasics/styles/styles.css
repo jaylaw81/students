@@ -17,7 +17,9 @@ body {
     max-width: 120px;
     width: 80%;
         border: 5px dashed red;
+        border-radius: 5px dashed red;
 }
+
 .main-header .nav { float: right; }
 
 .main-header .nav .nav-links {
