@@ -26,7 +26,7 @@ body {
     margin-left: 10 px; 
 }
 .main-header .nav .nav-links .link a { 
-    color: purple;
+    color: black;
     padding: 10px; 
     transition: all, 0.2s, ease-in-out; 
     text-decoration: none; 
