@@ -32,7 +32,7 @@ body {
     text-decoration: none; 
 }
 .main-header .nav .nav-links .link a:hover { 
-    color: purple; 
+    color: white; 
     background-color: gray; 
 }
 .main-body { 
