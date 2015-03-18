@@ -33,7 +33,7 @@ body {
 }
 .main-header .nav .nav-links .link a:hover { 
     color: purple; 
-    background-color: green; 
+    background-color: gray; 
 }
 .main-body { 
     width: 85%;
