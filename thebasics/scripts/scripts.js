@@ -62,3 +62,4 @@ function createGallery(element, file, alt) {
 }
 
 var galleryContainer = ".photo-gallery";
+var imagePath = "../assets/images/gallery/thumb/";
