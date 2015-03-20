@@ -60,3 +60,5 @@ function createGallery(element, file, alt) {
     }
     document.querySelector(element).innerHTML = liString;
 }
+
+var galleryContainer = ".photo-gallery";
