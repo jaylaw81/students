@@ -69,4 +69,5 @@ var altName = "alt name";
 function showImage(argument) {
     var img = "<img src='images/gallery/large" + argument + "'>";
     document.querySelector(".gallery-main-image . image-container").innerHTML = img;
+    return false;
 };
