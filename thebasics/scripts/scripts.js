@@ -1,1 +1,3 @@
-var string = "I have "+letters+", "+numbers+" and "+characters+" all part of my string";
+var stringPartLetters = "letters";
+var stringPartNumbers = "numbers";
+var stringPartCharacters = "characters";
