@@ -65,3 +65,7 @@ var galleryContainer = ".photo-gallery";
 var imagePath = "../assets/images/gallery/thumb/";
 var imageName = "rhino";
 var altName = "alt name";
+
+function showImage(argument) {
+    
+};
