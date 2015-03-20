@@ -23,7 +23,7 @@
 .photo-gallery li .photo { height: auto; max-height: 165px; width: 100%; }
 .image-container { height: 600px; margin: 0 auto; width: 800px; }
 .gallery-main-image { margin-bottom: 10px; }
-.main-header .nav .nav-links .link a { color: green; padding: 10px; transition: all, 0.2s, ease-in-out; text-decoration: none; }
+.main-header .nav .nav-links .link a { color: white; padding: 10px; transition: all, 0.2s, ease-in-out; text-decoration: none; }
 .main-header .nav .nav-links .link a:hover { color: #999; background-color: #333; }
 .photo-gallery { margin: 0; padding: 0; }
 .clearfix:before, .clearfix:after { content: " "; display: table; }
