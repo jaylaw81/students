@@ -47,3 +47,5 @@ if(myAge > myFriendAge) {
 }
 
 console.log(myFriend);
+
+function myFirstFunction(_myFriend, _myName, _status){ }
