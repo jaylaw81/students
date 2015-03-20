@@ -48,5 +48,5 @@ if(myAge > myFriendAge){
 console.log(myFriend);
 
 function myFirstFunction( _myFriend, _myName, _status) {
-    console.log( "Hello " + _myFriend +". Its me, "+ _myName +" and this is my "+_status +" function!" );
+    console.log(" Hello " + _myFriend +". Its me, "+ _myName +" and this is my "+_status +" function!" );
 }
