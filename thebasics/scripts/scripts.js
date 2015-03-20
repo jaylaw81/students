@@ -56,6 +56,6 @@ myFirstFunction('Mike', 'ben', 'first');
 function createGallery(element, file, alt) {
     var liString = "";
     for(var i = 1; i <= 8; i++) {
-        
+        liString += '<li><a href="#self" onclick="showImage(\'' + file + i + '\');"><img class="photo" alt="' + alt + '-' + i + '" src="' + path + file + i + '.jpg"></a></li>\n';
     }
 }
