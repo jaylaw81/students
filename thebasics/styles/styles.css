@@ -1,0 +1,33 @@
+.main-header, .section-container, .main-footer {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    }
+.main-header .logo{ 
+   max-width: 120px;
+   width: 75%;
+    }
+.main-header .nav {
+    display: inline-block;
+}
+.main-header .nav .nav-links{
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+.main-body { width: 65%; float: left; }
+.main-header .nav .nav-links .link { 
+    display: inline;
+    margin-left: 10px;
+}
+.photo-gallery li .photo { height: auto; max-height: 165px; width: 100%; }
+.image-container { height: 600px; margin: 0 auto; width: 800px; }
+.gallery-main-image { margin-bottom: 10px; }
+.main-header .nav .nav-links .link a { color: #fff; padding: 10px; transition: all, 0.2s, ease-in-out; text-decoration: none; }
+.main-header .nav .nav-links .link a:hover { color: #999; background-color: #333; }
+.photo-gallery { margin: 0; padding: 0; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.photo-gallery li { float: left; list-style: none; max-height: 165px; overflow: hidden; position: relative; width: 25%; }
+.main-footer { background-color: #105b74; padding: 20px; }
+.main-footer .copyright, .main-footer .terms { color: #fff; font-size: 13px; font-weight: bold; margin: 0; padding: 0; }
+
