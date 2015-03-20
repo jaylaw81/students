@@ -41,5 +41,7 @@ var myAge = 12;
 var myFriendAge = 13;
 
 if(myAge > myFriendAge) {
-    gemString += "Gems come in many colors.";
-} else { }
+    myFriend = "I am older than "+myFriendName+".";
+} else {
+    myFriend = myFriendName+" is older than me.";
+}
