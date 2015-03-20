@@ -67,5 +67,5 @@ var imageName = "rhino";
 var altName = "alt name";
 
 function showImage(argument) {
-    
+    var img = "<img src='images/gallery/large" + argument + "'>";
 };
