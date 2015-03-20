@@ -44,3 +44,5 @@ if(myAge > myFriendAge){
 } else {
     myFriend = myFriendName + " is older than me.";
 }
+
+console.log(myFriend);
