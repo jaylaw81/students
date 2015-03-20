@@ -55,4 +55,5 @@ myFirstFunction('Mike', 'Ben', 'first');
 
 function createGallery(element, path, file, alt){
     var liString = "";
+    for(var i=1; i<=8; i++){}
 }
