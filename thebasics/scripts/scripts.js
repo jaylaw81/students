@@ -40,4 +40,6 @@ var myFriendName = "Mike";
 var myAge = 12;
 var myFriendAge = 13;
 
-if(myAge > myFriendAge) { } else { }
+if(myAge > myFriendAge) {
+    gemString += "Gems come in many colors.";
+} else { }
