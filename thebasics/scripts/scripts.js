@@ -53,12 +53,12 @@ function myFirstFunction( _myFriend, _myName, _status) {
 
 myFirstFunction('Mike', 'ben', 'first');
 
-function createGallery(element, file, alt) {
+function createGallery(galleryContainer, imagePath, imageName, altName) {
     var liString = "";
     for(var i = 1; i <= 8; i++) {
-        liString += '<li><a href="#self" onclick="showImage(\'' + file + i + '\');"><img class="photo" alt="' + alt + '-' + i + '" src="' + path + file + i + '.jpg"></a></li>\n';
+        liString += '<li><a href="#self" onclick="showImage(\'' + imageName + i + '\');"><img class="photo" alt="' + altName + '-' + i + '" src="' + imagePath + imageName + i + '.jpg"></a></li>\n';
     }
-    document.querySelector(element).innerHTML = liString;
+    document.querySelector(galleryContainer).innerHTML = liString;
 }
 
 var galleryContainer = ".photo-gallery";
