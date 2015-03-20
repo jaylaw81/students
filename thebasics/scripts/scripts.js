@@ -1,6 +1,8 @@
 var myVariable = "value";
 var stringPartLetters = "letters";
-var stringPartNumberss = "numbers";
+var stringPartNumbers = "numbers";
 var stringPartCharacters = "characters";
 
 var myFullString = "A string may contain as many "+stringPartLetters+" "+stringPartNumbers+" "+stringPartCharacters+" asdf.";
+
+console.log(myFullString);
