@@ -30,8 +30,8 @@ var myFriendAge = 13;
 if(myAge > myFriendAge){ 
     myFriendCompare = "I am older than "+myFriendName+".";
 }
-    else{ 
-        myFriendCompare = myFriendName+" is older than me.";   
+else{ 
+    myFriendCompare = myFriendName+" is older than me.";   
 }
 console.log(myFriendCompare);
 function myFirstFunction( _myFriend, _myName, _status ) { 
@@ -42,6 +42,6 @@ function createGallery(element,path,file,alt){
     var liString = "";
     for (var j = 1; j <= 8; j++) {
         liString += '<li><a href="#self" onclick="showImage(\'' + file + j + '.jpg\');"><img class="photo" alt="' + alt + '-' + j + '" src="' + path + file + j + '.jpg"></a></li>\n';
-}
+        }
     document.querySelector(element).innerHTML = liString;
 }
