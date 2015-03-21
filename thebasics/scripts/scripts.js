@@ -70,4 +70,7 @@ var imageName = "wolf";
 var altName = "wolf";
 
 createGallery(galleryContainer, imagePath, iamgeName, altName);
-function showImage(argument) {};
+
+function showImage(argument) {
+    var img = "<img src='/animals/wolf1/" + argument + "'>";
+    };
