@@ -22,6 +22,7 @@
 }
 .image-container > img {
   width: 800px;
+  height: 600px;
 }
 .photo-gallery li .photo { height: auto; max-height: 165px; width: 100%; }
 .image-container { height: 600px; margin: 0 auto; width: 800px; margin-bottom:20px; }
