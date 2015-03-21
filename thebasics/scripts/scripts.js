@@ -65,6 +65,6 @@ function createGallery(element,path,file,alt)
 }
     
 var galleryContainer = ".photo-gallery";
-var imagePath = "/animals/youranimalfolder/";
+var imagePath = "/animals/wolf1/";
 var imageName = "rhino";
 var altName = "rhino";
