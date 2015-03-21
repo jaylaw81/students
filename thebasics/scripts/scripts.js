@@ -54,6 +54,7 @@ function createGallery(element,path,file,alt){
     document.querySelector(element).innerHTML = liString;
 }
 
+var galleryContainer = ".photo-gallery";
 
 
 
