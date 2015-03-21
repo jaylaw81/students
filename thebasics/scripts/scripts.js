@@ -45,5 +45,5 @@ function createGallery(element,path,file,alt){
     document.querySelector(element).innerhtml = liString;
 }
 var galleryContainer = '.photo-gallery';
-var imagepath ="/animals/chicken/";
-var imagename = 'chicken';
+var imagePath ="/animals/chicken/";
+var imageName = 'chicken';
