@@ -50,4 +50,5 @@ function createGallery(element,path,file,alt){
 }        
 
 var galleryContainer = ".photo-gallery";
-var imagepath = "/animals/whales/";
+var imagepath = "/animals/whales/whales1.jpg";
+var ImageName = "rhino";
