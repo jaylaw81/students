@@ -53,3 +53,7 @@ var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/germanshepard/";
 var imageName = "germanshepard";
 var altName = "germanshepard";
+
+
+
+createGallery(galleryContainer, imagePath, imageName, altName);
