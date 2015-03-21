@@ -48,3 +48,4 @@ var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/labrador/";
 var imageName = "labrador";
 var altName = "labrador";
+createGallery(galleryContainer, imagePath, imageName, altName);
