@@ -41,3 +41,5 @@ console.log("Hello "+_myFriend +". It is me, "+ _myName +" and this is my "+_sta
 }
 
 myFirstFunction('Sam', 'Nathan', 'first');
+
+function createGallery(element,path,file,alt){}
