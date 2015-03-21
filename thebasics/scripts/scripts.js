@@ -55,4 +55,7 @@ function myFirstFunction( _myFriend, _myName, _status ) {
 
 myFirstFunction('Joel','Nik','CHEESE');
 
-function createGallery(element,path,file,alt){var liString = "";}
+function createGallery(element,path,file,alt)
+{
+    var liString = "";
+    }
