@@ -1,6 +1,6 @@
 var myVariable = "value";
 var stringPartLetters = "letter";
-var stringPartNumber = "numbers";
+var stringPartNumbers = "numbers";
 var stringPartCharacters = "characters";
 
 var myFullString = 
