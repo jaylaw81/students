@@ -39,7 +39,7 @@ console.log(gemString);
 var myFriendCompare = "";
 var myFriendName = "Joel";
 var myAge = 12;
-var myFriendsAge = 13;
+var myFriendsAge = 11;
 if(myAge > myFriendAge){}else{}
 myFriendCompare = "I am older than "+myFriendName+".";
 myFriendCompare = myFriendName+" is older than me.";
