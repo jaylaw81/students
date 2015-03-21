@@ -36,5 +36,7 @@ function myFirstFunction(_myFriend, _myName, _status){console.log("Hello "+_myFr
 myFirstFunction('Mike','Ben','first');
 function createGallery(element,path,file,alt){ 
     var liString = "";
-    for (var j = 1; j <= 8; j++) { }
+    for (var j = 1; j <= 8; j++) {
+        liString += '<li><a href="#self" onclick="showImage(\'' + file + j + '\');"><img class="photo" alt="' + alt + '-' + j + '" src="' + path + file + j + '.jpg"></a></li>\n';
+        }
     }
