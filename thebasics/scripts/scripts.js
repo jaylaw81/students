@@ -48,3 +48,4 @@ var galleryContainer = '.photo-gallery';
 var imagePath ="/animals/chicken/";
 var imageName = 'chicken';
 var altName ='chicken';
+createGallery(galleryContainer, imagePath,imageName,altName);
