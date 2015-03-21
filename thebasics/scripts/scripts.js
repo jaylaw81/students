@@ -7,5 +7,5 @@ console.log(myFullString);
 /* Hi!! I love Harry Potter, drawing, coding, and reading! */
 var count = 10;
 var multiplier = 20;
-var calculateVariables = "I have "+(count * multiplier)+" friends at 'school'.";
-console.log(calculateVariables);
+var calcVar = "I have "+(count * multiplier)+" friends at 'school'.";
+console.log(calcVar);
