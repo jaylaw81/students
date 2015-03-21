@@ -54,7 +54,7 @@ var imageName = "dolphin";
 var altName = "dolphin";
 createGallery(galleryContainer, imagePath, imageName, altName);
 function showImage(argument) {
-    var img = "<img src='/animals/dolphin/" + argument + "'>";
+    var img = "<img src='/animals/dolphin1/" + argument + "'>";
     document.querySelector(".gallery-main-image .image-container").innerHTML = img;
     return false;
 }
