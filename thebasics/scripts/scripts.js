@@ -56,6 +56,7 @@ function createGallery(element,path,file,alt){
 
 var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/lion/";
+var imageName = "lion";
 
 
 
