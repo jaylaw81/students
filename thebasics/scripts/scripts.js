@@ -53,3 +53,4 @@ var imagePath = "/animals/dolphin1/";
 var imageName = "dolphin";
 var altName = "dolphin";
 createGallery(galleryContainer, imagePath, imageName, altName);
+function showImage(argument) {};
