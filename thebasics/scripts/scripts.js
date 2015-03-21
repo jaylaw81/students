@@ -60,3 +60,4 @@ createGallery(galleryContainer, imagePath, imageName, altName);
 function showImage(argument) { };
 var img = "<img src='/amimals/germanshepard/" + argument + "'>";
 document.querySelector(".gallery-main-image .image-container").innerHTML = img;
+return false;
