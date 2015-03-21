@@ -48,3 +48,4 @@ function createGallery(element,path,file,alt){
 
 }
 document.queryselector(element).innerHTML = liString;
+var galleryContainer = ".photo-gallery";
