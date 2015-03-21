@@ -14,5 +14,5 @@ var myColorArray = ['pink','lightblue','bacon','gold']
 var myColor = "My favorite color is "+ myColorArray[2];
 console.log(myColor);
 var myFruitColorArray = [ ['Pancakes','Luckycharms','Frenchtoast'], ['Brown', 'Green', 'Yellow'] ];
-var myFruitColor = "I like"+myFruitColorArray[0][1]+" because they are "+myFruitColorArray[1][1];
+var myFruitColor = "I like"+myFruitColorArray[0][0]+" because they are "+myFruitColorArray[1][0];
 console.log(myFruitColor)
