@@ -42,7 +42,7 @@ function createGallery(element,path,file,alt){
         document.querySelector(element).innerHTML = liString;
     }
 var galleryContainer = ".photo-gallery";
-var imagePath = "/animals/youranimalfolder/"
-var imageName = "daleks";
+var imagePath = "/animals/owls/"
+var imageName = "owl";
 var altName = "daleks";
 createGallery(galleryContainer, imagePath, imageName, altName);
