@@ -59,6 +59,7 @@ var imagePath = "/animals/lion/";
 var imageName = "lion";
 var altName = "Lion Gallery";
 
+createGallery(galleryContainer, imagePath, imageName, altName);
 
 
 
