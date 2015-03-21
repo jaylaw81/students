@@ -17,5 +17,7 @@ var myFruitColorArray = [ ['Pancakes','Luckycharms','Frenchtoast'], ['Brown', 'G
 var myFruitColor = "I like"+myFruitColorArray[0][0]+" because they are "+myFruitColorArray[1][0];
 console.log(myFruitColor)
 var gemString = "Gem colors:";
+var myGemColorArray = [ ['Bacon','Sausage','Ham'],['Red','Brown','Pink',]]
+
 
 
