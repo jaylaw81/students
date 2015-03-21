@@ -18,7 +18,7 @@ var myFruitColor = "I like "+myFruitColorArray[0][1]+" because they are "+myFrui
 console.log(myFruitColor);
 var gemString = "Gem colors:";
 
-var myGemColorArray = [["Ruby","Saphire","Emeralds"],["Red","Blue","Green"]];
+var myGemColorArray = [["Ruby","Saphire","Emerald"],["Red","Blue","Green"]];
 
 for(var i = 0; i< myGemColorArray[0].length; i++){
     gemString += "The "+ myGemColorArray[0][i] +" is "+ myGemColorArray[1][i] +". ";   
@@ -27,6 +27,8 @@ for(var i = 0; i< myGemColorArray[0].length; i++){
 gemString += "Gems come in many colors.";
 console.log(gemString);
 
+var myFriendCompare = "";
+var myFriendName = "Mike";
 
 
 
