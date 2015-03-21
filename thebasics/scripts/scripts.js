@@ -10,5 +10,6 @@ var calculateVariables = "I have "+(count * multiplier)+" pieces of 'toast'.";
 console.log(calculateVariables);
 var stringYear = "In the kitchen " + multiplier.toString() + count.toString() + ", most of us had 3 bacon strips.";
 console.log(stringYear);
-var myColorArray = ['Orange','Red','Yellow','Green']
+var myColorArray = ['pink','lightblue','bacon','gold']
+var myColor = "My favorite color is "+ myColorArray[2];
 
