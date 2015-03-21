@@ -12,4 +12,4 @@ var stringYear = "In the kitchen " + multiplier.toString() + count.toString() + 
 console.log(stringYear);
 var myColorArray = ['pink','lightblue','bacon','gold']
 var myColor = "My favorite color is "+ myColorArray[2];
-
+console.log(myColor);
