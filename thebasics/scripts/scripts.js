@@ -10,3 +10,4 @@ var multiplier = 20;
 var calcVar = "I have "+(count * multiplier)+" friends at 'school'.";
 console.log(calcVar);
 var stringYear = "In the year " + multiplier.toString() + ", most of us were over 3 years old.";
+console.log(stringYear);
