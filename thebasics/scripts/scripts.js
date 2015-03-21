@@ -25,3 +25,4 @@ var myFruitColorArray = [ ['Apples', 'Bannanas', 'Grapes'],
 ['Red', 'Yellow', 'Green'] ];
 
 console.log(myFruitColor);
+var gemString = "Gem colors: ";
