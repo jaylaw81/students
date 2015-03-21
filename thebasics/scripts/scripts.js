@@ -61,6 +61,8 @@ var altName = "Lion Gallery";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
+function showImage(argument){};
+
 
 
 
