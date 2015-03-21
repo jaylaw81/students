@@ -23,7 +23,7 @@ for(var i = 0; i < myGemColorArray[0].length; i++){
     gemString += "The " + myGemColorArray[0][i] +"is"+ myGemColorArray[1][i] + ". ";
 };
 
-gemString += "Gems come Breakfest comes in many varieties.";
+gemString += "Breakfest comes in many varieties.";
 
 
 
