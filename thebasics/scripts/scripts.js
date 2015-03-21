@@ -1,8 +1,8 @@
 var myVariable = "value";
-var stringPartLetters = "letters";
-var stringPartNumbers = "numbers";
-var stringPartCharacters = "characters";
-var myFullString = "A string may contain as many "+stringPartLetters+", "+stringPartNumbers+", and "+stringPartCharacters+" as you want."; 
+var stringPartLetters = "reading";
+var stringPartNumbers = "drawing";
+var stringPartCharacters = "writing";
+var myFullString = "Esha loves "+stringPartLetters+", "+stringPartNumbers+", and "+stringPartCharacters+" as you want."; 
 console.log(myFullString);
 /* Hi!! I love Harry Potter, drawing, coding, and reading! */
 var count = 10;
