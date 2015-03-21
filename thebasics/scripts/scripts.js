@@ -38,5 +38,4 @@ if(myage > myFriendAge){
 }
 myFirstFunction('poop','michael','first'){
 var liString ="";
-
 }
