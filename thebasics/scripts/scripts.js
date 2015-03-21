@@ -66,8 +66,8 @@ function createGallery(element,path,file,alt)
     
 var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/wolf1/";
-var imageName = "_wolf";
-var altName = "_wolf";
+var imageName = "wolf";
+var altName = "wolf";
 
 createGallery(galleryContainer, imagePath, iamgeName, altName);
 
