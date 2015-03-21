@@ -54,3 +54,4 @@ function showImage(argument) {
     var img = "<img src='/animals/germansherpherd/" + argument + "'>";
     document.querySelector(".gallery-main-image .image-container").innerHTML = img
 };
+return false;
