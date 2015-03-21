@@ -17,3 +17,4 @@ console.log(myColor);
 var myFCA = [ ['Apples', 'Oranges', 'Bananananananananananananananananananas'], ['Red', 'Orange', 'Yellow'] ];
 var myFruitColor = "I like "+myFCA[0][2]+" because they are "+myFCA[1][2];
 console.log(myFruitColor);
+var gemString = "Gem colors: ";
