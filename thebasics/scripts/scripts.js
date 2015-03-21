@@ -47,7 +47,7 @@ function createGallery(element,path,file,alt){
 var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/labrador/";
 var imageName = "labrador_";
-var altName = "labrador";
+var altName = "labrador_";
 createGallery(galleryContainer, imagePath, imageName, altName);
 function showImage(argument) {
     var img = "<img src='/animals/labrador/" + argument + "'>";
