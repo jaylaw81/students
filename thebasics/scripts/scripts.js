@@ -12,5 +12,5 @@ console.log(calcVar);
 var stringYear = "In the year " + multiplier.toString() + count.toString() + ", most of us were over 3 years old.";
 console.log(stringYear);
 var myColorArray = ['Orange', 'Sky Blue', 'Yellow', 'Green'];
-var myColor = "My favorite color is " + myColorArray[2];
+var myColor = "My favorite color is " + myColorArray[1];
 console.log(myColor);
