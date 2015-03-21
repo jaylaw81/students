@@ -45,12 +45,12 @@ function createGallery(element,path,file,alt){
     document.querySelector(element).innerHTML = liString;
 }
 var galleryContainer = ".photo-gallery";
-var imagePath = "/animals/labrador/";
-var imageName = "labrador_";
+var imagePath = "/animals/yellow-labrador/";
+var imageName = "yellowlab";
 var altName = "labrador";
 createGallery(galleryContainer, imagePath, imageName, altName);
 function showImage(argument) {
-    var img = "<img src='/animals/labrador/" + argument + "'>";
+    var img = "<img src='/animals/yellow-labrador/" + argument + "'>";
     document.querySelector(".gallery-main-image .image-container").innerHTML = img;
     return false;
 }
