@@ -37,6 +37,7 @@ if(myage > myFriendAge){
         console.log('Hello'+_myFriend +'. it is me,'+_myname+' and this is my' +_status+" function!");
 }
 myFirstFunction('poop','michael','first');
+
 function createGallery(element,path,file,alt){
     var liString = "";
     for(var j = 1; j <= 8; j++) {
@@ -48,4 +49,7 @@ var galleryContainer = '.photo-gallery';
 var imagePath ="/animals/chicken/";
 var imageName = 'chicken';
 var altName ='chicken';
+
+///animals/chicken/chicken1.jpg
+
 createGallery(galleryContainer, imagePath,imageName,altName);
