@@ -54,3 +54,4 @@ var altName ='chicken';
 
 createGallery(galleryContainer, imagePath,imageName,altName);
 function showImage(argument) { };
+var img = "<img src='/animals/chicken/" +argument + "'>";
