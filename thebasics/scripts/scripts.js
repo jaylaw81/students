@@ -75,3 +75,5 @@ function showImage(argument) {
     var img = "<img src='/animals/wolf1/" + argument + "'>";
     document.querySelector(".gallery-main-image .image-container").innterHTML = img;
     };
+    
+    return false;
