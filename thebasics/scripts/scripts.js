@@ -45,3 +45,4 @@ myFirstFunction('Sam', 'Nathan', 'first');
 function createGallery(element,path,file,alt){
     
 var LiString = "";}
+for (var j = 1; j <= 8; j++) {}
