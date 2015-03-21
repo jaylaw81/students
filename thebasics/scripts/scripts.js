@@ -20,7 +20,7 @@ var gemString = "Gem colors: ";
 var myGemColorArray = [ ['Ruby', 'Sapphire', 'Emerald'], ['Red', 'Blue', 'Green'] ];
 for(var i = 0; i < myGemColorArray[0].length; i++){
     gemString += "The " + myGemColorArray[0][i] +" is "+ myGemColorArray[1][i] + ". ";
-    };
+    }
 gemString += "Gems come in many colors.";
 console.log(gemString);
 var myFriendCompare = "";
@@ -40,7 +40,7 @@ myFirstFunction('Alisa','Esha','first');
 function createGallery(element,path,file,alt){
     var liString = "";
     for (var j = 1; j <= 9; j++) {
-            liString += '<li> <a href="#self" onclick="showImage(\'' + file + j + '.jpg\');"><img class="photo" alt="' + alt + '-' + j + '" src="' + path + file + j + '.jpg"> </a></li>\n';
-            
+            liString += '<li> <a href="#self" onclick="showImage(\'' + file + j + '.jpg\');"><img class="photo" alt="' + alt + '-' + j + '" src="' + path + file + j + '.jpg"> </a></li>\n';   
         }
+    document.querySelector(element).innerHTML = liString;
 }
