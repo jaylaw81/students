@@ -51,4 +51,5 @@ var altName = "labrador";
 createGallery(galleryContainer, imagePath, imageName, altName);
 function showImage(argument) {
     var img = "<img src='/animals/labrador/" + argument + "'>";
+    document.querySelector(".gallery-main-image .image-container").innerHTML = img;
 };
