@@ -6,5 +6,6 @@ var myFullString = "A string may contain as much "+stringpartletters+", "+string
 console.log(myFullString);
 var count = 10;
 var multiplier = 20;
+var calculateVariables = "I have "+(count * multiplier)+" pieces of 'toast'.";
 
 
