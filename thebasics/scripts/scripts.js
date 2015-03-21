@@ -2,7 +2,7 @@ var myvariable = 'value';
 var stringpartletters = 'letters';
 var stringpartnumbers = 'numbers';
 var stringpartcharacters = 'characters';
-var myfullstring = ' A string may contain as many '+stringpartletters+', '+stringpartnumbers+' and '+stringpartcharacters+' as you want.';
+var myfullstring = 'A string may contain as many '+stringpartletters+', '+stringpartnumbers+' and '+stringpartcharacters+' as you want.';
 console.log(myfullstring);
 var count = 10;
 var multiplier = 20;
