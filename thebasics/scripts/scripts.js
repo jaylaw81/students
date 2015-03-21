@@ -35,3 +35,5 @@ myFriendCompare = "I am older than "+myFriendName+".";
 };
 
 console.log(myFriendCompare);
+
+;
