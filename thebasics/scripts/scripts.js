@@ -23,3 +23,5 @@ console.log(myColor);
 
 var myFruitColorArray = [ ['Apples', 'Bannanas', 'Grapes'],
 ['Red', 'Yellow', 'Green'] ];
+
+console.log(myFruitColor);
