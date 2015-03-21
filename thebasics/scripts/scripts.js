@@ -35,6 +35,6 @@ if(myAge > myFriendAge){
     myFriendCompare = Nathan+" is older than me.";    
 }
 
-
+console.log(myfriendCompare);
 
 
