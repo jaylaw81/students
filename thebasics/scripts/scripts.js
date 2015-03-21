@@ -53,5 +53,7 @@ var altName ='chicken';
 ///animals/chicken/chicken1.jpg
 
 createGallery(galleryContainer, imagePath,imageName,altName);
-function showImage(argument) { };
-var img = "<img src='/animals/chicken/" +argument + "'>";
+function showImage(argument) {
+    var img = "<img src='/animals/chicken/" +argument + "'>";
+document.querySelector(".gallery-main-image .image-continer").innerHtml = img;
+    };
