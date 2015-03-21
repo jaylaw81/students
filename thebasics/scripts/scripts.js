@@ -4,7 +4,6 @@ var stringPartNumbers = "drawing";
 var stringPartCharacters = "writing";
 var myFullString = "Esha loves "+stringPartLetters+", "+stringPartNumbers+", and "+stringPartCharacters+" and coding."; 
 console.log(myFullString);
-/* Hi!! I love Harry Potter, drawing, coding, and reading! */
 var count = 10;
 var multiplier = 20;
 var calcVar = "I have "+(count * multiplier)+" friends at 'school'.";
@@ -19,3 +18,4 @@ var myFruitColor = "I like "+myFCA[0][2]+" because they are "+myFCA[1][2];
 console.log(myFruitColor);
 var gemString = "Gem colors: ";
 var myGemColorArray = [ ['Ruby', 'Sapphire', 'Emerald'], ['Red', 'Blue', 'Green'] ];
+for(var i = 0; i < myGemColorArray[0].length; i++){};
