@@ -25,6 +25,8 @@ for(var i = 0; i < myGemColorArray[0].length; i++){
 
 gemString += "Breakfest comes in many varieties.";
 console.log(gemString);
+var myFriendCompare = "";
+var myFriendName = "billy";
 
 
 
