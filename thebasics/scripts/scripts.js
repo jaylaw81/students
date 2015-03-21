@@ -38,5 +38,5 @@ function myFirstFunction( _myFriend, _myName, _status ) {
     }
 myFirstFunction('Alisa','Esha','first');
 function createGallery(element,path,file,alt){
-    
+    var liString = "";
 }
