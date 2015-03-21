@@ -7,5 +7,5 @@ console.log(myFullString);
 var count = 10;
 var multiplier = 20;
 var calculateVariables = "I have "+(count * multiplier)+" pieces of 'toast'.";
-console.log(calculatevariables);
+console.log(calculateVariables);
 
