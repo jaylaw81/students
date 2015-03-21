@@ -30,9 +30,9 @@ var myFriendName = "Nathan";
 var myAge = 12;
 var myFriendAge = 11;
 if(myAge > myFriendAge){
-    myFriendCompare = "I am older than "+Nathan+".";    
+    myFriendCompare = "I am older than "+myFriendName+".";    
 }else{
-    myFriendCompare = Nathan+" is older than me.";    
+    myFriendCompare = myFriendName+" is older than me.";    
 }
 
 console.log(myfriendCompare);
