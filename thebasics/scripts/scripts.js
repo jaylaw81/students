@@ -5,3 +5,5 @@ var stringPartCharacters = "characters";
 var myFullString = "A string may contain as many "+stringPartLetters+", "+stringPartNumbers+", and "+stringPartCharacters+" as you want."; 
 console.log(myFullString);
 /* Hi!! I love Harry Potter, drawing, coding, and reading! */
+var count = 10;
+var multiplier = 20;
