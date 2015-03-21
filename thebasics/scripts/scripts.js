@@ -41,7 +41,6 @@ function myFirstFunction(_myFriend, _myName, _status )
     console.log("Hello "+_myFriend +". It is me, "+ _myName +" and this is my "+ _status +" function!"); 
 }
 myFirstFunction('Mike','Ben','first');
-var galleryContainer = ".photo-gallery";
 function createGallery(element,path,file,alt){
     var liString = "";
     for (var j = 1; j <=8; j++) {
@@ -49,3 +48,6 @@ function createGallery(element,path,file,alt){
     }
     document.querySelector(element).innerHTML = liString;  
 }        
+
+var galleryContainer = ".photo-gallery";
+var imagepath = "/animals/whales/whales1.jpg/";
