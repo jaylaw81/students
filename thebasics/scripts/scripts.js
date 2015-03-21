@@ -46,3 +46,4 @@ function createGallery(element,path,file,alt){
 }
 var galleryContainer = '.photo-gallery';
 var imagepath ="/animals/chicken/";
+var imagename = 'chicken';
