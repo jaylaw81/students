@@ -20,3 +20,4 @@ var gemString = "Gem colors: ";
 var myGemColorArray = [ ['Ruby', 'Sapphire', 'Emerald'], ['Red', 'Blue', 'Green'] ];
 gemString += "The " + myGemColorArray[0][i] +" is "+ myGemColorArray[1][i] + ". ";
 gemString += "Gems come in many colors.";
+console.log(gemString);
