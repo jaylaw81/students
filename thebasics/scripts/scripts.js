@@ -27,4 +27,4 @@ var myFriendCompare = "";
 var myFriendName = "Alisa";
 var myAge = 12;
 var myFriendAge = 11;
-if(myAge > myFriendAge){ }else{ }
+if(myAge > myFriendAge){myFriendCompare = "I am older than "+myFriendName+"."; }else{ }
