@@ -54,6 +54,9 @@ var imagepath = "/animals/whales/";
 var ImageName = "whales";
 var altName = "whale";
 createGallery(galleryContainer, imagepath, imageName, altName);
-function showImage(argument) {var img = "<img src='/animals/whale/" + argument + "'>";};
+function showImage(argument) 
+{
+    var img = "<img src='/animals/whale/" + argument + "'>";
+}
 document.querySelector(".gallery-main-image .image-container").innerHTML = img;
 return false;
