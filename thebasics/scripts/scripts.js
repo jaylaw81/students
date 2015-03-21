@@ -17,3 +17,4 @@ var myFruitColorArray = [ ['Apples','Bannanas','Grapes'],  ['Red', 'Yellow', 'Gr
 var myFruitColor = "I like "+myFruitColorArray[0][1]+" because they are "+myFruitColorArray[1][1];
 console.log(myFruitColor);
 var gemString = "Gem colors: ";
+var myGemColorArray = [  ['Ruby','Saphire','Emerald'],  ['Red', 'Blue', 'Green'] ];
