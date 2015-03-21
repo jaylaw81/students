@@ -33,4 +33,6 @@ if(myage > myFriendAge){
         myFriendCompare = myFriendName+ " is older than me";
         }
     console.log(myFriendCompare);
-    function myFirstFunction(_myFriend, _myname, _status) {}
+    function myFirstFunction(_myFriend, _myname, _status) {
+        console.log('Hello'+_myFriend +'. it is me,'+_myname+' and this is my' +_status+" function!");
+}
