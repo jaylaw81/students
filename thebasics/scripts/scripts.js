@@ -18,6 +18,8 @@ var myFruitColor = "I like"+myFruitColorArray[0][0]+" because they are "+myFruit
 console.log(myFruitColor)
 var gemString = "Gem colors:";
 var myGemColorArray = [ ['Bacon','Sausage','Ham'],['Red','Brown','Pink',]]
+for(var i = 0; i < myGemColorArray[0].length; i++){};
+
 
 
 
