@@ -37,4 +37,4 @@ console.log(myFriendCompare);
 function myFirstFunction( _myFriend, _myName, _status ) { 
     console.log("Hello "+_myFriend +". It is me, "+ _myName +" and this is my "+ _status +" function!");
 }
-myFirstFunction('but','jaiden','first');
+myFirstFunction('Mike','jaiden','first');
