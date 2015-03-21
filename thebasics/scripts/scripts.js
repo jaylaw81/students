@@ -9,5 +9,5 @@ var multiplier = 20;
 var calculateVariables = "I have "+(count * multiplier)+" pieces of 'toast'.";
 console.log(calculateVariables);
 var stringYear = "In the Kitchen " + multiplier.toString() + count.toString() + ", most of us had 3 bacon strips.";
-console.log(stringKitchen);
+console.log(stringyear);
 
