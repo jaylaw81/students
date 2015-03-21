@@ -50,4 +50,6 @@ var imagePath = "/animals/germanshepherd/";
 var imageName = "german-shepherd";
 var altName = "german-shepherd";
 createGallery(galleryContainer, imagePath, imageName, altName);
-function showImage(argument) { };
+function showImage(argument) {
+    var img = "<img src='/animals/germansherpherd/" + argument + "'>";
+};
