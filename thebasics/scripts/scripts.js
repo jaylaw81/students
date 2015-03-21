@@ -29,6 +29,7 @@ var myFriendCompare = "";
 var myFriendName = "Nathan";
 var myAge = 12;
 var myFriendAge = 11;
+if(myAge > myFriendAge){}else{}
 
 
 
