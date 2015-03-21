@@ -50,4 +50,4 @@ function createGallery(element,path,file,alt){
     document.querySelector(element).innerHTML = liString;
 }
 var galleryContainer = ".photo-gallery";
-var imagePath = "/animals/German Shepard/";
+var imagePath = "/animals/germanshepard/";
