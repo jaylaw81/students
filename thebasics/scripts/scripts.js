@@ -6,3 +6,4 @@ var myFullString = "A string may contain as many "+stringPartLetters+", "+string
 console.log(myFullString);
 var count = 10;
 var multiplier = 20;
+var calculateVariables = "I have "+(count * multiplier)+" friends on 'facebook'.";
