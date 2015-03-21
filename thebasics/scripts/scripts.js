@@ -2,7 +2,7 @@ var myvariable = 'value';
 var stringpartletters = 'letters';
 var stringpartnumbers = 'numbers';
 var stringpartcharacters = 'characters';
-var myfullstring = ' A string may contain as many '+stringpartletters+', '+stringpart+' and '+stringpartcharacters+' as you want.';
+var myfullstring = ' A string may contain as many '+stringpartletters+', '+stringpartnumbers+' and '+stringpartcharacters+' as you want.';
 console.log(myFullstring);
 var count = 10;
 var multiplier = 20;
@@ -10,5 +10,6 @@ var calculateVariables = "I have "+(count * multiplier)+" friends on 'facebook'.
 console.log(calculateVariables);
 var stringYear = "In the year " +multiplier.tostring() + count.toString() + ", most of us were over 3 years old.";
 console.log(stringYear);
-var mycolorArray = ['Orange', 'Red', 'Yellow', 'Green'];
+var mycolorArray = ["Orange", "Red", "Yellow", "Green"];
 var mycolor + "MY favorite color is " + mycolorArray[2];
+console.log(mycolor);
