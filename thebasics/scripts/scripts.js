@@ -37,3 +37,4 @@ if(myage > myFriendAge){
         console.log('Hello'+_myFriend +'. it is me,'+_myname+' and this is my' +_status+" function!");
 }
 myFirstFunction('poop','michael','first');
+function creategallery(element,path,file,alt){}
