@@ -69,7 +69,6 @@ body {
     overflow: hidden;
     position: relative;
     width: 25%;
-    border: 2px solid #0099FF;
 }
 .photo-gallery li .photo {
     height: auto;
