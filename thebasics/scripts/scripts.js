@@ -23,3 +23,5 @@ gemstring += "the " +myGemColorArray[0][i] +' is '+  myGemColorArray[1][i] +'.';
     };
 gemstring +='gems come in many colors.';
 console.log(gemstring);
+var myFriendCompare ="";
+var myFriendName ="Jack"
