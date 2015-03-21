@@ -46,3 +46,4 @@ var imagePath = "/animals/owls/"
 var imageName = "owl";
 var altName = "owls";
 createGallery(galleryContainer, imagePath, imageName, altName);
+function showImage(argument) { };
