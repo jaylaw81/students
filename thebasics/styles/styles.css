@@ -10,7 +10,7 @@ background-color: green;
 }
 .main-header {
     background-color: teal;
-   border:5px dashed green;
+   border:5px solid green;
 
 }
 .main-header .logo {
