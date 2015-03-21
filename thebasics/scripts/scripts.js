@@ -14,6 +14,6 @@ console.log(stringYear);
 var myColorArray = ['Orange', 'Purple', 'Sky Blue', 'Green'];
 var myColor = "My favorite color is " + myColorArray[2];
 console.log(myColor);
-var myFCA = [ ['Apples', 'Oranges', 'Banananananas'], ['Red', 'Orange', 'Yellow'] ];
+var myFCA = [ ['Apples', 'Oranges', 'Bananananananananananananananananananas'], ['Red', 'Orange', 'Yellow'] ];
 var myFruitColor = "I like "+myFCA[0][2]+" because they are "+myFCA[1][2];
 console.log(myFruitColor);
