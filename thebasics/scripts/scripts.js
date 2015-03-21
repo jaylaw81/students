@@ -46,3 +46,4 @@ myFriendCompare = myFriendName+" is older than me.";
 console.log(myFriendCompare);
 
 function myFirstFunction( _myFriend, _myName, _status ) {}
+
