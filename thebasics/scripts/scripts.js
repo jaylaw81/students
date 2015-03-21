@@ -25,7 +25,7 @@ for(var i = 0; i < myGemColorArray[0].length; i++){
 gemString += "Gems come in many colors.";
 console.log(gemString);
 var myFriendCompare = "";
-var myFriendName = "mike";
+var myFriendName = "sam";
 var myAge = 12;
 var myFriendAge = 13;
 if(myAge > myFriendAge){ }else{ }
