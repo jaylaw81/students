@@ -28,3 +28,5 @@ console.log(myFruitColor);
 var gemString = "Gem colors: ";
 var myGemColorArray = [ ['Ruby', 'Sapphire', 'Emerald'],
 ['Red', 'Blue', 'Green'] ];
+
+for(var i = 0; i < myGemColorArray[0].length; i++){ };
