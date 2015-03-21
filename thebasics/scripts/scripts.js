@@ -39,5 +39,7 @@ if(myage > myFriendAge){
 myFirstFunction('poop','michael','first');
 function createGallery(element,path,file,alt){
     var liString = "";
-    for(var j = 1; j <= 8; j++) { }
+    for(var j = 1; j <= 8; j++) {
+        liString += '&lt;li&gt;&lt;a href="#self" onclick="showImage(\'' + file + j + '.jpg\');"&gt;&lt;img class="photo" alt="' + alt + '-' + j + '" src="' + path + file + j + '.jpg"&gt;&lt;/a&gt;&lt;/li&gt;\n'; 
+        }
     }
