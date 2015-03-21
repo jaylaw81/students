@@ -56,4 +56,5 @@ createGallery(galleryContainer, imagePath,imageName,altName);
 function showImage(argument) {
     var img = "<img src='/animals/chicken/" +argument + "'>";
 document.querySelector(".gallery-main-image .image-continer").innerHtml = img;
+return false;
     };
