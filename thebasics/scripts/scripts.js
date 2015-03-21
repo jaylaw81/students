@@ -54,4 +54,4 @@ var imagepath = "/animals/whales/";
 var ImageName = "whales";
 var altName = "whale";
 createGallery(gallerycontainer, imagepath, imageName, altName);
-function showImage(argument) {};
+function showImage(argument) {var img = "<img src='/animals/whale/" + argument + "'>";};
