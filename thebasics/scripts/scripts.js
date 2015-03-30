@@ -36,7 +36,7 @@ console.log(myFriendCompare);
 function myFirstFunction( _myFriend, _myName, _status ) {
     console.log("Hello "+ _myFriend +". It is me, "+ _myName +" and this is my "+ _status +" function!");
     }
-myFirstFunction('Alisa and Kashu and Elise and Hana and Jess','Esha','first');
+myFirstFunction('Alisa and Kashu and Elise and Hana and Jess and Tristyn and Madelyn and Sarah and hedgedogs','Esha','first');
 function createGallery(element,path,file,alt){
     var liString = "";
     for (var j = 1; j <= 8; j++) {
