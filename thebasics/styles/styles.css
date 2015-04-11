@@ -6,4 +6,10 @@
 }
 
 .main-header {
-    background-color: pink; }
+    background-color: pink; 
+}
+
+.main-header .logo {
+    max-width: 120px;
+    width: 75%;
+}
