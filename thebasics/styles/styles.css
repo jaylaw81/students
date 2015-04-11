@@ -28,7 +28,7 @@
 
 .main-header .nav .nav-links .link a {
     color: #fff; 
-    padding: 20px; 
+    padding: 15px; 
     transition: all, 0.40s, ease-in-out; 
     text-decoration: none;
 }
