@@ -25,3 +25,6 @@
       display: inline; margin-left: 10px; 
 }
 
+.main-header .nav .nav-links .link a { 
+    color: #fff; padding: 10px; transition: all, 0.2s, eas-in-out; text-decoration: none; 
+}
