@@ -33,7 +33,7 @@
     padding: 10px;
     transition: all, 1s, ease-in-out;
     text-decoration: underline;
-    font-size: 25px;
+    font-size: 16px;
 }
 
 .main-header .nav .nav-links .link a:hover {
@@ -41,6 +41,11 @@
     background-color: pink;
     padding: 50px;
     text-decoration: none;
+}
+
+.main-body {
+    width: 85%;
+    float: left;
 }
 
 
