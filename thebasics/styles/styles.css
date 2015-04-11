@@ -87,9 +87,23 @@
     width: 100%; 
 }
 
-.main-footer { background-color: grey; padding: 20px; }
+.main-footer { 
+    background-color: grey; 
+    padding: 20px; 
+}
 
+.main-footer .copyright, .main-footer .terms { 
+    color: #fff; 
+    font-size: 13px; 
+    font-weiht: bold; 
+    margin: 0; 
+    padding: 0;
+}
 
+.main-footer .terms {
+    color: blue;
+    font-size: 22px;
+}    
 
 
 
