@@ -50,6 +50,11 @@
     margin: 0 auto;
     width: 800px;
 }  
+.image-container img{
+    width:100%;
+    
+    
+}
 
 .photo-gallery {margin: 0; padding: 0;}
 .clear-fix:before, .clearfix:after {contant: " "; display: table;}
@@ -63,6 +68,11 @@
     position: relative;
     width: 33%;
 }
+
+.photo-gallery li .photo {
+    height: auto;
+    max-height: 165px;
+    width:100%
 
 
 
