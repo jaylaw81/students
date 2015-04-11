@@ -1,0 +1,6 @@
+.main-header, .section-container, .main-footer { 
+    width: 90%; 
+    magin: 0 auto; 
+    background-color: #fff; 
+    padding: 20px; 
+}
