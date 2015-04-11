@@ -59,6 +59,10 @@
     border-radius: 25px;
 }
 
+.image-container img{
+    width:100%;    
+}
+
 .photo-gallery {
     margin: 0;
     padding: 0;
