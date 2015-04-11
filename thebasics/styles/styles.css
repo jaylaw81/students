@@ -37,7 +37,7 @@
 }
 
 .main-header .nav .nav-links .link a:hover {
-    color: black;
+    color: purple;
     background-color: pink;
     padding: 50px;
     text-decoration: none;
