@@ -29,7 +29,7 @@
 }
 
 .main-header .nav .nav-links .link a {
-    color: white;
+    color: black;
     padding: 10px;
     transition: all, 1s, ease-in-out;
     text-decoration: underline;
@@ -39,7 +39,7 @@
     color: black;
     background-color: pink;
     padding: 50px;
-    text-decoration: dotted;
+    text-decoration: strikethru;
 }
 
 
