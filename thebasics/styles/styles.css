@@ -31,7 +31,7 @@
 .main-header .nav .nav-links .link a {
     color: black;
     padding: 10px;
-    /*transition: all, 1s, ease-in-out;*/
+    transition: all, 1s, ease-in-out;
     text-decoration: underline;
     font-size: 25px;
 }
@@ -41,7 +41,6 @@
     background-color: pink;
     padding: 50px;
     text-decoration: none;
-    font-size: 45px;
 }
 
 
