@@ -52,7 +52,7 @@
 }  
 
 .photo-gallery {margin: 0; padding: 0;}
-.clear-fix:before, .clearfix:after {contant: ""; display: table;}
+.clear-fix:before, .clearfix:after {contant: " "; display: table;}
 .clearfix:after { clear: both; }
 
 
