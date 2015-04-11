@@ -98,6 +98,7 @@
 .main-footer {
     background-color: orange;
     padding: 20px;
+    border-top: 5px solid lightblue;
 }
 
 
