@@ -8,3 +8,7 @@
 .main-header {
     background-color: blue; 
 }
+
+.main-header .logo {
+    max-width: 75%; 
+}
