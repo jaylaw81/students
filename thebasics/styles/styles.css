@@ -5,4 +5,10 @@
     padding: 20px; 
 }
 
-.main-header { background-color: #22acdb; }
+.main-header { 
+    background-color: #22acdb; 
+}
+.mainheader .logo { 
+    max-width: 120px; 
+    width: 75%;
+}
