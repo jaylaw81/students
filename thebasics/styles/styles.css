@@ -18,7 +18,7 @@
     }
     
 .main-header .nav .nav-links { 
-    margin: 40px 0 0; 
+    margin: 20px 0 0; 
     padding: 0px; 
 }
 
@@ -29,7 +29,7 @@
 .main-header .nav .nav-links .link a {
     color: #fff; 
     padding: 20px; 
-    transition: all, 0.64s, ease-in-out; 
+    transition: all, 0.40s, ease-in-out; 
     text-decoration: none;
 }
 
