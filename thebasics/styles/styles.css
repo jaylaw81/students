@@ -109,6 +109,11 @@
     padding: 0;
 }
 
+.main-footer .terms {
+    color: darkgrey;
+    text-decoration: underline;
+}
+
 
 
 
