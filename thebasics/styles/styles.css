@@ -14,4 +14,6 @@
     width: 75%; 
 }
 
-.main-header .nav { float: right; }
+.main-header .nav { 
+    float: right; 
+    }
