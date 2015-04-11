@@ -76,7 +76,6 @@
 
 .photo-gallery li .photo {
     height: auto;
-    max-height: auto;
     max-height: 165px;
     width: 100%;
 }
