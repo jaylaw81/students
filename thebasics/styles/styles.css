@@ -1,7 +1,7 @@
 .main-header, .section-container, .main-footer { 
     width: 90%; 
     margin: 0 auto; 
-    background-color: lightgreen; 
+    background-color:grey; 
     padding: 20px 20px 20px 20px; 
 }
 
