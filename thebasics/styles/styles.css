@@ -88,7 +88,11 @@
     max-height: 165px;
     width: 100%; 
     box-shadow:10px 10px 5px #21adde;
-}  
+}
+
+.main-footer {
+    background-color: #105b74; padding: 20px;   
+}
 
 
 
