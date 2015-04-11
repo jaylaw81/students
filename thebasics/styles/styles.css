@@ -65,7 +65,12 @@
     clear: both;
 }
 
-
+.photo-gallery li { float: left;
+list-style: none;
+max-height: 165px;
+overflow: hidden; 
+position: relative; 
+width: 25% }
 
 
 
