@@ -79,6 +79,10 @@ width: 33%
     max-height: 165px;
     width: 100%;
 }
+.main-footer { 
+    background-color: #105b74;
+    padding: 20px;
+}
 
 
 
