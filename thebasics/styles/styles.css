@@ -93,6 +93,10 @@ width: 33%
     padding: 0;
 }
 
+.main-footer .terms {
+    font-style: italic;
+    font-weight: normal; 
+}
 
 
 
