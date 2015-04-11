@@ -56,11 +56,11 @@
     height: 600px;
     margin: 0 auto;
     width: 800px;
-    border-radius: 50px;
 }
 
 .image-container img {
-    width:100%;    
+    width:100%;
+    border-radius: 50px;
 }
 
 .photo-gallery {
