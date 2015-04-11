@@ -52,6 +52,10 @@
     width: 800px;
 }
 
+.image-container img {
+    width: 100%;
+}
+
 .photo-gallery {
     margin: 0; padding: 0; 
 }
