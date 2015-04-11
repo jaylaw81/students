@@ -33,6 +33,7 @@
     padding: 10px;
     transition: all, 1s, ease-in-out;
     text-decoration: underline;
+    font-size: 50px;
 }
 
 .main-header .nav .nav-links .link a:hover {
