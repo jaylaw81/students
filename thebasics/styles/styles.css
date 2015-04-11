@@ -101,6 +101,14 @@
     border-top: 10px dashed green;
 }
 
+.main-footer .copyright, .main-footer .terms {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
 
 
 
