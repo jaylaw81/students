@@ -75,9 +75,18 @@
 }
 
 .main-footer{
-    background-color: orange;
+    background-color: yellow;
     padding: 20px;
     border-top:10px dotted purple;
+}
+    
+.main-footer .copyright, .main-footer .terms{ 
+    color: #fff; 
+    front-size: 13px; 
+    front-weight: bold; 
+    margin: 0; 
+    padding: 0;
+}
 
 
 
