@@ -42,7 +42,8 @@
     float: left;
 }
 
-.gallery-main-image { margin-bottom: 10px;
+.gallery-main-image {
+    margin-bottom: 10px;
 }
 
 .image-container {
@@ -72,11 +73,8 @@
 .photo-gallery li .photo {
     height: auto;
     max-height: 165px;
-    width:100%
-
-
-
-
+    width:100%;
+}
 
 
 
