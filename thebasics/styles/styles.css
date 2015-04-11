@@ -36,3 +36,7 @@
     color: #999;
     background-color: #333;
 }
+
+.main-body {
+    width: 85%; float: left;
+}
