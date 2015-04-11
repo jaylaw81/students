@@ -30,5 +30,10 @@
     color: white;
     padding: 10px;
     transition: all, 0.2s, ease-in-out; 
-    text-decoration: none; 
+    text-decoration: none;
+    font-size:50px;
+}
+.main-header .nav .nav-links .link a:hover { 
+    color: #999; 
+    background-color: #333;
 }
