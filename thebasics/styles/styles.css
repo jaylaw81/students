@@ -40,3 +40,7 @@
        background-color: #333;
        padding: 10px 10px 10px 10px;
 }
+
+.main-body {
+    width: 85%; float: left;   
+}
