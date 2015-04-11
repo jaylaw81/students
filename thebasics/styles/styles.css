@@ -51,10 +51,8 @@
     margin: 0 auto;
     width: 800px;
 }  
-.image-container img{
+.image-container img {
     width:100%;
-    
-    
 }
 
 .photo-gallery {margin: 0; padding: 0;}
@@ -67,7 +65,7 @@
     max-height: 165px;
     overflow: hidden;
     position: relative;
-    width: 33%;
+    width: 25%;
 }
 
 .photo-gallery li .photo {
