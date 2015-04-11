@@ -71,8 +71,13 @@
     width: 25%;
 }
 
+.photo-gallery li.photo {
+    height: auto; max-height: 165px; width: 100%   
+}  
+
 .image-container {
     height: 600px;
     margin: 0 auto;
     width: 800px;   
 }
+
