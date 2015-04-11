@@ -55,6 +55,7 @@
     margin: 0 auto;
     width: 800px; 
 }
+
 .image-container img {
        width: 100%;
        border-radius: 20px;
@@ -85,7 +86,8 @@
 .photo-gallery li .photo {
     height: auto;
     max-height: 165px;
-    width: 100%;   
+    width: 100%; 
+    box-shadow:10px 10px 5px #21adde;
 }  
 
 
