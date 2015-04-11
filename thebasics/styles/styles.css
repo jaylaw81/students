@@ -54,6 +54,7 @@
 
 .image-container img {
     height: 100%;
+    border-radius: 100px;
 }
 
 .photo-gallery {
