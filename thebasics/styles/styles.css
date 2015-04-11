@@ -35,6 +35,6 @@
 }
 
 .main-header .nav .nav-links .link a:hover {
-       color:red;
-       background-color: green;
+       color: #999;
+       background-color: #333;
 }
