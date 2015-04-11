@@ -31,3 +31,8 @@
     transition: all, 0.2s, ease-in-out;
     text-decoration: none;
     }
+    
+.main-header .nav .nav-links .link a:hover { 
+    color: #999;
+    backgrond-color: #333;
+    }
