@@ -49,3 +49,9 @@
 .gallery-main-image {
     margin-bottom: 10px;   
 }
+
+.image-comtainer {
+    height: 600px;
+    margin: 0 auto;
+    width: 800px;   
+}
