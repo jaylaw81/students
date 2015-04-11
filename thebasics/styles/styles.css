@@ -79,6 +79,7 @@
     overflow: hidden;
     position: relative;
     width: 25%;
+    border-radius: 15px;
 }
 
 .photo-gallery li .photo {
