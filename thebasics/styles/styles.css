@@ -36,7 +36,7 @@
 } 
 
 .main-header .nav .nav-links .link a:hover {
-       color: #0000ff;
+       color: #000;
        background-color: #333;
        padding: 10px 20px 30px 40px;
 }
