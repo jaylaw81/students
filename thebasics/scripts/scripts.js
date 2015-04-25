@@ -34,7 +34,7 @@ for(var i = 0; i < myGemColorArray[0].length; i++) {
     gemString += 'The ' + myGemColorArray[0][i] +' is '+ myGemColorArray[1][i] + '. ';
 }
 
-gemSting += 'Gems come in many clors.';
+gemSting += 'Gems come in many colors.';
 
 
 
