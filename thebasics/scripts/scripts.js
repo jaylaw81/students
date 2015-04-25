@@ -39,7 +39,7 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
    console.log(gemString);
    
    var myFriendCompare = "";
-   var myFriendName = "Mike";
+   var myFriendName = "Jacob";
    var myAge = 13;
    var myFriendAge =2;
    
