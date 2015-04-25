@@ -73,7 +73,7 @@ function createGallery(element,path,file,alt){
 
 var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/elephants/";
-var imageName = "elephant";
+var imageName = "elephants";
 var altName = "Elephant";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
