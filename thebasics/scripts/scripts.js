@@ -57,6 +57,7 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
     
     function createGallery(element,path,file,alt){
         var liString = "";   
+        for (var j = 1; j <= 8; j++) {}
     }
 
 
