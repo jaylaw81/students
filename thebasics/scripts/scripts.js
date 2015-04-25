@@ -67,7 +67,7 @@ function createGallery(element, path, file, alt){
 var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/unicorns/";
 var imageName = "unicorns";
-var altName = "unicorns are majestic hoove pounding beasts";
+var altName = "unicorns are majestic";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
