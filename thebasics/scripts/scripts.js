@@ -63,7 +63,9 @@ function myFirstFunction( _myFriend, _myName , _status ){
 
 myFirstFunction('Duffelpuff','Isain','first')
 
-function createGallery(element,path,file,alt){}
+function createGallery(element,path,file,alt){
+    var liString ="";
+}
 
 
 
