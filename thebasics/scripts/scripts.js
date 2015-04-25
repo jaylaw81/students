@@ -71,7 +71,7 @@ var gallerycontainer = ".photo-gallery";
 var imagePath = "/animals/owls/";
 var imageName = "owl"
 var altName = "owl";
-createGallery(galleryContainer, imagePath, imageName, altName);
+createGallery(gallerycontainer, imagePath, imageName, altName);
 
 
 
