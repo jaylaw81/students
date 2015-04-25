@@ -43,6 +43,9 @@ console.log(gemString);
 var myFriendCompare = "";
 var myFriendName ="Cocoa";
 
+var myAge = 10;
+var myFriendAge = 6
+
 
 
 
