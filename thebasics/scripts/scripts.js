@@ -41,7 +41,7 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
    var myFriendCompare = "";
    var myFriendName = "Mike";
    var myAge = 13;
-   var myFriendAge =7;
+   var myFriendAge =2;
 
 
 
