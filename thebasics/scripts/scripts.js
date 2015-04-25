@@ -1,0 +1,1 @@
+var myVariablr = "owl";
