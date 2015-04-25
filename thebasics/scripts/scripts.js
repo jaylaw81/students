@@ -74,7 +74,8 @@ var altName = "owl";
 createGallery(gallerycontainer, imagePath, imageName, altName);
 
 function showImage(argument) {
-    var img = "<img src='/animals/owl/" + argument + "'>";  
+    var img = "<img src='/animals/owl/" + argument + "'>"; 
+    document.querySelector(".gallery-main-image .image-container").innerHTML=img;
     };
 
 
