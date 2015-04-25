@@ -55,7 +55,9 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
     }
     myFirstFunction('Jacob','Eli','first');
     
-    function createGallery(element,path,file,alt){}
+    function createGallery(element,path,file,alt){
+        var liString = "";   
+    }
 
 
 
