@@ -69,6 +69,7 @@ var gallerycontainer = ".photo-gallery";
 
 
 var imagePath = "/animals/owls/";
+var imageName = "owls"
 
 
 
