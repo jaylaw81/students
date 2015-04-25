@@ -43,6 +43,8 @@ gemString += "Gems come in many colors.";
 
 console.log(gemString);
 
+var myFriendCompare = "";
+var myfriendName = "Mke";
 
 
 
