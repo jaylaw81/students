@@ -67,6 +67,8 @@ function myFirstFunction(_myFriend, _myName, _status ) {
         }
         document.querySelector(element).innerHTML = liString;
     }
+    
+    var galleryContainer = ".photo-gallery";
 
 
 
