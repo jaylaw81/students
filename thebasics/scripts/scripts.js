@@ -43,6 +43,8 @@ var myFriendName = "Bella";
 var myAge = 11;
 var myFriendAge = 11;
 
+if(myAge > myFriendAge){ }else{ }
+
 
 
 
