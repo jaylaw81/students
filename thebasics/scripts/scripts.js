@@ -73,6 +73,7 @@ var imageName = "owl"
 var altName = "owl";
 createGallery(gallerycontainer, imagePath, imageName, altName);
 
+function showImage(argument) {};
 
 
 
