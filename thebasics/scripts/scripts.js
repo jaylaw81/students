@@ -27,7 +27,7 @@ var myFruitColorArray = [ ['Apples','Chicken Nuggets','Grapes'],  ['Red', 'delic
 var myFruitColor = 'I like '+myFruitColorArray[0][1]+' because they are '+myFruitColorArray[1][1]
 console.log(myFruitColor);
 
-var gemString = 'Favorite foods: ';
+var gemString = 'Dinner: ';
 
 var myGemColorArray = [  ['food','cake','mac n cheese'],['delicious','yummy','amazing'] ]; 
 for(var i = 0; i < myGemColorArray[0].length; i++) {
