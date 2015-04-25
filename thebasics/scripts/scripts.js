@@ -22,6 +22,8 @@ var myColorarray = ['Orange', 'Red', 'Yellow', 'Green'];
 var myColor = "My favorite color is " + myColorarray[3];
 console.log(myColor);
 
+var myFruitColorArray = [  ['Apples','Bannanas','Grapes'],['Red', 'Yellow', 'Green']  ];
+
 
 
 
