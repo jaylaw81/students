@@ -44,7 +44,7 @@ var myAge = 11;
 var myFriendAge = 11;
 
 if(myAge > myFriendAge){
-    myFriendCompare = 'I am the same age as '+myFriendName+'.';
+    myFriendCompare = "I am the same age as "+myFriendName+".";
 }else{ }
 
 
