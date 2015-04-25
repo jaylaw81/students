@@ -78,7 +78,9 @@ var altName = "Elephant";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
-function showImage(argument) {};
+function showImage(argument) {
+    var img = "<img src='/animals/elephants/" + argument + "'>";
+};
 
 
 
