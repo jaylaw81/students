@@ -70,7 +70,7 @@ function myFirstFunction(_myFriend, _myName, _status ) {
     
     var galleryContainer = ".photo-gallery";
     var imagePath = "/animals/dragons/";
-    var imageName = "dragon";
+    var imageName = "dragons";
     var altName = "dragon images are awesome";
     
     createGallery(galleryContainer, imagePath, imageName, altName);
