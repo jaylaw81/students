@@ -64,7 +64,7 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
     }
     
     var galleryContainer = ".photo-gallery";
-    var imagePath = "/animals/youranimalfolder/";
+    var imagePath = "/animals/owls/";
     
     
 
