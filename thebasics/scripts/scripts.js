@@ -31,6 +31,8 @@ var gemString = "gem colors: ";
 
 var mygemColorArray = [  ['Ruby','Saphire','Emerald'],   ['Red', 'Blue', 'Green'] ];
 
+for(var i = 0; i < mygemColorArray[0].length; i++){ };
+
 
 
 
