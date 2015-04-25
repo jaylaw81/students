@@ -65,6 +65,7 @@ myFirstFunction('Duffelpuff','Isain','first')
 
 function createGallery(element,path,file,alt){
     var liString = "";
+    for (var j = 1; j <= 8; j++) {}
 }
 
 
