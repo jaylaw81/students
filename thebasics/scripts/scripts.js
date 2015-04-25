@@ -67,6 +67,8 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
     var imagePath = "/animals/owls/";
     var imageName = "owl";
     var altName = "owl images are awesome";
+    
+    createGallery(galleryContianer, imagePath, imageName, altName);
 
 
 
