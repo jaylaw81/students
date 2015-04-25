@@ -60,7 +60,9 @@ function myFirstFunction(_myFriend, _myName, _status ) {
     
     myFirstFunction('Cocoa','Jared','first');
     
-    function createGallery(element,path,file,alt){ }
+    function createGallery(element,path,file,alt){ 
+        var liString = "";
+    }
 
 
 
