@@ -1,1 +1,1 @@
-var myVariablr = "owl";
+var myVariablr = "value";
