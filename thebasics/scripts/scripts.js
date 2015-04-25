@@ -22,7 +22,7 @@ var myColorArray = ['Orange', 'Red', 'Yellow', 'Purple'];
 var myColor = 'My favorite color is ' + myColorArray[3];
 console.log(myColor);
 
-var myFruitColorArray = [ ['Apples','Bananas','Grapes'],  ['Red', 'Yellow', 'Green'] ];
+var myFruitColorArray = [ ['Apples','Chicken','Grapes'],  ['Red', 'Delicious', 'Green'] ];
 
 var myFruitColor = 'I like '+myFruitColorArray[0][1]+' because they are '+myFruitColorArray[1][1]
 console.log(myFruitColor);
