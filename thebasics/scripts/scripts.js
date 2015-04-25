@@ -72,6 +72,7 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
     
     function showImage(argument) {
         var img = "<img src='/animals/owl/" + argument + "'>";
+        document.querySelector(".gallery-main-image .image-container").innerHTML = img;
     };
 
 
