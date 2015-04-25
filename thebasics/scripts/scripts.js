@@ -71,7 +71,9 @@ var altName = "unicorns are majestic hoove pounding beasts";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
-function showImage(argument) {};
+function showImage(argument) {
+    var img = "<img src='/animals/unicorns/" + argument + "'>";    
+};
 
 
 
