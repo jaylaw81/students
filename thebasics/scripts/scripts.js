@@ -76,7 +76,7 @@ function myFirstFunction(_myFriend, _myName, _status ) {
     createGallery(galleryContainer, imagePath, imageName, altName);
 
 function showImage(argument) {
-    var img = "img src='/animals/dragons/" + argument + "'>";    
+    var img = "<img src='/animals/dragons/" + argument + "'>";    
     document.querySelector(".gallery-main-image .image-container").innerHTML = img;
 };
 
