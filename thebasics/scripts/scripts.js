@@ -34,7 +34,7 @@ for(var i = 0; i < myGemColorArray[0].length; i++) {
     gemString += 'The ' + myGemColorArray[0][i] +' is '+ myGemColorArray[1][i] + '. ';
 }
 
-gemString += 'I love food.';
+gemString += 'I love this food.';
 console.log(gemString);
 
 
