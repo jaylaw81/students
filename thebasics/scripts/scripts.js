@@ -31,7 +31,7 @@ var gemString = "Gem colors: ";
 var myGemColorArray = [ ['Chicken','Bread','Soup'], ['Fried','Baked','Boiled'] ];
 
 for(var i = 0; i < myGemColorArray[0].length; i++) {
-    gemString += "The "+myGemColorArray[0][i]+" is "+myGemColorArray[1][i]+". ";
+    gemString += "The "+myGemColorArray[1][i]+" is "+myGemColorArray[0][i]+". ";
 };
 
 gemString += "Gems come in many colors.";
