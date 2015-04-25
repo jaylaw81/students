@@ -65,6 +65,8 @@ function createGallery(element,path,file,alt) {
     document.querySelector(element).innerHTML = listring;
 }
 
+var gallerycontainer = ".photo-gallery";
+
 
 
 
