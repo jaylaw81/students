@@ -72,7 +72,7 @@ var altName = "cats are amazing";
 createGallery(galleryContainer, imagePath, imageName, altName);
 
 function showImage(argument) {
-    var img = "<img src='/animals/cats/" + argument + "'>";
+    var img = "<img src='/animals/cat/" + argument + "'>";
 }
 
 
