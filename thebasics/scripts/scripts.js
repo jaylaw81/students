@@ -37,6 +37,9 @@ for(var i = 0; i < myGemColorArray[0].length; i++) {
 gemString += 'I love this food.';
 console.log(gemString);
 
+var myFriendCompare = '';
+var myFriendName = 'Sydnee';
+
 
 
 
