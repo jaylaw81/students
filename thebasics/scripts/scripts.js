@@ -46,7 +46,7 @@ var myFriendName ="Cocoa";
 var myAge = 10;
 var myFriendAge = 6
 
-if(myAge > myFriebdAge){ }else{ }
+if(myAge > myFriendAge){ }else{ }
 
 
 
