@@ -78,7 +78,7 @@ var altName = "Elephant";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
-
+function showImage(argument) {};
 
 
 
