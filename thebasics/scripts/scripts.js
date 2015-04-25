@@ -42,6 +42,8 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
    var myFriendName = "Mike";
    var myAge = 13;
    var myFriendAge =2;
+   
+   if(myAge > myFriendAge){}else{}
 
 
 
