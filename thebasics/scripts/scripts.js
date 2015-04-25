@@ -71,6 +71,7 @@ function myFirstFunction(_myFriend, _myName, _status ) {
     var galleryContainer = ".photo-gallery";
     var imagePath = "/animals/dragons/";
     var imageName = "dragon";
+    var altName = "dragon images are awesome";
 
 
 
