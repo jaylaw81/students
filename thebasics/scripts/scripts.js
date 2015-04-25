@@ -71,7 +71,7 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
     createGallery(galleryContainer, imagePath, imageName, altName);
     
     function showImage(argument) {
-        var img = "<img src='/animals/youranimal/" + argument + "'>";
+        var img = "<img src='/animals/owl/" + argument + "'>";
     };
 
 
