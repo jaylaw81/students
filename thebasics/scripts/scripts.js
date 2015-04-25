@@ -54,6 +54,10 @@ function myFirstFunction(_myFriend, _myName, _status){
     console.log("Hello "+_myFriend+". It is me, "+_myName+" and this is my "+_status+" function!");
 }
 
+myFirstFunction('Ben','Matt','first');
+
+
+
 
 
 
