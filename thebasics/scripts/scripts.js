@@ -58,7 +58,7 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
     function createGallery(element,path,file,alt){
         var liString = "";   
         for (var j = 1; j <= 8; j++) {
-                liString += '<li><a Href="#sel" onclick="showImage(\'' + file + j + '.jpg\');"><img class="photo" alt="' + alt + '-' + j + '" src="' + path + file + j + '.jpg"></a></li>\n';
+                liString += '<li><a Href="#self" onclick="showImage(\'' + file + j + '.jpg\');"><img class="photo" alt="' + alt + '-' + j + '" src="' + path + file + j + '.jpg"></a></li>\n';
             }
             document.querySelector(element).innerHTML = liString;
     }
@@ -71,7 +71,7 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
     createGallery(galleryContainer, imagePath, imageName, altName);
     
     function showImage(argument) {
-        var img = "<img src='/animals/owl/" + argument + "'>";
+        var img = "<img src='/animals/owls/" + argument + "'>";
         document.querySelector(".gallery-main-image .image-container").innerHTML = img;
     };
 
