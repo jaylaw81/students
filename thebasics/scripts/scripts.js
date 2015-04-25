@@ -77,6 +77,7 @@ function myFirstFunction(_myFriend, _myName, _status ) {
 
 function showImage(argument) {
     var img = "img src='/animals/dragons/" + argument + "'>";    
+    document.querySelector(".gallery-main-image .image-container").innerHTML = img;
 };
 
 
