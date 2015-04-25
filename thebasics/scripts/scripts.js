@@ -54,6 +54,8 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
         console.log("Hello "+_myFriend +". It is me, "+ _myName +" and this is my "+_status +" function!");    
     }
     myFirstFunction('Jacob','Eli','first');
+    
+    function creatGallery(element,path,file,alt){}
 
 
 
