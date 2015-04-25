@@ -16,3 +16,4 @@ var calculateVariables = "I have "+(count * multiplier)+" friends on 'facebook'.
 console.log(calculateVariables);
 
 var stringYear = "In the year " + multiplier.toString() + count.toString() + ", most of us were over three years old";
+console.log(stringYear);
