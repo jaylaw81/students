@@ -68,9 +68,8 @@ var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/cats/";
 var imageName = "cat";
 var altName = "cats are amazing";
-createGallery(gallerycontainer, imagePath, imageName, altName);
 
-
+createGallery(galleryContainer, imagePath, imageName, altName);
 
 
 
