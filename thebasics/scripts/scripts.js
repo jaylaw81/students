@@ -62,6 +62,10 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
             }
             document.querySelector(element).innrHTML = liStrin;
     }
+    
+    var galleryContainer = ".photo-gallery";
+    
+    
 
 
 
