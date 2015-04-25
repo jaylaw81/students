@@ -48,6 +48,7 @@ if(myAge > myFriendAge) {
 }else{
     myFriendCompare = myFriendName+" is the same age as me.";
 }
+console.log(myFriendCompare);
 
 
 
