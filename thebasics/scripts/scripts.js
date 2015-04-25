@@ -68,6 +68,9 @@ function createGallery(element,path,file,alt) {
 var gallerycontainer = ".photo-gallery";
 
 
+var imagePath = "/animals/owls/";
+
+
 
 
 
