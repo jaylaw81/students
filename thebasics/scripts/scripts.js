@@ -29,7 +29,7 @@ console.log(myFruitColor);
 
 var gemString = 'Gem colors: ';
 
-var myGemColorArray = [  ['Ruby','Saphire','Emerald'],['Red','Blue','Green'] ]; 
+var myGemColorArray = [  ['food','potato','mac n cheese'],['delicious','yummy','amazing'] ]; 
 for(var i = 0; i < myGemColorArray[0].length; i++) {
     gemString += 'The ' + myGemColorArray[0][i] +' is '+ myGemColorArray[1][i] + '. ';
 }
