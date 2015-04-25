@@ -69,6 +69,8 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
     var altName = "owl images are awesome";
     
     createGallery(galleryContainer, imagePath, imageName, altName);
+    
+    function showImage(argument) {};
 
 
 
