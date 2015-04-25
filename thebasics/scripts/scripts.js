@@ -56,6 +56,10 @@ function myFirstFunction(_myFriend, _myName, _status){
 
 myFirstFunction('Ben','Matt','first');
 
+function createGallery(element, path, file, alt){}
+
+
+
 
 
 
