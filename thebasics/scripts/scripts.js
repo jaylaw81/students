@@ -9,7 +9,7 @@ var myFULLstring = "A string may contain as meny "+stringPartLetters+", "+string
 console.log(myFULLstring);
 
 var count = 10;
-var multiplier = 900;
+var multiplier = 20;
 
 var calculateVariables = "I have "+(count * multiplier)+" freinds on 'facebook'.";
 console.log(calculateVariables);
