@@ -29,7 +29,7 @@ var myFruitColorArray = [ ['Apples','Bananas','Grapes'], ['Red', 'YEllow', 'Gree
 
 var myFruitColor = "I like "+ myFruitColorArray[0][1]+" because they are "+myFruitColorArray[1][1];
 
-
+colsole.log(myFruitColor);
 
 
 
