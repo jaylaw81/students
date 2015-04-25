@@ -54,7 +54,7 @@ if(myAge > myFriendAge){
 
 console.log(myFriendCompare);
 
-function myFirstFunction(_myFriend, _status ) { }
+function myFirstFunction(_myFriend, _myName, _status ) { }
 
 
 
