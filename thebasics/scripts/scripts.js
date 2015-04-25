@@ -36,6 +36,7 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
    };
    
    gemString += "Gems come in many colors.";
+   console.log(gemString);
 
 
 
