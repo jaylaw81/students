@@ -49,6 +49,8 @@ for(var i = 0; i < mygemColorArray[0].length; i++){
        myFriendCompare = myFriendName+" is older than me."; 
     }
     console.log(myFriendCompare);
+    
+    function myFirstFunction( _myFriend, _myName, _status ) { }
 
 
 
