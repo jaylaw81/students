@@ -10,3 +10,5 @@ console.log(myFULLstring);
 
 var count = 10;
 var multiplier = 20;
+
+var calculateVariables = "I have "+(count * multiplier)+" freinds on 'facebook'.";
