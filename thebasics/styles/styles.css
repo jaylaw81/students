@@ -79,15 +79,7 @@ body {
     clear: both;
 }
 
-h1:before {
-    content: "hello ";
-    color: orange;
-}
 
-h1:after {
-    content: " everyone";
-    color: red;
-}
 
 
 
