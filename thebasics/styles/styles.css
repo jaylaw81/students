@@ -84,8 +84,8 @@ body {
     overflow:hidden;
     position: relative;
     width: 25%;
-    border: 5px zigzag turquoise;
-    border-radius:15px;
+    border: 5px solid turquoise;
+    border-radius: 0px 15px;
 }
 
 .photo-gallery li .photo {
