@@ -19,7 +19,7 @@
 }
 
 .main-header .nav .nav-links {
-    margin: 10px 0 0;
+    margin: 40px 0 0;
 }
 
 .main-header .nav .nav-links .link {
@@ -39,6 +39,7 @@
     font-size: 1.5em;
     padding-top: 40px;
     margin-bottom: 10px;
+    border-color: black;
 }
 
 .main-body {
