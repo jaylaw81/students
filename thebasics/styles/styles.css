@@ -6,12 +6,12 @@ body {
 .main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
-    background-color: lightblue;
+    background-color: navyblue;
     padding: 20px;
 }
 
 .main-header {
-    backround-color: #22acdb; 
+    backround-color: lightblue; 
 }
 
 .main-header .logo {
