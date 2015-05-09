@@ -48,10 +48,13 @@ body {
     color: #999;
     background-color: #333;
     padding: 8px;
-
 }
 
 .main-body {
     widtg: 85%;
     float: left;
+}
+
+.gallery-main-image {
+    margin-bottom: 10px;
 }
