@@ -39,7 +39,7 @@ body {
     color: black;
     padding: 10px;
     transition: all, 0.2s, ease-in-out;
-    text-decoration: underline;
+    text-decoration: strikethrough;
 }
 
 a {
