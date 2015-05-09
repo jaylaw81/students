@@ -85,9 +85,10 @@ body {
     max-height: 165px;
     overflow: hidden;
     position: relative;
-    width: 24%;
+    width: 23%;
     border: 5px solid orange;
     border-radius: 0px 25px;
+    margin:2px;
 }
 
 
