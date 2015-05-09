@@ -45,7 +45,7 @@ body {
     background-color: salmon;
 }
 
-.main-header .nav .nav-links .link a:hover {
+.main-header .nav .nav-links .link a:hover, .footer-links li a:hover {
     color: white;
     background-color: purple;
     padding: 20px 10px 100px 10px;
