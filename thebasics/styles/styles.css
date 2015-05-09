@@ -21,6 +21,7 @@ body {
 
 .main-header .nav {
     float: right;
+    display: inline-block;
 }
 
 .main-header .nav .nav-links {
