@@ -90,4 +90,19 @@
     padding: 0;
 }
 
+.main-header .nav .nav-links .link a { /*THE LINK */
+    color: #fff;
+    padding: 10px;
+    transition: all, 0.5s, ease-in-out;
+    text-decoration: none;
+}
+
+.main-header .nav .nav-links .link a:hover { /*THE LINK HOVER ACTION*/
+    background-color: #003399;
+    padding-top: 40px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    border: 1px solid black
+}
+
 /*END*/
