@@ -9,3 +9,8 @@
     background-color: #003399;
     padding: 20px;
 }
+
+.main-header .logo {
+    max-width: 12-px;
+    width: 75%;
+}
