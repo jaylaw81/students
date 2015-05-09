@@ -12,16 +12,17 @@ body {
 
 .main-header {
     background-color: #999999;
+    height: 150px;
 }
 
 .main-header .logo {
     max-width: 120px;
     width: 75%;
+    float: left;
 }
 
 .main-header .nav {
     float: right;
-    display: inline-block;
 }
 
 .main-header .nav .nav-links {
