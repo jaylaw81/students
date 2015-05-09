@@ -29,6 +29,7 @@
 
 .main-header .nav .nav-links .link a {
     color: #fff;
+    background-color: black;
     padding: 10px;
     transition: all, 0.1s, ease-in-out;
     text-decoration: none;
@@ -63,7 +64,7 @@
     float: left;
     list-style: none;
     max-height: 165px;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
     width: 25%;
 }
