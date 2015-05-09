@@ -86,7 +86,7 @@ body {
     overflow: hidden;
     position: relative;
     width: 24%;
-    border: thin solid black;
+    border: 3px dotted #ff0000;
 }
 
 
