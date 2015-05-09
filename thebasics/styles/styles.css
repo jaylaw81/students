@@ -1,7 +1,6 @@
 body {
     background-color: salmon;
     margin: 0;
-
 }
 
 
@@ -10,4 +9,8 @@ body {
     margin: 0 auto;
     background-color: green;
     padding: 20px;
+}
+
+.main-header {
+    background-color: #221cdb;
 }
