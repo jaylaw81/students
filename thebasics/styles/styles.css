@@ -85,7 +85,7 @@
      clear: both;   
     }
     
-.photo-gallery .li
+.photo-gallery li
     {
      float: left;
      list-style: none;
@@ -95,7 +95,7 @@
      width: 25%;
     }
     
-.photo-gallery .li photo
+.photo-gallery li photo
     {
      height: auto;
      max-height: 165px;
