@@ -42,3 +42,10 @@ body {
     transition: all, o.2s, ease-in-out; 
     text-decoration: none;
 }
+
+
+.main-header .nav .nav-links .link a:hover {
+    color: #999;
+    background-color: #333;
+
+}
