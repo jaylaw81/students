@@ -101,7 +101,7 @@
 .photo-gallery li .photo
     {
      height: auto;
-     min-height: 175px;
+     min-height: 165px;
      width: 100%;
      margin-top: -10px;
     }
