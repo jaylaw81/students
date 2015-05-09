@@ -92,7 +92,10 @@ body {
     width: 100%;
 }
     
-
+.main-footer {
+    backgroun-color: salmon;
+    padding: 20px;
+}
 
 
 
