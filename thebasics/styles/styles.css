@@ -8,11 +8,20 @@ body {
     margin: 0 auto; 
     background-color: ivory; 
     padding: 20px;
+    
+}
+
+.main-header {
+    background-color: pink;
+    height: 130px;
+
+    
 }
 
 .main-header .logo {
-    max-width: 200px;
-    width: 75%
+    max-width: 120px;
+    width: 75%;
+    float: left;
 }
 .main-header .nav {
     float: right;
