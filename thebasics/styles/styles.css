@@ -81,7 +81,7 @@ body {
 
 
 
-.photo-gallery li {
+.photo-gallery li .photo {
     float: left;
     list-style: none;
     max-height: 165px;
