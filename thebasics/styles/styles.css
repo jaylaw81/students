@@ -11,12 +11,14 @@ body {
 }
 
 .main-header {
-    background-color: turquoise; 
+    background-color: turquoise;
+    height: 130px;
 }
 
 .main-header .logo {
-    max-width: 500px;
+    max-width: 150px;
     width: 75%;
+    float: left;
 }
 
 .main-header .nav {
@@ -27,3 +29,5 @@ body {
     margin: 40px 0 0 0;
     padding: 0;
 }
+
+.main-header .nav .nav-links .link
