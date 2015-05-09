@@ -99,12 +99,12 @@ body {
 }
 
 .main-footer {
-    background-color: seashell;
+    background-color: salmon;
     padding: 20px; 
 }
 
 .main-footer .copyright, .main-footer .terms {
-    color: salmon;
+    color: white;
     font-size: 13px;
     font-weight: bold;
     margin: 0;
