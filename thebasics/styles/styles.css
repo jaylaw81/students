@@ -110,6 +110,7 @@
     {
      background-color: #105b74;
      padding: 20px;
+     box-shadow: 0 -5px 20px #333;
     }
 
 .main-footer .copyright, .main-footer .terms
