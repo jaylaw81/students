@@ -93,7 +93,7 @@ body {
     width: 25%;
 }
 
-.photo-gallery li .photo {
+.image-container img, .photo-gallery li .photo {
     height: auto;
     height: 165px;
     width: 100%;
