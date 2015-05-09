@@ -37,7 +37,7 @@ body {
 .main-header .nav .nav-links .link a {
     color: red;
     padding: 10px;
-    transition: all, o.2s, ease-in-out;
+    transition: all, 1.0s, ease-in-out;
     text-decoration: none;
     background-color:pink;
 }
