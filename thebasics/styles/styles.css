@@ -48,7 +48,7 @@ body {
 }
 
 
-.main-header .nav .nav-links .link a:hover{
+.main-header .nav .nav-links .link a:hover, .footer-links a:hover{
     color: #53DD6C;
     background-color:#1C77C3;
     padding: 20px;
