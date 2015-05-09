@@ -35,7 +35,7 @@ body {
 }
 
 .main-header .nav .nav-links .link a {
-    color: lightgreen;
+    color: blue;
     padding: 10px;
     transition: all, o.2s, ease-in-out;
     text-decoration: none;
