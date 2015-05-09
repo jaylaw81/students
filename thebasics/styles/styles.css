@@ -100,7 +100,8 @@ body {
 }
 
 .main-footer {
-    padding: 20px;
+    width: 90%;
+    padding: 0;
 }
 
 .main-footer .shadow-container {
