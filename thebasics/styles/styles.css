@@ -98,7 +98,14 @@ body {
 
 }
 
-
+.main-footer .copyright, .main-footer .terms {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    
+}
 
 
 
