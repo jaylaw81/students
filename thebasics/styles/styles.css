@@ -76,7 +76,7 @@ body {
     overflow: hidden;
     position: relative;
     width: 23%;
-    border: 5px solid darkblue;
+    border: 5px solid #314CB6;
     border-radius: 0px 10px;
     margin: 2px;
 }
@@ -99,3 +99,4 @@ body {
      margin: 0;
      padding: 0;
 }
+
