@@ -113,7 +113,7 @@ body {
     font-weight: normal;
 }
 
-.main-footer .shadow-container {
+.main-footer {
     box-shadow: 0 -5px 20px #333;
 }
     
