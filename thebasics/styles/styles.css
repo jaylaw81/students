@@ -84,7 +84,7 @@ body {
     overflow:hidden;
     position: relative;
     width: 25%;
-    border: 5px dotted turquoise;
+    border: 5px zigzag turquoise;
     border-radius:15px;
 }
 
