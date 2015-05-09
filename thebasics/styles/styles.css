@@ -10,6 +10,10 @@
     padding: 20px;
 }
 
+.main-header {
+    background-color: #4D70B8;
+}
+
 .main-header .logo {
     max-width: 120px;
     width: 75%;
