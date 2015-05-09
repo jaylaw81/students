@@ -31,3 +31,8 @@ body {
     padding: 0;
 
 }
+
+.main-header .nav .nav-link {
+    display: inline;
+    margin-left: 10px;
+}
