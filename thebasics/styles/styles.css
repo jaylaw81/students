@@ -1,19 +1,22 @@
 body {
     background-color: blue;
-    margin: #a33636;
+    margin: #000000;
 }
 
 .main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
-    background-color: #a33636;
+    background-color: #000000;
     padding: 20px;
 }
 
 .main-header {
-    background-color: #FF0000;
+    background-color: #000000;
 }
 
-
+.main-header .logo {
+    max-width: 120px;
+    width: 75%;
+}
     
     
