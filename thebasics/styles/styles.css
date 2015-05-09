@@ -80,7 +80,6 @@ body {
 }
 
 
-
 .photo-gallery li {
     float: left;
     list-style: none;
@@ -89,7 +88,6 @@ body {
     position: relative;
     width: 25%;
 }
-
 
 
 .photo-gallery li .photo {
