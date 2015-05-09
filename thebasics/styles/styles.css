@@ -105,6 +105,7 @@ body {
 
 .main-footer .shadow-container {
     box-shadow: 0 -5px 20px #333;
+    padding: 20px;
     width: 95%;
     margin: 0 auto;
 }
