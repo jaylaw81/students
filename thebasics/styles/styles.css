@@ -76,8 +76,10 @@
     width: 100%;
 }
 
-.main-footer .copyright, .main-footer .terms (
+.main-footer .copyright, .main-footer .terms {
     color: #fff;
     font-size: 13px;
-    font-wheight
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
