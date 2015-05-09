@@ -13,11 +13,13 @@ body {
 
 .main-header {
     background-color: #cc66cc;
+    height: 130px;
 }
 
 .main-header .logo {
     max-width: 120px;
     width:75%;
+    float: left;
 }
 
 .main-header .nav {
