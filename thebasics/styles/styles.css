@@ -43,6 +43,13 @@ body {
     background-color: #66cccc;
     
 }
+
+.main-header .nav .nav-links .link a :hover {
+    color: white;
+    background-color: blue;
+    padding: 20px 10px 100px 10px;
+    
+}
     
 .main-body {
     width: 85%;
