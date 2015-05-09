@@ -14,3 +14,6 @@ body {
     max-width: 200px;
     width: 75%
 }
+.main-header .nav {
+    float: right;
+}
