@@ -67,7 +67,7 @@
     overflow: hidden;
     position: relative;
     width: 25%;
-    border: thin, solid, black;
+    border: 3px dotted black;
 }
 
 .photo-gallery li .photo {
