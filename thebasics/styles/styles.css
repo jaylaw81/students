@@ -38,8 +38,8 @@
 .main-header .nav .nav-links .link a:hover {
     color: black;
     background-color: white;
-    padding-top: 40px;
     font-size: 1.5em;
+    padding-top: 40px;
 }
 
 .main-body {
