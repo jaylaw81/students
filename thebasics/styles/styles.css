@@ -80,7 +80,11 @@ body {
 }
 
 h1:before {
-    content: "hello";
+    content: "hello ";
+}
+
+h1:after {
+    content: " everyone";
 }
 
 
