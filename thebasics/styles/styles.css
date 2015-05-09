@@ -59,7 +59,7 @@
 
 .photo-gallery { margin: 0; padding: 0; }
 .clearfix:before, clearfix:after { content: " "; display: table; }
-.clearfix:aftetr { clear: both; }
+.clearfix:after { clear: both; }
 
 .photo-gallery li {
     float: left;
@@ -69,7 +69,7 @@
     position: relative;
     width: 25%;
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 5px 25px;
 }
 
 .photo-gallery li .photo {
