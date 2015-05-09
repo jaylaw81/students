@@ -1,3 +1,25 @@
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a,
+	.theme-light a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+	  margin: 0;
+	  padding: 0;
+	  border: 0;
+	  font: inherit;
+	  font-size: 100%;
+	  vertical-align: baseline;
+	}
+/*
 body {
     background-color: salmon;
     margin: 0;
@@ -53,10 +75,6 @@ body {
 .main-body {
     width: 85%;
     float: left;
-}
-
-.main-body h1 {
-    /*font-family: 'Anton', sans-serif;*/
 }
 
 .gallery-main-image {
@@ -120,6 +138,7 @@ body {
     background-color: red;
     border-top: 2px solid orange;
 }
+*/
 
 
 
