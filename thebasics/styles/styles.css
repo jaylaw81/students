@@ -97,6 +97,7 @@ body {
     height: auto;
     height: 165px;
     width: 100%;
+    position: relative;
 }
 
 .image-container img {
