@@ -42,7 +42,7 @@ body {
   padding: 10px;
   transition: all, 0.2s, ease-in-out;
   text-decoration: none;
-  background-color: lightblue;
+  background-color: white;
 }
 
 .main-header .nav .nav-links .link a:hover {
