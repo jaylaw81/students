@@ -8,4 +8,8 @@ body {
     margin: 0 auto;
     background-color: grey;
     padding: 20px;
-}    
+}
+
+.main-header {
+    backround-color: #22acdb; 
+}
