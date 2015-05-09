@@ -30,7 +30,7 @@
 .main-header .nav .nav-links .link a {
     color: #fff;
     padding: 10px;
-    border: thin solid black;
+    
     transition: all, 0.1s, ease-in-out;
     text-decoration: none;
 }
@@ -67,6 +67,7 @@
     overflow: hidden;
     position: relative;
     width: 25%;
+    border: thin solid black;
 }
 
 .photo-gallery li .photo {
