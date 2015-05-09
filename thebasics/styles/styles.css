@@ -1,19 +1,23 @@
-.main-header, .section-container, .main-footer {
+.main-header, .section-container, .main-footer 
+    {
     width: 90%; 
     margin: 0 auto; 
     background-color: lightblue; 
     padding: 20px;
-}
+    }
 
-.main-header {
-        background-color: #22acdb;
-}
+.main-header 
+    {
+    background-color: #22acdb;
+    }
 
-.main-header .logo {
-    max-width: 130px;
+.main-header .logo 
+    {
+    max-width: 200px;
     width: 75%;
-}
+    }
 
-.main-header .nav {
+.main-header .nav 
+    {
     float:right;
-}
+    }
