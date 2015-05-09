@@ -92,6 +92,12 @@ body {
     margin: 1%;
 }
 
+.photo-gallery li .photo {
+    height: auto;
+    max-height: 165;
+    width: 100;
+}
+
 
 
 
