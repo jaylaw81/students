@@ -63,7 +63,7 @@
     float: left;
     list-style: none;
     max-height: 165px;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     width: 25%;
 }
