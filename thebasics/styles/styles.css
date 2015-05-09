@@ -104,9 +104,10 @@ body {
     padding: 20px;
 }
 
-.main-footer:before {
-    content: " ";
+.main-footer .shadow-container {
     box-shadow: 0 -5px 20px #333;
+    width: 95%;
+    margin: 0 auto;
 }
 
 
