@@ -43,11 +43,10 @@ body {
     background-color: salmon;
 }
 
-a {
-    color: red;
+.main-header .nav .nav-links .link a:hover {
+    color: white;
+    background-color: purple;
 }
-
-
 
 
 
