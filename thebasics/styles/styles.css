@@ -119,6 +119,7 @@ body {
 
 .footer-links li a:hover {
     background-color: red;
+    border-top: 2px solid orange;
 }
 
 
