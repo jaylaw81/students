@@ -42,7 +42,7 @@ body {
 .main-header .nav .nav-links .link a {
     color: red;
     padding: 10px;
-    transition: all, 1.0s, ease-in-out;
+    transition: all, 0.5s, ease-in-out;
     text-decoration: none;
     background-color:pink;
 }
@@ -54,7 +54,9 @@ body {
     padding: 20px;
 }
 
-
+.gallery-main-image {
+    margin-bottom: 10px;
+}
 
 
 
