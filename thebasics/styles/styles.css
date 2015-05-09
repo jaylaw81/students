@@ -40,7 +40,7 @@ body {
     padding: 10px;
     transition: all, 0.9s, ease-in-out;
     text-decoration: none;
-    background-color: lightgrey;
+    background-color: #5C6B73;
 }
 
 .main-header .nav .nav-links .link a:hover { 
