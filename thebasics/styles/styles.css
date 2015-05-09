@@ -86,7 +86,8 @@ body {
     overflow: hidden;
     position: relative;
     width: 24%;
-    border: 3px dotted #ff0000;
+    border: 2px solid purple;
+    border-radius: 5px;
 }
 
 
