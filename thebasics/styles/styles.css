@@ -32,6 +32,6 @@
     
 .main-header .nav .nav-links .link
     {
-    display: inline;
+    display: none;
     margin-left: 10px;
     }
