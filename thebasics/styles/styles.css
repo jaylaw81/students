@@ -3,13 +3,13 @@ body {
     margin: 0;
 }
 
+.main-header {
+    background-color: #22acdb;
+}
+
 .main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
     background-color: #006666;
     padding: 20px;
-}
-
-.main-header {
-    background-color: #22acdb;
 }
