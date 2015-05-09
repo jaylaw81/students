@@ -27,3 +27,7 @@ body {
     margin: 40px 0;
     padding: 0;
 }
+
+.main-header .nav .navlinks .link {
+    display: inline;
+    margin-left: 10px; }
