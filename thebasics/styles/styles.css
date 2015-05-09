@@ -3,6 +3,7 @@
     margin: 0 auto;
     background-color: #003399;
     padding: 20px;
+    margin:
 }
 
 .main-header {
@@ -31,7 +32,7 @@
 .main-header .nav .nav-links .link a {
     color: #fff;
     padding: 10px;
-    transition: all, 0.25s, ease-in-out;
+    transition: all, 0.25s, ease-out;
     text-decoration: none;
 }
 
