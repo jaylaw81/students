@@ -32,7 +32,7 @@ body {
 
 }
 
-.main-header .nav .nav-link {
+.main-header .nav .nav-link .link {
     display: inline;
     margin-left: 10px;
 }
