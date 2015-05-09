@@ -91,7 +91,7 @@
 }
 
 .main-footer .nav { /*THE LOWER NAV*/
-    float: right;
+    float: left;
 }
 
 .main-footer .nav .footer-links { /*THE LOWER NAV LINKS*/
