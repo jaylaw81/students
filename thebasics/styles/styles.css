@@ -29,6 +29,11 @@ body {
     padding: o;
 }
 
+.main-header .nav .nav-links .link{
+    diplay: inline;
+    margin-left: 10px;
+}
+
 
 
 
