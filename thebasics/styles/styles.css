@@ -74,7 +74,7 @@
      padding: 0;
     }
 
-.clearfix:before, .clearfix.after
+.clearfix:before, .clearfix:after
     {
      content: " ";
      display: table;
@@ -84,3 +84,4 @@
     {
      clear: both;   
     }
+    
