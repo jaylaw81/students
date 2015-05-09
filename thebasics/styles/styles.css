@@ -1,12 +1,12 @@
 body {
-    background-color: blue;
+    background-color: grey;
     margin: 0;
 }
 
 .main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
-    background-color: grey;
+    background-color: blue;
     padding: 20px;
 }
 
