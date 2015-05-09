@@ -92,7 +92,8 @@
      nax-height: 165px;
      overflow: hidden;
      position: relative;
-     width: 25%;
+     width: 24%;
+     border: thin solid block
     }
     
 .photo-gallery li .photo
