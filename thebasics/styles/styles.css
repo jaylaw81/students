@@ -87,7 +87,7 @@ body {
     position: relative;
     width: 24%;
     border: 5px solid orange;
-    border-radius: 10px;
+    border-radius: 0px 25px;
 }
 
 
