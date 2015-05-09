@@ -31,7 +31,7 @@ body {
 }
 
 .main-header .nav .nav-links .link {
-    display: block;
+    display: none;
     margin-left: 10px;
 }
 
