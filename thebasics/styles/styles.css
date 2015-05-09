@@ -30,6 +30,7 @@
 .main-header .nav .nav-links .link a {
     color: #fff;
     padding: 10px;
+    background-color: black;
     transition: all, 0.1s, ease-in-out;
     text-decoration: none;
 }
