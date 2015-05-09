@@ -85,3 +85,12 @@
      clear: both;   
     }
     
+.photo-gallery li
+    {
+     float: left;
+     list-style: none;
+     nax-height: 165px;
+     overflow: hidden;
+     position: relative;
+     width: 25%;
+    }
