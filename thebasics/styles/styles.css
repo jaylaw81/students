@@ -100,8 +100,8 @@
     
 .photo-gallery li .photo
     {
-     height: 165px;
-     width: auto;
+     height: auto;
+     width: 100%;
     }
 
 .main-footer
