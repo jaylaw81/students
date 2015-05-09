@@ -75,7 +75,9 @@ body {
     max-height: 165px;
     overflow: hidden;
     position: relative;
-    width: 25%;
+    width: 24%;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
 }
 
 .photo-gallery li .photo {
