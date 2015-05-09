@@ -9,7 +9,7 @@
 .main-header { /*THE TOP HEADER BORDER AND COLOR*/
     background-color: #4D70B8;
     border: 5px solid black;
-    box-shadow: 20px 5px 10px #333;
+    box-shadow: 0 5px 10px #333;
 }
 
 .main-header .logo { /*MAIN PICTURE IN TOP HEADER*/
