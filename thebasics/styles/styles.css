@@ -12,3 +12,8 @@ body {
 .main-header {
     background-color: turquoise;
 }
+
+.main-header .logo {
+    max-width: 120px;
+    width: 75%;
+}
