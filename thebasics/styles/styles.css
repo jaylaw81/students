@@ -1,4 +1,9 @@
-.main-header, .section-container, .main-footer {
+body {
+    background-color: salmon;
+    margin: 0;
+}
+
+    .main-header, .section-container, .main-footer {
     width: 90%; 
     margin: 0 auto; 
     background-color: #fff; 
