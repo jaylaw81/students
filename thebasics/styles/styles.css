@@ -34,7 +34,7 @@ body {
     padding: o;
 }
 
-.main-header .nav .nav-links .link{
+.main-header .nav .nav-links .link, .footer-links li{
     display: inline;
     margin-left: 10px;
 }
