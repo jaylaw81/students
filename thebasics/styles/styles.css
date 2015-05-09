@@ -83,7 +83,7 @@ body {
     float: left;
     list-style: none;
     max-height: 165px;
-    overflow: auto;
+    overflow: visible;
     position: relative;
     width: 25%;
 }
