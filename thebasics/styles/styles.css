@@ -81,7 +81,7 @@ body {
 
 
 
-.photo-gallery li .photo {
+.photo-gallery li {
     float: left;
     list-style: none;
     max-height: 165px;
@@ -89,3 +89,12 @@ body {
     position: relative;
     width: 25%;
 }
+
+
+
+.photo-gallery li .photo {
+    height: auto;
+    max-height: 165px;
+    width: 100%;
+}
+
