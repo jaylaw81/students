@@ -14,3 +14,6 @@
     max-width: 12-px;
     width: 75%;
 }
+.main-header .nav {
+    float: right;
+}
