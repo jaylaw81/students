@@ -99,6 +99,10 @@ body {
     width: 100%;
 }
 
+.image-container img {
+    height: 600px;
+}
+
 
 
 
