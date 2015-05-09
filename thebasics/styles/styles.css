@@ -13,6 +13,7 @@
     max-width: 120px;
     width: 75%;
 }
+
 .main-header .nav {
     float: right;
 }
@@ -30,8 +31,14 @@
 .main-header .nav .nav-links .link a {
     color: #fff;
     padding: 10px;
-    transition: all, 0.2s, ease-in-out;
+    transition: all, 0.5s, ease-in-out;
     text-decoration: none;
+}
+
+.main-header .nav .nav-links .link a:hover {
+    color: black;
+    background-color: white;
+    padding-top: 40px;
 }
 
 .main-body {
@@ -66,4 +73,10 @@
     height: auto;
     max-height: 165px;
     width: 100%;
+}
+
+.main-footer .copyright, .main-footer .terms (
+    color: #fff;
+    font-size: 13px;
+    font-wheight
 }
