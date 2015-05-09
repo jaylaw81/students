@@ -92,6 +92,7 @@ body {
 
 
 .photo-gallery li .photo {
+    float: center;
     height: auto;
     max-height: 165px;
     width: 100%;
