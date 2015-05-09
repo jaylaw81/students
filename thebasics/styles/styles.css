@@ -48,6 +48,7 @@
 .main-body { /**/
     width: 85%;
     float: left;
+    background-color: blue;
 }
 
 .gallery-main-image { /**/
@@ -88,7 +89,6 @@
     font-style: italic;
     margin: 0;
     padding: 0;
-    border: 1px solid black
 }
 
 main-footer {
