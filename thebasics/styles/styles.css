@@ -2,6 +2,7 @@
     width: 90%;
     margin: 0 auto;
     background-color: #003399;
+    box-shadow: 0 5px 20px #333;
     padding: 20px;
     border: 1px solid black
 }
@@ -9,7 +10,6 @@
 .main-header { /*THE TOP HEADER BORDER AND COLOR*/
     background-color: #4D70B8;
     border: 5px solid black;
-    box-shadow: 0 5px 20px #333;
 }
 
 .main-header .logo { /*MAIN PICTURE IN TOP HEADER*/
