@@ -84,7 +84,8 @@
 .main-footer .copyright, .main-footer .terms {
     color: #fff;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: normal;
+    font-style: italic;
     margin: 0;
     padding: 0;
 }
