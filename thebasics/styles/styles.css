@@ -1,7 +1,7 @@
 body {
     background-color: salmon;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
 }
 
 .main-header, .section-container, .main-footer {
@@ -57,7 +57,7 @@ body {
 }
 
 .main-body h1 {
-    font-family: 'Anton', sans-serif;
+    /*font-family: 'Anton', sans-serif;*/
 }
 
 .gallery-main-image {
