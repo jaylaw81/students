@@ -13,3 +13,8 @@ body {
 .main-header {
     background-color: black;
 }
+
+.main-header .logo {
+    max-width: 120px;
+    width: 75%;
+}
