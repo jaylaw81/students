@@ -74,13 +74,13 @@ function createGallery(element,path,file,alt){
     document.querySelector(element).innerHTML = liString;
 }
 
-// 1.jpg
+// <a href="#self" onclick="showImage('german-shepherd6.jpg');" alt="Sorry the picture didn't load. :(-6" src="/animals/germanshepherd/german-shepherd6.jpg"></a>
 var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/germanshepherd/";   
 var imageName = "german-shepherd";
 var altName = "Sorry the picture didn't load. :(";
 
-createGallery(galleryContainer, imagePath, imageName, altName);
+//createGallery(galleryContainer, imagePath, imageName, altName);
 
 function showImage(argument) {
     var img = "<img src='/animals/germanshepherd/" +argument +"'>";
