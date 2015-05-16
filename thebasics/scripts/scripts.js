@@ -63,9 +63,13 @@ function createGallery(element,path,file,alt){
     }
     document.querySelector(element).innerHTML = liString
 }
-    var galleryContainer = ".photo-gallery";
-    var imagePath = "/animals/polarbear/";  
-    var imageName = "polarbear";
-    var altName = "polarbear";
+var galleryContainer = ".photo-gallery";
+var imagePath = "/animals/polarbear/";  
+var imageName = "polarbear";
+var altName = "polarbear";
     
-    createGallery(galleryContainer, imagePath, imageName, altName);
+createGallery(galleryContainer, imagePath, imageName, altName);
+
+function showImage(argument){
+    
+}
