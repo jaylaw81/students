@@ -70,11 +70,11 @@ function createGallery(element,path,file,alt){
         liString += '<li><a href="#self" onclick="showImage(\'' +file+ j+ '.jpg\');"' +alt+ '-' + j+ '" src="' + path +file + j +'.jpg"></a></li>\n';
         
     }
-    console.log(liString);
-    //document.querySelector(element).innerHTML = liString;
+    //console.log(liString);
+    document.querySelector(element).innerHTML = liString;
 }
 
-var galleryContainer = ".photo-Gallery";
+var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/germanshepherd/";   
 var imageName = "german-shepherd";
 var altName = "Sorry the picture didn't load. :(";
