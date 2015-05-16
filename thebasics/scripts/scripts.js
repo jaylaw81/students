@@ -83,7 +83,7 @@ createGallery(galleryContainer, imagePath, imageName, altName);
 function showimage(argument) {
     var img = "<img src='/animals/germanshepherd/" +argument +"'>";
 
-document.queryselector(".gallery-main-image image-container").innerHTML = img;
+document.queryselector(".gallery-main-image .image-container").innerHTML = img;
 
 return false;
 
