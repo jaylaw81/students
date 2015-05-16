@@ -80,7 +80,7 @@ var altName = "Sorry the picture didn't load. :(";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
-function showimage(argument) {
+function showImage(argument) {
     var img = "<img src='/animals/germanshepherd/" +argument +"'>";
 
 document.queryselector(".gallery-main-image .image-container").innerHTML = img;
