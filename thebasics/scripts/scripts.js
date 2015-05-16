@@ -59,7 +59,7 @@ var imagePath ="/animals/germanshepherd/";
 var imageName = "German Shepherds";
 var altName = "Pictures of German Shepherds";
 
-
+createGallery(galleryContainer, imagePath, imageName, altName);
 
 
 
