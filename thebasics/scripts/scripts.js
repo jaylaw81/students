@@ -46,9 +46,9 @@ console.log("Hello "+_myFriend +". It is me, "+ _myName +" and this is my "+ _st
 }
 myFirstFunction('Mike','Pat','first');
 
-function createGallery(element,path,file,alt){}
+function createGallery(element,path,file,alt){
 var liString = "";
-
+}
 
 
 
