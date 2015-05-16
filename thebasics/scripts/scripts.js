@@ -5,7 +5,8 @@ var stringPartCharacters = "characters";
 var myFullString = "A string may contain as many ";
 myFullString += stringPartLetters+", "+stringPartNumbers+" and "+stringPartCharacters+" as you want.";
 console.log(myFullString);
-
+var count = 10;
+var multiplier = 20;
 
 
 
