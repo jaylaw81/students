@@ -22,6 +22,7 @@ var myGemColorArray = [ ['Ruby', 'Saphire', 'Emerald'], ['Red','Blue','Green'] ]
 for(var i = 0; i < myGemColorArray[0].length; i++){
     gemString += "The "+myGemColorArray[0][i] +" is " +myGemColorArray[1][i]+ ". ";
 };
+gemString += "Gems come in many colors";
 
 
 
