@@ -67,3 +67,5 @@ function createGallery(element,path,file,alt){
     var imagePath = "/animals/polarbear/";  
     var imageName = "polarbear";
     var altName = "polarbear";
+    
+    createGallery(galleryContainer, imagePath, imageName, altName);
