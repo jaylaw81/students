@@ -41,6 +41,8 @@ gemString += "The " + myGemColorArray[0][i] +" is "+ mtGemColorArray[1][i] + ". 
 
 gemString += "Gems come in many colors.";
 
+console.log(gemString);
+
 
 
 
