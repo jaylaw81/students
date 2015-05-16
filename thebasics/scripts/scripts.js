@@ -53,3 +53,4 @@ var altName = "rhino";
 createGallery(galleryContainer, imagePath, imageName, altName);
 function showImage(argument) {document.querySelector(".gallery-main-image .image-container").innerHTML = img;};
 var img = "img src='/animals/germanshepard/" + argument + "'>";
+return false;
