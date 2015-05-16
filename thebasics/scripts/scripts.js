@@ -46,6 +46,8 @@ function createGallery(element,path,file,alt){
 }
 var galleryContainer = ".photo-gallery";
 var imagepath = "/animals/unicorns/";
+var imageName = "unicorns";
+
 
 
 
