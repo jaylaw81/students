@@ -68,8 +68,9 @@ function createGallery(element,path,file,alt){
     var liString = "";
     for (var j = 1; j <= 8; j++){
         liString += '<li><a href="#self" onclick="showImage(\'' +file+ j+ '.jpg\');"' +alt+ '-' + j+ '" src="' + path +fle + j +'.jpg"></a></li>\n';
-        document.querySelector(element).innerHTML = liString
+        
     }
+    document.querySelector(element).innerHTML = liString
 }
 
 var galleryContainer = ".photo-Gallery";
