@@ -73,6 +73,8 @@ function createGallery(element,path,file,alt){
 }
 
 var galleryContainer = ".photo-Gallery";
+
+var imagePath = "/animals/Dragons/"
     
 
 
