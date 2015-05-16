@@ -56,5 +56,5 @@ function myFirstFunction (_myFriend, _myName, _status){
 myFirstFunction("Chris", "Brian", "first");
 
 function createGallery(element,path,file,alt){
-    
+    var liString = "";
 }
