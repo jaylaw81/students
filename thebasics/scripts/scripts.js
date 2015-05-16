@@ -24,8 +24,8 @@ gemString += "The " + myGemColorArray[0][i] +" is "+ myGemColorArray[1][i] + ". 
 gemString += "Gems come in many colors. ";
 console.log(gemString);
 var myFriendCompare = "";
-var myFriendName = "Mike";
-var myAge = 12;
+var myFriendName = "Beyonce";
+var myAge = 17;
 var myFriendAge = 13;
 if(myAge > myFriendAge){
  myFriendCompare = "I am older than "+myFriendName+".";  
