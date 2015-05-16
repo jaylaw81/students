@@ -34,10 +34,15 @@ if(myAge > myFriendAge){
 }else{ 
     myFriendCompare = myFriendName+ "Is older than me.";
 }
+
 console.log(myFriendCompare);
-function myFirstFunction(_myFriend,_myName,_status ) {}
-console.log("Hello "+_myFriend +". It is me, "+_myName +"and this is my "+_status +" function!");
+
+function myFirstFunction(_myFriend,_myName,_status ) {
+    console.log("Hello "+_myFriend +". It is me, "+_myName +"and this is my "+_status +" function!");    
+}
+
 myFirstFunction("Mike","Ben","first");
+
 function createGallery(element,path,file,alt){ }
 var liString = "";
 for (var j = 1; j <= 8; j++) { }
