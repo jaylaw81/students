@@ -74,17 +74,14 @@ function createGallery(element,path,file,alt){
 }
 
 var galleryContainer = ".photo-Gallery";
-
-var imagePath = "/animals/germanshepherd/";
-    
+var imagePath = "/animals/germanshepherd/";   
 var imageName = "german-shepherd";
-
 var altName = "Sorry the picture didn't load. :(";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
 function showimage(argument) {
-    var img = "<img src='/animal/germanshepherd/" +argument +"'>";
+    var img = "<img src='/animals/germanshepherd/" +argument +"'>";
 
 document.queryselector(".gallery-main-image image-container").innerHTML = img;
 
