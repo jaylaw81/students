@@ -54,7 +54,7 @@ function createGallery(element,path,file,alt){
     document.querySelector(element).innerHTML = liString;   
 }
 
-var GalleryContainer = ".photo-gallery";
+var galleryContainer = ".photo-gallery";
 var imagePath ="/animals/germanshepherd/";
 var imageName = "German Shepherds";
 var altName = "Pictures of German Shepherds";
