@@ -27,7 +27,7 @@ console.log(myColor);
 
 var myFruitColorArray = [ ['apples' , 'bananas' , 'grapes'], ['red', 'yellow' , 'green'] ];
 
-var myFruitColor = "I like "+myFruitColorArray[0][1]+" because they are "+myFruitColorArray[1][1];
+var myFruitColor = "I like "+myFruitColorArray[0][1]+" because they are "+yFruitColorArray[1][1];
 
 console.log(myFruitColor);
 
@@ -37,6 +37,6 @@ var myGemColorArray = [ ['ruby' , 'saphire' , 'emerald'], ['red','blue','green']
 
 for(var i = 0; i < myGemColorArray[0].length; i++){ };
 
-gemString += "the " + myGemColorArray[0][i] +" is "+ mygemColrArray[1][i] +". ";
+gemString += "the " + myGemColorArray[0][i] +" is "+ myGemColorArray[1][i] +". ";
 
 
