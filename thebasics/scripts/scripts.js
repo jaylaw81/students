@@ -29,7 +29,7 @@ var myFruitColorArray = [ ['apples' , 'bananas' , 'grapes'], ['red', 'yellow' , 
 
 var myFruitColor = "I like "+myFruitColorArray[0][1]+" because they are "+myFruitColorArray[1][1];
 
-
+console.log(myfruitcolor);
 
 
 
