@@ -11,8 +11,7 @@ var calculateVariables = "I have  "+(count*multiplier)+" friends on 'facebook'."
 console.log(calculateVariables)
 var stringYear = "in the year"+multiplier.toString() + count.toString() + ", most of us were 3 years old.";
 console.log(stringYear);
-
-
+var myColorArray = [ "Orange","Red","Yellow", "Green" ];
 
 
 
