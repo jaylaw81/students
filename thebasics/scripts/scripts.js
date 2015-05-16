@@ -37,6 +37,8 @@ var myGemColorArray = [  ['Ruby', 'Saphire', 'Emerald']  ];
 
 for(var i = 0; i < myGemColorArray[0].length; i++){};
 
+gemString += "The " + myGemColorArray[0][i] +" is "+ mtGemColorArray[1][i] + ". ";
+
 
 
 
