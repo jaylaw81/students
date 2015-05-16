@@ -1,10 +1,10 @@
 var myVariable = "value";
 
     var stringPartLetters = "letters";
-    var stringPartNumber = "numbers";
+    var stringPartNumbers = "numbers";
     var stringPartCharacters = "characters";
     
-var myFullString = "A string may contain as many "+stringPartLetters+", "+stringPartNumber+" and "+stringPartCharacters+" as you want.";
+var myFullString = "A string may contain as many "+stringPartLetters+", "+stringPartNumbers+" and "+stringPartCharacters+" as you want.";
 
 console.log(myFullString);
 
