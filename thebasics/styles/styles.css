@@ -63,10 +63,14 @@ body {
     margin: o auto;
     width: 800px;
 }
+.image-container img{
+    width : 100%;
+}
 
-.photo-gallery {
+.photo-gallery{
     margin: 0;
     padding:0
+    
 }
 .clearfix:before, .clearfix:after{
     content:" ";
