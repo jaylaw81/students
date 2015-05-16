@@ -39,8 +39,8 @@ function myFirstFunction(_myFriend, _myName, _status) {
 myFirstFunction('Beyonce', 'BB', 'first');
 function createGallery(element,path,file,alt){
     var listring = "";  
+    for (var j = 1; j <= 8; j++) {}
 }
-for (var j = 1; j <= 8; j++) {}
 
 
 
