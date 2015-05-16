@@ -78,14 +78,14 @@ var imagePath = "/animals/germanshepherd/"
     
 var imageName = "german-shepherd";
 
-var altName = "germanshepherd";
+var altName = "Sorry the picture didn't load. :(";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
 function showimage(argument) {
     var img = "<img src='/animal/germanshepherd/" +argument +"'>";
 
-document.queryselector(".gallery-main-image image-container").innerHTML = img
+document.queryselector(".gallery-main-image image-container").innerHTML = img;
 
 return false;
 
