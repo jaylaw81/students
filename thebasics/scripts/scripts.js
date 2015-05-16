@@ -22,3 +22,5 @@ for(var i = 0; i < myGemColorArray[0].length; i++){gemString += "The " + myGemCo
 
 gemString += "Gems come in many colors";
 console.log(gemString);
+var myFriendCompare = "";
+var myFriendName = "Bob";
