@@ -84,7 +84,7 @@ var imagePath = "/animals/germanshepherd/";
 
 var imageName = "german-shepherd";
 
-var altName = "german-shepherd";
+var altName = "error... the picture can not load";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
