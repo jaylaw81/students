@@ -82,9 +82,9 @@ var galleryContainer = ".photo-gallery";
 
 var imagePath = "/animals/germanshepherd/";
 
-var imageName = "rhino";
+var imageName = "german-shepherd";
 
-var altName = "rhino";
+var altName = "german-shepherd";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
