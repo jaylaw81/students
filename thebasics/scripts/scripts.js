@@ -94,6 +94,7 @@ function showImage(argument) {
 document.querySelector(".gallery-main-image .image-container").innerHTML = img;
 
 return false;
+
 }
 
 
