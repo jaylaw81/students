@@ -66,6 +66,7 @@ body {
 
 .image-container img{
     width : 100%
+    
 }
 .photo-gallery { margin: 0; padding: 0; }
     .clearfix:before, .clearfix:after { content: ""; display: table; }
