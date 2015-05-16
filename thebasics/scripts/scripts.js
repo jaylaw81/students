@@ -43,3 +43,49 @@ for(var i = 0; i < myGemColorArray[0].length; i++){
 gemString += "Gems come in many colors";
 
 console.log(gemString);
+
+var myFriendCompare = "";
+var myFriendName = "Mike";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
