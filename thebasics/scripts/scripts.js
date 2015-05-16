@@ -7,7 +7,7 @@ myFullString += ","+stringPartLetters+" and "+stringPartNumbers+" and "+stringPa
 console.log(myFullString)
 var count = 10;
 var multiplier = 20;
-
+var calculateVariables = "I have  "+(count*multiplier)+" friends on 'facebook'.";
 
 
 
