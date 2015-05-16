@@ -82,7 +82,9 @@ var altName = "dragon";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
-
+function showimage(argument) {
+    
+}
 
 
 
