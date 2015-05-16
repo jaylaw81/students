@@ -74,6 +74,7 @@ function createGallery(element,path,file,alt){
     document.querySelector(element).innerHTML = liString;
 }
 
+// 1.jpg
 var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/germanshepherd/";   
 var imageName = "german-shepherd";
