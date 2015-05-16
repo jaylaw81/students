@@ -60,7 +60,7 @@ body {
 
 .image-container{
     height: 600px;
-    margin: o auto;
+    margin: 0 auto;
     width: 800px;
 }
 .image-container img{
