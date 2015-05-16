@@ -57,6 +57,8 @@ myFriendCompare = "I am older than "+myFriendName+".";
 
 myFriendCompare = myFriendName+" is younger than me.";
 
+console.log(myFriendCompare);
+
 
 
 
