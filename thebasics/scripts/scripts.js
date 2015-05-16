@@ -16,3 +16,5 @@ var stringYear = "In the year " + multiplier.toString() + count.toString() + ", 
 console.log(stringYear);
 
 var myColorArray = ['Orange', 'Red', 'Yellow', 'Green'];
+
+var myColor = "My favorite color is " + myColorArray[2];
