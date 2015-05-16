@@ -76,7 +76,7 @@ var galleryContainer = ".photo-Gallery";
 
 var imagePath = "/animals/Dragons/"
     
-
+var imageName = "dragon";
 
 
 
