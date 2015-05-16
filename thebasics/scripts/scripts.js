@@ -32,7 +32,7 @@ var myFriendAge = 13;
 if(myAge > myFriendAge){
     mtFriendCompare = " I am older than" +myFriendName+"."; 
 }else{ 
-    
+    myFriendCompare = myFriendName+ "Is older than me.";
 }
 
 
