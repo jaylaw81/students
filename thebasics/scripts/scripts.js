@@ -69,6 +69,8 @@ console.log("hello "+_myFriend +". It is me, "+_myName +"and this is my "+_statu
 
 myFirstFunction('Chason', 'Caden', 'first');
 
+function createGallery(element,path,file,alt){}
+
 
 
 
