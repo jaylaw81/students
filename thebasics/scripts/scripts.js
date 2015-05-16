@@ -86,7 +86,7 @@ var imageName = "rhino";
 
 var altName = "rhino";
 
-
+createGallery(galleryContainer, imagePath, imageName, altName);
 
 
 
