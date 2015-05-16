@@ -85,10 +85,11 @@ body {
     height: 600px;
     margin: 0 auto;
     width: 800px;
+    overflow:hidden;
 }
 
 .image-container img{
-    height : 100%;   
+    width : 100%;   
 }
 
 .photo-gallery {
