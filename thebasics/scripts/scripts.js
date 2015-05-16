@@ -60,6 +60,7 @@ var imageName = "german-shepherd";
 var altName = "Pictures of German Shepherds";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
+function showImage(arguemnt) {};
 
 
 
