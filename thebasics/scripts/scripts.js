@@ -82,6 +82,8 @@ var galleryContainer = ".photo-gallery";
 
 var imagePath = "/animals/German Shepards/";
 
+var imageName = "rhino";
+
 
 
 
