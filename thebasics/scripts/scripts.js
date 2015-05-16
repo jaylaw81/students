@@ -51,6 +51,8 @@ varmyFriendName = "Chason";
 var myAge= 12;
 var myFriendAge = 12;
 
+if(myAge > myFriendAge){}else{}
+
 
 
 
