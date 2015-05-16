@@ -88,7 +88,7 @@ function showimage(argument) {
 
 var img = "<img src='/animal/dragon/" +argument +"'>";
 
-
+document.queryselector(".gallery-main-image image-container").innerHTML = img
 
 
 
