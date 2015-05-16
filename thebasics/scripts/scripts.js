@@ -49,10 +49,11 @@ var imagepath = "/animals/unicorns/";
 var imageName = "unicorns";
 var altName = "Unicorn Gallery";
 createGallery(galleryContainer, imagepath, imageName, altName);
-function showImage (argument) {};
+function showImage (argument) {
 var img = "<img src= '/animals/unicorns/" + argument + "'>";
 document.querySelector(".gallery-main-image .image-container").innerHTML = img;
 return false;
+};
 
 
 
