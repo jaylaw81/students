@@ -78,7 +78,7 @@ var imagePath = "/animals/Dragons/"
     
 var imageName = "dragon";
 
-
+var altName = "dragon";
 
 
 
