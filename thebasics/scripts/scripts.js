@@ -53,7 +53,7 @@ function showImage (argument) {
 var img = "<img src= '/animals/unicorns/" + argument + "'>";
 document.querySelector(".gallery-main-image .image-container").innerHTML = img;
 return false;
-};
+}
 
 
 
