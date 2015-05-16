@@ -1,0 +1,1 @@
+var myvarible= "value";
