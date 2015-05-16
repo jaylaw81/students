@@ -67,20 +67,22 @@ myFirstFunction('Brian','Chris','first');
 function createGallery(element,path,file,alt){
     var liString = "";
     for (var j = 1; j <= 8; j++){
-        liString += '<li><a href="#self" onclick="showImage(\'' +file+ j+ '.jpg\');" alt="' +alt+ '-' + j+ '" src="' + path +file + j +'.jpg"></a></li>\n';
+        liString += '<li><a href="#self" onclick="showImage(\'' +file+ j+ '.jpg\');"> <img alt="' +alt+ '-' + j+ '" src="' + path +file + j +'.jpg"></a></li>\n';
         
     }
     //console.log(liString);
     document.querySelector(element).innerHTML = liString;
 }
 
-// <a href="#self" onclick="showImage('german-shepherd6.jpg');" alt="Sorry the picture didn't load. :(-6" src="/animals/germanshepherd/german-shepherd6.jpg"></a>
+// 
+
+//<a href="#self" onclick="showImage('german-shepherd6.jpg');"> //<img alt="Sorry the picture didn't load. :(-6" src="/animals/germanshepherd/german-shepherd6.jpg"></a>
 var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/germanshepherd/";   
 var imageName = "german-shepherd";
 var altName = "Sorry the picture didn't load. :(";
 
-//createGallery(galleryContainer, imagePath, imageName, altName);
+createGallery(galleryContainer, imagePath, imageName, altName);
 
 function showImage(argument) {
     var img = "<img src='/animals/germanshepherd/" +argument +"'>";
