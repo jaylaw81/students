@@ -53,8 +53,8 @@ function createGallery(element,path,file,alt){
 
 var galleryContainer = ".photo-gallery";
 var imagePath= "/animals/germanshepherd/";
-var imageName = "german-sheperd";
-var altName = "germanshepard";
+var imageName = "german-shepherd";
+var altName = "germanshepherd";
 createGallery(galleryContainer, imagePath, imageName, altName);
 function showImage(argument) { 
 var img = "<img src='/animals/germanshepherd/" + argument + "'>";
