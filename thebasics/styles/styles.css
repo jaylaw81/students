@@ -1,6 +1,184 @@
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a,
+	.theme-light a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+	  margin: 0;
+	  padding: 0;
+	  border: 0;
+	  font: inherit;
+	  font-size: 100%;
+	  vertical-align: baseline;
+	}
+
+body {
+    background-color: salmon;
+    margin: 0;
+}
+
 .main-header, .section-container, .main-footer {
     width: 90%;
     margin: 0 auto;
-    background-color: #0000FF;
+    background-color: #006666;
     padding: 20px;
+    color: white;
 }
+
+.main-header {
+    background-color: #efefef;
+    height: 130px;
+}
+
+.main-header .logo {
+    max-width: 120px;
+    width: 75%;
+    float: left;
+}
+
+.main-header .nav {
+    float: right;
+}
+
+.main-header .nav .nav-links {
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+.main-header .nav .nav-links .link, .footer-links li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.main-header .nav .nav-links .link a, .footer-links li a {
+    color: black;
+    padding: 10px;
+    transition: all, 1s, ease-in-out;
+    text-decoration: none;
+    background-color: salmon;
+}
+
+.main-header .nav .nav-links .link a:hover, .footer-links li a:hover {
+    color: white;
+    background-color: purple;
+    padding: 20px 10px 100px 10px;
+}
+
+.main-body {
+    width: 85%;
+    float: left;
+}
+
+.gallery-main-image {
+    margin: 0 0 10px 0;
+}
+
+.image-container {
+    height: 600px;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.photo-gallery {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.photo-gallery li {
+    float: left;
+    list-style: none;
+    max-height: 165px;
+    overflow: hidden;
+    position: relative;
+    width: 25%;
+}
+
+.photo-gallery li .photo {
+    height: auto;
+    height: 165px;
+    width: 100%;
+}
+
+.main-footer {
+    background-color: green;
+    padding: 20px;
+    box-shadow: 0 -20px 20px -20 black;
+}
+
+.main-footer .copyright, .main-footer .terms {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer .terms {
+    font-size: 36px;
+}
+
+.footer-links li a:hover {
+    background-color: red;
+    border-top: 2px solid orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
