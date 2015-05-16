@@ -50,4 +50,4 @@ var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/germanshepard/";
 var imageName = "rhino";
 var altName = "rhino";
-createGallery(galleryConatiner, imagePath, imageName, altName);
+createGallery(galleryContainer, imagePath, imageName, altName);
