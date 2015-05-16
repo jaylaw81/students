@@ -45,6 +45,7 @@ function createGallery(element,path,file,alt){
     document.querySelector(element).innerHtML = listring;
 }
 var galleryContainer = ".photo-gallery";
+var imagepath = "/animals/unicorns/";
 
 
 
