@@ -52,7 +52,7 @@ var imagePath = "/animals/elephants/";
 var imageName = "elephants";
 var altName = "Elephants";
 createGallery(galleryContainer, imagePath, imageName, altName);
-
+function showImage(argument) {};
 
 
 
