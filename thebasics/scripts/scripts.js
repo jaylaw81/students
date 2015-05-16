@@ -48,7 +48,7 @@ console.log(gemString);
 var myFriendCompare = "";
 var myFriendName = "Chason";
 
-var myAge= 12;
+var myAge= 13;
 var myFriendAge = 12;
 
 if(myAge > myFriendAge){
@@ -63,9 +63,10 @@ if(myAge > myFriendAge){
 
 console.log(myFriendCompare);
 
-function myFirstFunction(_myFriend, _myName, _status ) {}
-
+function myFirstFunction(_myFriend, _myName, _status ) {
 console.log("hello "+_myFriend +". It is me, "+_myName +"and this is my "+_status +" function!");
+}
+
 
 
 
