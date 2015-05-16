@@ -55,6 +55,7 @@ function createGallery(element,path,file,alt){
 }
 
 var GalleryContainer = ".photo-gallery";
+var imagePath ="/animals/germanshepherd/";
 
 
 
