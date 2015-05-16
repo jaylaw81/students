@@ -80,7 +80,7 @@ document.querySelector(element).innerHTML = liString;
 
 var galleryContainer = ".photo-gallery";
 
-
+var imagePath = "/animals/German Shepards/";
 
 
 
