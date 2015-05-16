@@ -80,7 +80,7 @@ document.querySelector(element).innerHTML = liString;
 
 var galleryContainer = ".photo-gallery";
 
-var imagePath = "/animals/German Shepards/";
+var imagePath = "/animals/germanshepherd/";
 
 var imageName = "rhino";
 
@@ -89,7 +89,7 @@ var altName = "rhino";
 createGallery(galleryContainer, imagePath, imageName, altName);
 
 function showImage(argument) {
-    var img = "<img src='/animals/German Shepard/" + argument + "'>";  
+    var img = "<img src='/animals/germanshepherd/" + argument + "'>";  
 };
 
 document.querySelector(".gallery-main-image .image-container").innerHTML = img;
