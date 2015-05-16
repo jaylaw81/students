@@ -84,6 +84,8 @@ var imagePath = "/animals/German Shepards/";
 
 var imageName = "rhino";
 
+var altName = "rhino";
+
 
 
 
