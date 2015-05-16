@@ -55,7 +55,7 @@ if(myAge > myFriendAge){}else{}
 
 myFriendCompare = "I am older than "+myFriendName+".";
 
-myFriendCompare = myFriendName+" is older than me.";
+myFriendCompare = myFriendName+" is younger than me.";
 
 
 
