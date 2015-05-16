@@ -41,4 +41,4 @@ gemString += "the " + myGemColorArray[0][i] +" is "+ myGemColorArray[1][i] +". "
 
 gemString += "Gems come in many colors";
 
-consle.log(gemString);
+console.log(gemString);
