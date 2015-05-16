@@ -21,7 +21,7 @@ console.log(stringYear);
 
 var myColorArray = ['Orange', 'Red', 'Yellow', 'Green', 'blue'];
 
-var myColor = "my favorite color is " + myColorArray[3];
+var myColor = "my favorite color is " + myColorArray[4];
 
 console.log(myColor);
 
