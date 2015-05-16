@@ -10,7 +10,10 @@ myFullString += stringPartLetters+","+stringPartNumbers+" and "+stringPartCharac
 console.log(myFullString);
 
 var count = 10;
-var multiplier = 30;
+var multiplier = 20;
 
 var calculateVariables = "I have "+(count *multiplier)+ " friends on 'facebook'.";
 console.log(calculateVariables);
+
+var stringYear = "In the year " + multiplier.toString() + count.toString + ", most of us were over 3  years old.";        
+
