@@ -41,3 +41,5 @@ var myFriendName = "Chris";
 var myAge ="43";
 var myFriendAge ="9";
 
+if(myAge > myFriendAge){ } else { }
+
