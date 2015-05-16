@@ -80,6 +80,7 @@ var imageName = "dragon";
 
 var altName = "dragon";
 
+createGallery(galleryContainer, imagePath, imageName, altName);
 
 
 
