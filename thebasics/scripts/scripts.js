@@ -86,7 +86,7 @@ function showimage(argument) {
     
 }
 
-
+var img = "<img src='/animal/dragon/" +argument +"'>";
 
 
 
