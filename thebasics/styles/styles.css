@@ -70,6 +70,10 @@
      overflow: hidden;
     }
     
+.image-container img{
+     width: 100%;
+    }    
+    
 .photo-gallery
     {
      margin: 0;
