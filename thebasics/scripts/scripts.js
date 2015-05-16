@@ -70,7 +70,7 @@ function createGallery(element,path,file,alt){
         liString += '<li><a href="#self" onclick="showImage(\'' +file+ j+ '.jpg\');"' +alt+ '-' + j+ '" src="' + path +fle + j +'.jpg"></a></li>\n';
         
     }
-    document.querySelector(element).innerHTML = liString
+    document.querySelector(element).innerHTML = liString;
 }
 
 var galleryContainer = ".photo-Gallery";
