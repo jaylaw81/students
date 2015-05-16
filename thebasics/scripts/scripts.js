@@ -1,1 +1,1 @@
-var myvariable= "value";
+var myvariable = "value";
