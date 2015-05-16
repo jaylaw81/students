@@ -1,0 +1,2 @@
+var myVariable = "value";
+
