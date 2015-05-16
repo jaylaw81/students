@@ -52,7 +52,7 @@ function createGallery(element,path,file,alt){
 }
 
 var galleryContainer = ".photo-gallery";
-var imagepath= "/animals/germanshepherd/german-shepherd4.jpg";
+var imagePath= "/animals/germanshepherd/german-shepherd4.jpg";
 var imageName = "germanshepard";
 var altName = "germanshepard";
 createGallery(galleryContainer, imagePath, imageName, altName);
