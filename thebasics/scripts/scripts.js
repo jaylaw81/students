@@ -61,7 +61,7 @@ var altName = "Pictures of German Shepherds";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 function showImage(arguemnt) {
-var image = "<img src='/animals/germanshepherd/" + argument + "'>";   
+var img = "<img src='/animals/germanshepherd/" + argument + "'>";   
 };
 
 
