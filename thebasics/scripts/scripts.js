@@ -51,11 +51,15 @@ var myFriendName = "Chason";
 var myAge= 12;
 var myFriendAge = 12;
 
-if(myAge > myFriendAge){}else{}
+if(myAge > myFriendAge){
+    myFriendCompare = "I am older than "+myFriendName+".";    
+}else{
+    myFriendCompare = myFriendName+" is younger than me.";    
+}
 
-myFriendCompare = "I am older than "+myFriendName+".";
 
-myFriendCompare = myFriendName+" is younger than me.";
+
+
 
 console.log(myFriendCompare);
 
