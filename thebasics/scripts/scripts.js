@@ -23,7 +23,7 @@ for(var i = 0; i < myGemColorArray[0].length; i++){gemString += "The " + myGemCo
 gemString += "Gems come in many colors";
 console.log(gemString);
 var myFriendCompare = "";
-var myFriendName = "ALEX ON WEED";
+var myFriendName = "Alex";
 var myAge = 12;
 var myFriendAge = 11;
 if(myAge > myFriendAge){
