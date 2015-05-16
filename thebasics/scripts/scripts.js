@@ -37,4 +37,4 @@ gemString += "Gems come in many colors.";
 console.log(gemString);
 
 varFriendCompare = "";
-varFriendName = "Chris";
+varFriendName = "Mike";
