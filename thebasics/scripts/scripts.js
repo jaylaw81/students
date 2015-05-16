@@ -74,11 +74,11 @@ function createGallery(element,path,file,alt){
 
 var galleryContainer = ".photo-Gallery";
 
-var imagePath = "/animals/Dragons/"
+var imagePath = "/animals/germanshepherd/"
     
-var imageName = "dragon";
+var imageName = "german-shepherd";
 
-var altName = "dragon";
+var altName = "germanshepherd";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
