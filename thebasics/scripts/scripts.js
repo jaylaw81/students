@@ -37,6 +37,8 @@ if(myAge > myFriendAge){myFriendCompare = "I am older than "+myFriendName+".";}e
 console.log(myFriendCompare);
 
 function myFirstFunction(_myFriend,_myName,_status ) {console.log("Hello "+_myFriend +". It is me, "+_myName +", and this is my "+_status +" function!");}
-myFirstFunction('Mike','Ben','first');
+myFirstFunction('CHARLIE','ALEX','EPIC');
 function createGallery(element,path,file,alt){var liString = "";}
-for (var j = 1; j <= 8; j++) { }
+for (var j = 1; j <= 8; j++) {
+    
+}
