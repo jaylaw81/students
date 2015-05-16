@@ -49,3 +49,4 @@ function createGallery(element,path,file,alt){
 var galleryContainer = ".photo-gallery";
 var imagePath = "/animals/germanshepard/";
 var imageName = "rhino";
+var altName = "rhino";
