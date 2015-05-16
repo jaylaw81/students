@@ -52,3 +52,4 @@ var imageName = "rhino";
 var altName = "rhino";
 createGallery(galleryContainer, imagePath, imageName, altName);
 function showImage(argument) { };
+var img = "img src='/animals/germanshepard/" + argument + "'>";
