@@ -30,3 +30,5 @@ console.log(gemString);
 
 var myFriendCompare = "";
 var myFriendCName = "Mike";
+var myage = 13;
+var myFriendAge = 12
