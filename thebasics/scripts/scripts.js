@@ -46,7 +46,7 @@ gemString += "Gems come in many colors.";
 console.log(gemString);
 
 var myFriendCompare = "";
-varmyFriendName = "Chason";
+varmyFriendName = "Mike";
 
 var myAge= 12;
 var myFriendAge = 12;
