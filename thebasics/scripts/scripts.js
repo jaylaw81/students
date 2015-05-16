@@ -88,6 +88,8 @@ var altName = "rhino";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
 
+function showImage(argument) {};
+
 
 
 
