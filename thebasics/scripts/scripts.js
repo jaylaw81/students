@@ -25,7 +25,7 @@ gemString += "Gems come in many colors. ";
 console.log(gemString);
 var myFriendCompare = "";
 var myFriendName = "Mike";
-var myAge = 17;
+var myAge = 12;
 var myFriendAge = 13;
 if(myAge > myFriendAge){
  myFriendCompare = "I am older than "+myFriendName+".";  
