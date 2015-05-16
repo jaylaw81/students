@@ -50,7 +50,7 @@ for (var j = 1; j <= 8; j++) {liString += '<li><a href="#self" onclick="showImag
     
     }
 document.querySelector(element).innerHTML = liString;
-
+var galleryContainer = ".photo-gallery";
 
 
 
