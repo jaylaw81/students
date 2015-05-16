@@ -31,6 +31,8 @@ var myFruitColor = "I like "+myFruitColorArray[0][3]+" because they are "+myFrui
 
 console.log(myFruitColor);
 
+var gemString = "Gem colors: ";
+
 
 
 
