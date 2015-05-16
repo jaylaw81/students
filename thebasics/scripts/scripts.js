@@ -25,7 +25,7 @@ var gemString = "Gem colors: ";
 var myGemColorArray = [ ['Ruby','Saphire','Emerald'],   ['Red', 'Blue', 'Green']    ];
 for(var i =0; i < myGemColorArray[0].length; i++){ 
     gemString += "The " + myGemColorArray[0][i] +" is "+myGemColorArray[1][i] + ". ";
-    }
+}
 gemString += "Gems come in many colors.";
 console.log(gemString);
 
@@ -35,3 +35,5 @@ var myAge = 13;
 var myFriendAge = 12;
 if(myAge > myFriendAge){myFriendCompare = "I am older than "+myFriendName+".";}else{myFriendCompare = myFriendName+" is older than me.";}
 console.log(myFriendCompare);
+
+function myFirstFunction(_myFriend,_myName,_status ) { }
