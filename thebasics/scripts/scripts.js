@@ -35,9 +35,11 @@ var gemString = "Gem colors: ";
 
 var myGemColorArray = [  ['Ruby', 'Saphire', 'Emerald']  ];
 
-for(var i = 0; i < myGemColorArray[0].length; i++){};
+for(var i = 0; i < myGemColorArray[0].length; i++){
+    gemString += "The " + myGemColorArray[0][i] +" is "+ myGemColorArray[1][i] + ". ";    
+};
 
-gemString += "The " + myGemColorArray[0][i] +" is "+ myGemColorArray[1][i] + ". ";
+
 
 gemString += "Gems come in many colors.";
 
