@@ -56,7 +56,7 @@ function createGallery(element,path,file,alt){
 
 var galleryContainer = ".photo-gallery";
 var imagePath ="/animals/germanshepherd/";
-var imageName = "German Shepherds";
+var imageName = "german-shepherds";
 var altName = "Pictures of German Shepherds";
 
 createGallery(galleryContainer, imagePath, imageName, altName);
