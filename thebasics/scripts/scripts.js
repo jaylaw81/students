@@ -39,7 +39,7 @@ function myFirstFunction(_myFriend, _myName, _status) {
 myFirstFunction('Beyonce', 'BB', 'first');
 function createGallery(element,path,file,alt){
   var listing = "";  
-    }
+}
 
 
 
