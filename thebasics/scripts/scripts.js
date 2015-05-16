@@ -40,7 +40,7 @@ console.log("Hello "+_myFriend +". It is me, "+_myName +"and this is my "+_statu
 myFirstFunction("Mike","Ben","first");
 function createGallery(element,path,file,alt){ }
 var liString = "";
-
+for (var j = 1; j <= 8; j++) { }
 
 
 
