@@ -42,7 +42,7 @@ var myAge ="43";
 var myFriendAge ="9";
 
 if(myAge < myFriendAge){
-    myFriendCompare = "I am older than " + myFriendName+ ". "
+    myFriendCompare = "I am older than " + myFriendName+ ", but he is cuter. "
     } 
         else { 
             myFriendCompare = myFriendName+ " is older than me.";
