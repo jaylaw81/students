@@ -1,2 +1,3 @@
 .main-header .nav .nav-links { margin: 40px 0 0; padding: 0px; }
 .main-header, .section-container, .main-footer { width: 90%; margin: 0 auto; background-color: #fff; padding: 20px; }
+.main-header .logo { max-width: 120px; width: 75%; }
